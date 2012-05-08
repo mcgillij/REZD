@@ -1,0 +1,13 @@
+Index: dialog.py
+===================================================================
+--- dialog.py    (revision 4)
++++ dialog.py    (working copy)
+@@ -322,7 +322,7 @@
+         if isinstance(other, DialogGroup):
+             return cmp(self.real_order, other.real_order)
+         else:
+-            return OrderedGroup.__cmp__(self, other)
++            return pyglet.graphics.OrderedGroup.__cmp__(self, other)
+ 
+     def is_on_top(self):
+         """
