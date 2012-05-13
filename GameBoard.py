@@ -37,8 +37,8 @@ class GameBoard(window.Window, ConnectionListener):
         window.Window.__init__(self, resizable=True, width=WINWIDTH, height=WINHEIGHT, caption="REZD:" + str(VERSION), context=context)
         self.camera = Camera(self)
         #host = "localhost"
-        #self.host = "localhost"
-        self.host = "192.168.0.101"
+        self.host = "localhost"
+        #self.host = "192.168.0.101"
         #self.host = "24.138.79.5"
         self.port = 1234
         self.connected = False
