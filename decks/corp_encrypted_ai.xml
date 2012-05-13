@@ -1,0 +1,582 @@
+<cards>
+<card>
+	<cid>9</cid>
+	<name>AI Chief Financial Officer</name>
+	<type>Agenda</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(A): Shuffle cards stored in HQ and the Archives into R&amp;D; then draw five cards.</text>
+	<quote>"I think it's 'preferred' stock because their AI financial adviser prefers not to risk changing the board of directors!"</quote>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AIChiefFinancialOfficer.jpg</image>
+</card>
+<card>
+	<cid>426</cid>
+	<name>Fetal AI</name>
+	<type>Agenda</type>
+	<subtype1>Asset - AI</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Rare</rarity>
+	<artist>Rick Berry</artist>
+	<text>When Runner accesses Fetal AI, do 2 Net damage, even if it is not installed. Ignore this effect if Runner accesses Fetal AI from the Archives. If Fetal AI is accessed from R&amp;D, Runner must show it to you. Runner must pay 2 to steal Fetal AI, in addition to any other costs.</text>
+	<release>Proteus</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/FetalAI.jpg</image>
+</card>
+<card>
+	<cid>426</cid>
+	<name>Fetal AI</name>
+	<type>Agenda</type>
+	<subtype1>Asset - AI</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Rare</rarity>
+	<artist>Rick Berry</artist>
+	<text>When Runner accesses Fetal AI, do 2 Net damage, even if it is not installed. Ignore this effect if Runner accesses Fetal AI from the Archives. If Fetal AI is accessed from R&amp;D, Runner must show it to you. Runner must pay 2 to steal Fetal AI, in addition to any other costs.</text>
+	<release>Proteus</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/FetalAI.jpg</image>
+</card>
+<card>
+	<cid>553</cid>
+	<name>Data Fort Remapping</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Common</rarity>
+	<artist>John Sledd</artist>
+	<text>Put a Remap counter on a Data Fort Remapping when you score it. Remap Counter: End a run.</text>
+	<quote>"In netspace, the map is often the territory. That's just one more reason we don't hire philosophy grads." -- Dave Michaels</quote>
+	<release>Classic</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/data_fort_remapping.jpg</image>
+</card>
+<card>
+	<cid>117</cid>
+	<name>Encryption Breakthrough</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Kim Francisco</artist>
+	<text>All code gates have +1 strength. When you score Encryption Breakthrough, reveal as many code gates as you wish. Then, gain (1) for each revealed or rezzed code gate.</text>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncryptionBreakthrough.jpg</image>
+</card>
+<card>
+	<cid>117</cid>
+	<name>Encryption Breakthrough</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Kim Francisco</artist>
+	<text>All code gates have +1 strength. When you score Encryption Breakthrough, reveal as many code gates as you wish. Then, gain (1) for each revealed or rezzed code gate.</text>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncryptionBreakthrough.jpg</image>
+</card>
+<card>
+	<cid>117</cid>
+	<name>Encryption Breakthrough</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Kim Francisco</artist>
+	<text>All code gates have +1 strength. When you score Encryption Breakthrough, reveal as many code gates as you wish. Then, gain (1) for each revealed or rezzed code gate.</text>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncryptionBreakthrough.jpg</image>
+</card>
+<card>
+	<cid>117</cid>
+	<name>Encryption Breakthrough</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Kim Francisco</artist>
+	<text>All code gates have +1 strength. When you score Encryption Breakthrough, reveal as many code gates as you wish. Then, gain (1) for each revealed or rezzed code gate.</text>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncryptionBreakthrough.jpg</image>
+</card>
+<card>
+	<cid>460</cid>
+	<name>Misleading Access Menus</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(s) End the run unless Runner pays (1). Gain (3) when you rez Misleading Access Menus.</text>
+	<quote>"You wouldn't believe how many suckers try to access 'Tools/Certain Death.'"</quote>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MisleadingAccessMenus.jpg</image>
+</card>
+<card>
+	<cid>460</cid>
+	<name>Misleading Access Menus</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(s) End the run unless Runner pays (1). Gain (3) when you rez Misleading Access Menus.</text>
+	<quote>"You wouldn't believe how many suckers try to access 'Tools/Certain Death.'"</quote>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MisleadingAccessMenus.jpg</image>
+</card>
+<card>
+	<cid>460</cid>
+	<name>Misleading Access Menus</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(s) End the run unless Runner pays (1). Gain (3) when you rez Misleading Access Menus.</text>
+	<quote>"You wouldn't believe how many suckers try to access 'Tools/Certain Death.'"</quote>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MisleadingAccessMenus.jpg</image>
+</card>
+<card>
+	<cid>460</cid>
+	<name>Misleading Access Menus</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(s) End the run unless Runner pays (1). Gain (3) when you rez Misleading Access Menus.</text>
+	<quote>"You wouldn't believe how many suckers try to access 'Tools/Certain Death.'"</quote>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MisleadingAccessMenus.jpg</image>
+</card>
+<card>
+	<cid>28</cid>
+	<name>Ball and Chain</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>5</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) For the remainder of the run, Runner must pay (2) when encountering a piece of ice, in addition to any other costs, or end the run.</text>
+	<release>Limited</release>
+	<difficulty>The payment of 2* must be perfor</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BallandChain.jpg</image>
+</card>
+<card>
+	<cid>28</cid>
+	<name>Ball and Chain</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>5</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) For the remainder of the run, Runner must pay (2) when encountering a piece of ice, in addition to any other costs, or end the run.</text>
+	<release>Limited</release>
+	<difficulty>The payment of 2* must be perfor</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BallandChain.jpg</image>
+</card>
+<card>
+	<cid>28</cid>
+	<name>Ball and Chain</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>5</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) For the remainder of the run, Runner must pay (2) when encountering a piece of ice, in addition to any other costs, or end the run.</text>
+	<release>Limited</release>
+	<difficulty>The payment of 2* must be perfor</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BallandChain.jpg</image>
+</card>
+<card>
+	<cid>153</cid>
+	<name>Haunting Inquisition</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) Runner cannot make another run during his or her next six actions. (s) End the run.</text>
+	<quote>"It's just another nightmare, Johnny. Towel off and go back to sleep."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/HauntingInquisition.jpg</image>
+</card>
+<card>
+	<cid>153</cid>
+	<name>Haunting Inquisition</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) Runner cannot make another run during his or her next six actions. (s) End the run.</text>
+	<quote>"It's just another nightmare, Johnny. Towel off and go back to sleep."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/HauntingInquisition.jpg</image>
+</card>
+<card>
+	<cid>153</cid>
+	<name>Haunting Inquisition</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(s) Runner cannot make another run during his or her next six actions. (s) End the run.</text>
+	<quote>"It's just another nightmare, Johnny. Towel off and go back to sleep."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/HauntingInquisition.jpg</image>
+</card>
+<card>
+	<cid>339</cid>
+	<name>Too Many Doors</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<strength>3</strength>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(s) Secretly spend (0), (1), or (2); Runner does the same. Then you and Runner reveal how much each of you spent. End the run unless you spent as many bits ar Runner spent.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TooManyDoors.jpg</image>
+</card>
+<card>
+	<cid>339</cid>
+	<name>Too Many Doors</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<strength>3</strength>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(s) Secretly spend (0), (1), or (2); Runner does the same. Then you and Runner reveal how much each of you spent. End the run unless you spent as many bits ar Runner spent.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TooManyDoors.jpg</image>
+</card>
+<card>
+	<cid>339</cid>
+	<name>Too Many Doors</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<strength>3</strength>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(s) Secretly spend (0), (1), or (2); Runner does the same. Then you and Runner reveal how much each of you spent. End the run unless you spent as many bits ar Runner spent.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TooManyDoors.jpg</image>
+</card>
+<card>
+	<cid>339</cid>
+	<name>Too Many Doors</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<strength>3</strength>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(s) Secretly spend (0), (1), or (2); Runner does the same. Then you and Runner reveal how much each of you spent. End the run unless you spent as many bits ar Runner spent.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TooManyDoors.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>116</cid>
+	<name>Encoder, Inc.</name>
+	<type>Node</type>
+	<rarity>Rare</rarity>
+	<artist>Todd Wade</artist>
+	<text>Cost to rez code gates is reduced by (1). All code gates have an additional "(s) End the run." after all other subroutines.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncoderInc..jpg</image>
+</card>
+<card>
+	<cid>116</cid>
+	<name>Encoder, Inc.</name>
+	<type>Node</type>
+	<rarity>Rare</rarity>
+	<artist>Todd Wade</artist>
+	<text>Cost to rez code gates is reduced by (1). All code gates have an additional "(s) End the run." after all other subroutines.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncoderInc..jpg</image>
+</card>
+<card>
+	<cid>116</cid>
+	<name>Encoder, Inc.</name>
+	<type>Node</type>
+	<rarity>Rare</rarity>
+	<artist>Todd Wade</artist>
+	<text>Cost to rez code gates is reduced by (1). All code gates have an additional "(s) End the run." after all other subroutines.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncoderInc..jpg</image>
+</card>
+<card>
+	<cid>116</cid>
+	<name>Encoder, Inc.</name>
+	<type>Node</type>
+	<rarity>Rare</rarity>
+	<artist>Todd Wade</artist>
+	<text>Cost to rez code gates is reduced by (1). All code gates have an additional "(s) End the run." after all other subroutines.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EncoderInc..jpg</image>
+</card>
+<card>
+	<cid>124</cid>
+	<name>Experimental AI</name>
+	<type>Node</type>
+	<subtype1>AI</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Kimble</artist>
+	<text>You may advance Experimental AI before and after you rez it. When Runner accesses Experimental AI, it destroys one program for each advancement counter on it.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ExperimentalAI.jpg</image>
+</card>
+<card>
+	<cid>70</cid>
+	<name>Corporate Negotiating Center</name>
+	<type>Node</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Roger Coad</artist>
+	<text>At the start of each of your turns, gain (1) for each agenda card stored in HQ that you show to runner.</text>
+	<quote>"That which does not get ne fired makes me more valuable to the corporation." - Dave Michaels, Microtech Special Ops</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CorporateNegotiatingCenter.jpg</image>
+</card>
+<card>
+	<cid>70</cid>
+	<name>Corporate Negotiating Center</name>
+	<type>Node</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Roger Coad</artist>
+	<text>At the start of each of your turns, gain (1) for each agenda card stored in HQ that you show to runner.</text>
+	<quote>"That which does not get ne fired makes me more valuable to the corporation." - Dave Michaels, Microtech Special Ops</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CorporateNegotiatingCenter.jpg</image>
+</card>
+<card>
+	<cid>70</cid>
+	<name>Corporate Negotiating Center</name>
+	<type>Node</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Roger Coad</artist>
+	<text>At the start of each of your turns, gain (1) for each agenda card stored in HQ that you show to runner.</text>
+	<quote>"That which does not get ne fired makes me more valuable to the corporation." - Dave Michaels, Microtech Special Ops</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CorporateNegotiatingCenter.jpg</image>
+</card>
+<card>
+	<cid>70</cid>
+	<name>Corporate Negotiating Center</name>
+	<type>Node</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Roger Coad</artist>
+	<text>At the start of each of your turns, gain (1) for each agenda card stored in HQ that you show to runner.</text>
+	<quote>"That which does not get ne fired makes me more valuable to the corporation." - Dave Michaels, Microtech Special Ops</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CorporateNegotiatingCenter.jpg</image>
+</card>
+<card>
+	<cid>273</cid>
+	<name>Rescheduler</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(A): Note the number of cards stored in HQ. Shuffle those cards into R&amp;D, and then draw that many cards.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Rescheduler.jpg</image>
+</card>
+<card>
+	<cid>273</cid>
+	<name>Rescheduler</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Kimble</artist>
+	<text>(A): Note the number of cards stored in HQ. Shuffle those cards into R&amp;D, and then draw that many cards.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Rescheduler.jpg</image>
+</card>
+<card>
+	<cid>54</cid>
+	<name>City Surveillance</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Sue Ann Harkey</artist>
+	<text>For each card Runner draws, give Runner a tag unless Runner pays (1), in addition to any other costs, to avoid receiving that tag. You may rez City Surveillance just before the card is drawn.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CitySurveillance.jpg</image>
+</card>
+<card>
+	<cid>54</cid>
+	<name>City Surveillance</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Sue Ann Harkey</artist>
+	<text>For each card Runner draws, give Runner a tag unless Runner pays (1), in addition to any other costs, to avoid receiving that tag. You may rez City Surveillance just before the card is drawn.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CitySurveillance.jpg</image>
+</card>
+<card>
+	<cid>268</cid>
+	<name>Red Herrings</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>Runner must pay (5), in addition to any other costs, to steal agendas accessed from this fort, even on the run during which Runner trashes Red Herrings.</text>
+	<quote>"Frack! It's easier to find things on my floor than in this mess."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/RedHerrings.jpg</image>
+</card>
+<card>
+	<cid>268</cid>
+	<name>Red Herrings</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>Runner must pay (5), in addition to any other costs, to steal agendas accessed from this fort, even on the run during which Runner trashes Red Herrings.</text>
+	<quote>"Frack! It's easier to find things on my floor than in this mess."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/RedHerrings.jpg</image>
+</card>
+<card>
+	<cid>211</cid>
+	<name>Namatoki Plaza</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Chris Vande Voort</artist>
+	<text>Rez Namatoki Plaza when you install it. Install Namatoki Plaza only if you can pay to rez it. Install only inside a subsidiary data fort. That fort may have an additional agenda or node installed inside it. If Namatoki Plaza leaves play while installed, and this results in the fort having too many agendas and nodes installed inside it, trash one of those agendas or nodes.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NamatokiPlaza.jpg</image>
+</card>
+<card>
+	<cid>220</cid>
+	<name>New Galveston City Grid</name>
+	<type>Upgrade</type>
+	<subtype1>Region</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Craig Hooper</artist>
+	<text>All nodes and other upgrades installed inside this fort cost (2) to trash, in addition to the normal cost. Rez a region when you install it. Install a region only if you can pay to rez it. Only one region may be installed in each data fort. Trash older ones.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NewGalvestonCityGrid.jpg</image>
+</card>
+<card>
+	<cid>220</cid>
+	<name>New Galveston City Grid</name>
+	<type>Upgrade</type>
+	<subtype1>Region</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Craig Hooper</artist>
+	<text>All nodes and other upgrades installed inside this fort cost (2) to trash, in addition to the normal cost. Rez a region when you install it. Install a region only if you can pay to rez it. Only one region may be installed in each data fort. Trash older ones.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NewGalvestonCityGrid.jpg</image>
+</card>
+<card>
+	<cid>220</cid>
+	<name>New Galveston City Grid</name>
+	<type>Upgrade</type>
+	<subtype1>Region</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Craig Hooper</artist>
+	<text>All nodes and other upgrades installed inside this fort cost (2) to trash, in addition to the normal cost. Rez a region when you install it. Install a region only if you can pay to rez it. Only one region may be installed in each data fort. Trash older ones.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NewGalvestonCityGrid.jpg</image>
+</card>
+</cards>

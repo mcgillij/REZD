@@ -1,0 +1,611 @@
+<cards>
+<card>
+	<cid>9</cid>
+	<name>AI Chief Financial Officer</name>
+	<type>Agenda</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(A): Shuffle cards stored in HQ and the Archives into R&amp;D; then draw five cards.</text>
+	<quote>"I think it's 'preferred' stock because their AI financial adviser prefers not to risk changing the board of directors!"</quote>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AIChiefFinancialOfficer.jpg</image>
+</card>
+<card>
+	<cid>9</cid>
+	<name>AI Chief Financial Officer</name>
+	<type>Agenda</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(A): Shuffle cards stored in HQ and the Archives into R&amp;D; then draw five cards.</text>
+	<quote>"I think it's 'preferred' stock because their AI financial adviser prefers not to risk changing the board of directors!"</quote>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AIChiefFinancialOfficer.jpg</image>
+</card>
+<card>
+	<cid>9</cid>
+	<name>AI Chief Financial Officer</name>
+	<type>Agenda</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>(A): Shuffle cards stored in HQ and the Archives into R&amp;D; then draw five cards.</text>
+	<quote>"I think it's 'preferred' stock because their AI financial adviser prefers not to risk changing the board of directors!"</quote>
+	<release>Limited</release>
+	<difficulty>5</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AIChiefFinancialOfficer.jpg</image>
+</card>
+<card>
+	<cid>195</cid>
+	<name>Main-Office Relocation</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Mike Kimble</artist>
+	<text>Hand size +2.</text>
+	<quote>Corporate relocation efforts have become a much riskier proposition since the advert of the corporate war. Often, a corp's security teams will have to arrange armored convoys to prevent thefts.</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Main-OfficeRelocation.jpg</image>
+</card>
+<card>
+	<cid>195</cid>
+	<name>Main-Office Relocation</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Mike Kimble</artist>
+	<text>Hand size +2.</text>
+	<quote>Corporate relocation efforts have become a much riskier proposition since the advert of the corporate war. Often, a corp's security teams will have to arrange armored convoys to prevent thefts.</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Main-OfficeRelocation.jpg</image>
+</card>
+<card>
+	<cid>115</cid>
+	<name>Employee Empowerment</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Dan Frazier</artist>
+	<text>You may choose to draw an additional card at the start of each of your turns. (A): Draw 2 cards.</text>
+	<quote>"Be glad you don't get all the management the company pays for."</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EmployeeEmpowerment.jpg</image>
+</card>
+<card>
+	<cid>115</cid>
+	<name>Employee Empowerment</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Dan Frazier</artist>
+	<text>You may choose to draw an additional card at the start of each of your turns. (A): Draw 2 cards.</text>
+	<quote>"Be glad you don't get all the management the company pays for."</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EmployeeEmpowerment.jpg</image>
+</card>
+<card>
+	<cid>485</cid>
+	<name>Roadblock</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<subtype2>Random</subtype2>
+	<strength>0</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run. When Runner encounters Roadblock, roll a die. On a 6, derez Roadblock, and Runner automatically passes it; otherwise, add the result to Roadblock 's strength for that encounter.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Roadblock.jpg</image>
+</card>
+<card>
+	<cid>485</cid>
+	<name>Roadblock</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<subtype2>Random</subtype2>
+	<strength>0</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run. When Runner encounters Roadblock, roll a die. On a 6, derez Roadblock, and Runner automatically passes it; otherwise, add the result to Roadblock 's strength for that encounter.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Roadblock.jpg</image>
+</card>
+<card>
+	<cid>485</cid>
+	<name>Roadblock</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<subtype2>Random</subtype2>
+	<strength>0</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run. When Runner encounters Roadblock, roll a die. On a 6, derez Roadblock, and Runner automatically passes it; otherwise, add the result to Roadblock 's strength for that encounter.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Roadblock.jpg</image>
+</card>
+<card>
+	<cid>21</cid>
+	<name>Asp</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Flatline</subtype2>
+	<strength>4</strength>
+	<rarity>Common</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Trace5 - If trace is successful, end the run, and Runner cannot run again until Runner takes an action to pay (1).</text>
+	<quote>Oh how sharper than a serpent's tooth is one of these suckers clamped onto the boot sector of a drive!</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Asp.jpg</image>
+</card>
+<card>
+	<cid>21</cid>
+	<name>Asp</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Flatline</subtype2>
+	<strength>4</strength>
+	<rarity>Common</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Trace5 - If trace is successful, end the run, and Runner cannot run again until Runner takes an action to pay (1).</text>
+	<quote>Oh how sharper than a serpent's tooth is one of these suckers clamped onto the boot sector of a drive!</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Asp.jpg</image>
+</card>
+<card>
+	<cid>21</cid>
+	<name>Asp</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Flatline</subtype2>
+	<strength>4</strength>
+	<rarity>Common</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Trace5 - If trace is successful, end the run, and Runner cannot run again until Runner takes an action to pay (1).</text>
+	<quote>Oh how sharper than a serpent's tooth is one of these suckers clamped onto the boot sector of a drive!</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Asp.jpg</image>
+</card>
+<card>
+	<cid>563</cid>
+	<name>Glacier</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>5</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>Rezzing Glacier cost 1 agenda point in addition to normal cost. -> End the run, -> End the run, [1]: Move Glacier to the outermost position of any data fort. Use this ability only at the start of a run. You may use this ability even if Glacier is unrezzed, in which case you reveal it.</text>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/glacier.jpg</image>
+</card>
+<card>
+	<cid>563</cid>
+	<name>Glacier</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>5</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>Rezzing Glacier cost 1 agenda point in addition to normal cost. -> End the run, -> End the run, [1]: Move Glacier to the outermost position of any data fort. Use this ability only at the start of a run. You may use this ability even if Glacier is unrezzed, in which case you reveal it.</text>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/glacier.jpg</image>
+</card>
+<card>
+	<cid>563</cid>
+	<name>Glacier</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>5</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>Rezzing Glacier cost 1 agenda point in addition to normal cost. -> End the run, -> End the run, [1]: Move Glacier to the outermost position of any data fort. Use this ability only at the start of a run. You may use this ability even if Glacier is unrezzed, in which case you reveal it.</text>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/glacier.jpg</image>
+</card>
+<card>
+	<cid>94</cid>
+	<name>Day Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Draw two cards and gain (1).</text>
+	<quote>"I'm sick of punching the clock. I want to punch my supervisor."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DayShift.jpg</image>
+</card>
+<card>
+	<cid>94</cid>
+	<name>Day Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Draw two cards and gain (1).</text>
+	<quote>"I'm sick of punching the clock. I want to punch my supervisor."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DayShift.jpg</image>
+</card>
+<card>
+	<cid>94</cid>
+	<name>Day Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Draw two cards and gain (1).</text>
+	<quote>"I'm sick of punching the clock. I want to punch my supervisor."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DayShift.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>12</cid>
+	<name>Annual Reviews</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Ramirez</artist>
+	<text>Draw three cards.</text>
+	<quote>"Just between you and me, his wouldn't be a bad time to impress the boss with your initiative."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AnnualReviews.jpg</image>
+</card>
+<card>
+	<cid>196</cid>
+	<name>Management Shake-Up</name>
+	<type>Operation</type>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Add three advancement counters to any combination of installed cards that can be advanced.</text>
+	<quote>Don't be irreplaceable. If you can't be replaced, you can't be promoted.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ManagementShake-Up.jpg</image>
+</card>
+<card>
+	<cid>196</cid>
+	<name>Management Shake-Up</name>
+	<type>Operation</type>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Add three advancement counters to any combination of installed cards that can be advanced.</text>
+	<quote>Don't be irreplaceable. If you can't be replaced, you can't be promoted.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ManagementShake-Up.jpg</image>
+</card>
+<card>
+	<cid>196</cid>
+	<name>Management Shake-Up</name>
+	<type>Operation</type>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Add three advancement counters to any combination of installed cards that can be advanced.</text>
+	<quote>Don't be irreplaceable. If you can't be replaced, you can't be promoted.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ManagementShake-Up.jpg</image>
+</card>
+<card>
+	<cid>241</cid>
+	<name>Planning Consultants</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Christina Wald</artist>
+	<text>Look at the top five cards of R&amp;D and arrange them in any order you choose.</text>
+	<quote>"Chance favors the prepared mind." - Sire Isaac Newton</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/PlanningConsultants.jpg</image>
+</card>
+<card>
+	<cid>241</cid>
+	<name>Planning Consultants</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Christina Wald</artist>
+	<text>Look at the top five cards of R&amp;D and arrange them in any order you choose.</text>
+	<quote>"Chance favors the prepared mind." - Sire Isaac Newton</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/PlanningConsultants.jpg</image>
+</card>
+<card>
+	<cid>241</cid>
+	<name>Planning Consultants</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Christina Wald</artist>
+	<text>Look at the top five cards of R&amp;D and arrange them in any order you choose.</text>
+	<quote>"Chance favors the prepared mind." - Sire Isaac Newton</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/PlanningConsultants.jpg</image>
+</card>
+<card>
+	<cid>569</cid>
+	<name>Corporate Shuffle</name>
+	<type>Operation</type>
+	<subtype1>Double</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Draw 5 cards, then shuffle a card stored in HQ into RnD. Playing a double operation costs two consecutive actions this turn instead of one.</text>
+	<quote>It's a shell game for the shareholders</quote>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/corporate_shuffle.jpg</image>
+</card>
+<card>
+	<cid>569</cid>
+	<name>Corporate Shuffle</name>
+	<type>Operation</type>
+	<subtype1>Double</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Draw 5 cards, then shuffle a card stored in HQ into RnD. Playing a double operation costs two consecutive actions this turn instead of one.</text>
+	<quote>It's a shell game for the shareholders</quote>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/corporate_shuffle.jpg</image>
+</card>
+<card>
+	<cid>256</cid>
+	<name>Project Consultants</name>
+	<type>Operation</type>
+	<cost>12</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Raabe</artist>
+	<text>Add 4 advancement counters to any combination of installed cards that can be advanced.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ProjectConsultants.jpg</image>
+</card>
+<card>
+	<cid>256</cid>
+	<name>Project Consultants</name>
+	<type>Operation</type>
+	<cost>12</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Raabe</artist>
+	<text>Add 4 advancement counters to any combination of installed cards that can be advanced.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ProjectConsultants.jpg</image>
+</card>
+<card>
+	<cid>256</cid>
+	<name>Project Consultants</name>
+	<type>Operation</type>
+	<cost>12</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Mike Raabe</artist>
+	<text>Add 4 advancement counters to any combination of installed cards that can be advanced.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ProjectConsultants.jpg</image>
+</card>
+<card>
+	<cid>402</cid>
+	<name>Credit Consolidation</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Alexander</artist>
+	<text>Gain (15).</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/CreditConsolidation.jpg</image>
+</card>
+<card>
+	<cid>402</cid>
+	<name>Credit Consolidation</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Alexander</artist>
+	<text>Gain (15).</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/CreditConsolidation.jpg</image>
+</card>
+<card>
+	<cid>402</cid>
+	<name>Credit Consolidation</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>10</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Alexander</artist>
+	<text>Gain (15).</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/CreditConsolidation.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+</cards>

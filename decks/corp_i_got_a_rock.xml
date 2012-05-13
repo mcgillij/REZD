@@ -1,0 +1,606 @@
+<cards>
+<card>
+	<cid>229</cid>
+	<name>On-Call Solo Team</name>
+	<type>Agenda</type>
+	<subtype1>Asset</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Matt Wilson</artist>
+	<text>(A): Do 1 meat damage. Use this ability only if Runner is tagged.</text>
+	<quote>"Corporate solo teams operate much like government death squads, with the primary difference being that solo teams aren't clumsy enough to let themselves be exposed."</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/On-CallSoloTeam.jpg</image>
+</card>
+<card>
+	<cid>101</cid>
+	<name>Detroit Police Contract</name>
+	<type>Agenda</type>
+	<subtype1>Black Ops</subtype1>
+	<rarity>Vital</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Put (12) from the bank on Detroit Police Contract when you score it. Take (2) from Detroit Police Contract, if it has any bits, at the start of each of your turns.</text>
+	<quote>Corporate security forces are infamous for employing lethal force as a means of reducing overhead.</quote>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DetroitPoliceContract.jpg</image>
+</card>
+<card>
+	<cid>456</cid>
+	<name>Marked Accounts</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Common</rarity>
+	<artist>Doug Shuler</artist>
+	<text>When Runner accesses Marked Accounts, give Runner a tag, even if it is not installed. If Marked Accounts is accessed from R&amp;D, Runner must show it to you.</text>
+	<quote>"Heh. Get this:'Counterintrusion Disbursements.'"</quote>
+	<release>Proteus</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MarkedAccounts.jpg</image>
+</card>
+<card>
+	<cid>456</cid>
+	<name>Marked Accounts</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Common</rarity>
+	<artist>Doug Shuler</artist>
+	<text>When Runner accesses Marked Accounts, give Runner a tag, even if it is not installed. If Marked Accounts is accessed from R&amp;D, Runner must show it to you.</text>
+	<quote>"Heh. Get this:'Counterintrusion Disbursements.'"</quote>
+	<release>Proteus</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MarkedAccounts.jpg</image>
+</card>
+<card>
+	<cid>456</cid>
+	<name>Marked Accounts</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Common</rarity>
+	<artist>Doug Shuler</artist>
+	<text>When Runner accesses Marked Accounts, give Runner a tag, even if it is not installed. If Marked Accounts is accessed from R&amp;D, Runner must show it to you.</text>
+	<quote>"Heh. Get this:'Counterintrusion Disbursements.'"</quote>
+	<release>Proteus</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MarkedAccounts.jpg</image>
+</card>
+<card>
+	<cid>456</cid>
+	<name>Marked Accounts</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<subtype2>Ambush</subtype2>
+	<rarity>Common</rarity>
+	<artist>Doug Shuler</artist>
+	<text>When Runner accesses Marked Accounts, give Runner a tag, even if it is not installed. If Marked Accounts is accessed from R&amp;D, Runner must show it to you.</text>
+	<quote>"Heh. Get this:'Counterintrusion Disbursements.'"</quote>
+	<release>Proteus</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/MarkedAccounts.jpg</image>
+</card>
+<card>
+	<cid>32</cid>
+	<name>Bioweapons Engineering</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Each source of meat damage inflicts +1 meat damage.</text>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BioweaponsEngineering.jpg</image>
+</card>
+<card>
+	<cid>32</cid>
+	<name>Bioweapons Engineering</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Each source of meat damage inflicts +1 meat damage.</text>
+	<release>Limited</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BioweaponsEngineering.jpg</image>
+</card>
+<card>
+	<cid>258</cid>
+	<name>Quandary</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>2</strength>
+	<rarity>Common</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run.</text>
+	<quote>"So many decisions, so little ti-"</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Quandary.jpg</image>
+</card>
+<card>
+	<cid>258</cid>
+	<name>Quandary</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>2</strength>
+	<rarity>Common</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run.</text>
+	<quote>"So many decisions, so little ti-"</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Quandary.jpg</image>
+</card>
+<card>
+	<cid>288</cid>
+	<name>Scramble</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>3</strength>
+	<rarity>Common</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Scramble.jpg</image>
+</card>
+<card>
+	<cid>308</cid>
+	<name>Sleeper</name>
+	<type>Ice</type>
+	<subtype1>Code Gate</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>(s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Sleeper.jpg</image>
+</card>
+<card>
+	<cid>89</cid>
+	<name>Data Raven</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<strength>5</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Matt Miberger</artist>
+	<text>(s) Trace5 - If trace is successful, give Runner a tag and a Data Raven counter. Each Data Raven counter gives Runner a tag at the start of each of his or her turns. Runner may remove a Data Raven counter by taking an action to pay (1).</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DataRaven.jpg</image>
+</card>
+<card>
+	<cid>441</cid>
+	<name>Hunting Pack</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Bloodhound</subtype2>
+	<strength>4</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Norm Dwyer</artist>
+	<text>For each rezzed piece of ice installed outside Hunting Pack has, Hunting Pack has one subroutine as follows: "Trace5 - If trace is successful give Runner a tag."</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/HuntingPack.jpg</image>
+</card>
+<card>
+	<cid>90</cid>
+	<name>Data Wall</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>0</strength>
+	<rarity>Common</rarity>
+	<artist>Jonnie Wilder</artist>
+	<text>(s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DataWall.jpg</image>
+</card>
+<card>
+	<cid>91</cid>
+	<name>Data Wall 2.0</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Jonnie Wilder</artist>
+	<text>(s) End the run.</text>
+	<quote>"Can't those chimps in Marketing come up with a different name? This isn't just version 2.0 - it's a complete different program!"</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DataWall2.0.jpg</image>
+</card>
+<card>
+	<cid>91</cid>
+	<name>Data Wall 2.0</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>1</strength>
+	<rarity>Common</rarity>
+	<artist>Jonnie Wilder</artist>
+	<text>(s) End the run.</text>
+	<quote>"Can't those chimps in Marketing come up with a different name? This isn't just version 2.0 - it's a complete different program!"</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DataWall2.0.jpg</image>
+</card>
+<card>
+	<cid>362</cid>
+	<name>Wall of Static</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>2</strength>
+	<rarity>Common</rarity>
+	<artist>Kim Francisco</artist>
+	<text>(s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/WallofStatic.jpg</image>
+</card>
+<card>
+	<cid>49</cid>
+	<name>Chance Observation</name>
+	<type>Operation</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Play only if Runner attempted a run during his or her last turn. Trace5 - If trace is successful, give Runner a tag.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ChanceObservation.jpg</image>
+</card>
+<card>
+	<cid>49</cid>
+	<name>Chance Observation</name>
+	<type>Operation</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Play only if Runner attempted a run during his or her last turn. Trace5 - If trace is successful, give Runner a tag.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ChanceObservation.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>223</cid>
+	<name>Night Shift</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (2) and draw one card.</text>
+	<quote>"It wasn't until my certification boards that it began to dawn on me that nights aren't infinitely long."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/NightShift.jpg</image>
+</card>
+<card>
+	<cid>345</cid>
+	<name>Trojan Horse</name>
+	<type>Operation</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>Play only if Runner stole any agendas during his or her last turn. Give runner a tag.</text>
+	<quote>The high-tech equivalent of a teller slipping a paint bomb into a money bag.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TrojanHorse.jpg</image>
+</card>
+<card>
+	<cid>345</cid>
+	<name>Trojan Horse</name>
+	<type>Operation</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>Play only if Runner stole any agendas during his or her last turn. Give runner a tag.</text>
+	<quote>The high-tech equivalent of a teller slipping a paint bomb into a money bag.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/TrojanHorse.jpg</image>
+</card>
+<card>
+	<cid>286</cid>
+	<name>Scorched Earth</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>3</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Greg Staples</artist>
+	<text>Play only if Runner is tagged. Do 4 meat damage.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ScorchedEarth.jpg</image>
+</card>
+<card>
+	<cid>286</cid>
+	<name>Scorched Earth</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>3</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Greg Staples</artist>
+	<text>Play only if Runner is tagged. Do 4 meat damage.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ScorchedEarth.jpg</image>
+</card>
+<card>
+	<cid>286</cid>
+	<name>Scorched Earth</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>3</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Greg Staples</artist>
+	<text>Play only if Runner is tagged. Do 4 meat damage.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/ScorchedEarth.jpg</image>
+</card>
+<card>
+	<cid>352</cid>
+	<name>Urban Renewal</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>6</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Play only if Runner is tagged. Do 5 meat damage.</text>
+	<quote>"The paper work has been clearly posted in the basement closet of City Hall since last Thursday."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/UrbanRenewal.jpg</image>
+</card>
+<card>
+	<cid>352</cid>
+	<name>Urban Renewal</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>6</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Play only if Runner is tagged. Do 5 meat damage.</text>
+	<quote>"The paper work has been clearly posted in the basement closet of City Hall since last Thursday."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/UrbanRenewal.jpg</image>
+</card>
+<card>
+	<cid>352</cid>
+	<name>Urban Renewal</name>
+	<type>Operation</type>
+	<subtype1>Black Ops</subtype1>
+	<cost>6</cost>
+	<rarity>Common</rarity>
+	<artist>Doug Chaffee</artist>
+	<text>Play only if Runner is tagged. Do 5 meat damage.</text>
+	<quote>"The paper work has been clearly posted in the basement closet of City Hall since last Thursday."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/UrbanRenewal.jpg</image>
+</card>
+<card>
+	<cid>453</cid>
+	<name>Manhunt</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Thomas Gianni</artist>
+	<text>Play only if Runner attempted a run during his or her last turn. Trace6 - If trace is successful, give Runner one tag for each point by which your trace exceeded his or her link.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Manhunt.jpg</image>
+</card>
+<card>
+	<cid>453</cid>
+	<name>Manhunt</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Thomas Gianni</artist>
+	<text>Play only if Runner attempted a run during his or her last turn. Trace6 - If trace is successful, give Runner one tag for each point by which your trace exceeded his or her link.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Manhunt.jpg</image>
+</card>
+<card>
+	<cid>453</cid>
+	<name>Manhunt</name>
+	<type>Operation</type>
+	<subtype1>Gray Ops</subtype1>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Thomas Gianni</artist>
+	<text>Play only if Runner attempted a run during his or her last turn. Trace6 - If trace is successful, give Runner one tag for each point by which your trace exceeded his or her link.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Manhunt.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+<card>
+	<cid>5</cid>
+	<name>Accounts Receivable</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"But... but the equipment's already been installed in our employees."</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/AccountsReceivable.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>113</cid>
+	<name>Efficiency Experts</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>John Ramirez</artist>
+	<text>Gain (3).</text>
+	<quote>Waste not, want not.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/EfficiencyExperts.jpg</image>
+</card>
+<card>
+	<cid>162</cid>
+	<name>I Got a Rock</name>
+	<type>Node</type>
+	<subtype1>Black Ops</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Richard Thomas</artist>
+	<text>(A, 3 agenda points): Do 15 meat damage to Runner. Use this ability only if Runner has two or more tags.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/IGotaRock.jpg</image>
+</card>
+<card>
+	<cid>162</cid>
+	<name>I Got a Rock</name>
+	<type>Node</type>
+	<subtype1>Black Ops</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Richard Thomas</artist>
+	<text>(A, 3 agenda points): Do 15 meat damage to Runner. Use this ability only if Runner has two or more tags.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/IGotaRock.jpg</image>
+</card>
+<card>
+	<cid>54</cid>
+	<name>City Surveillance</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Sue Ann Harkey</artist>
+	<text>For each card Runner draws, give Runner a tag unless Runner pays (1), in addition to any other costs, to avoid receiving that tag. You may rez City Surveillance just before the card is drawn.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/CitySurveillance.jpg</image>
+</card>
+<card>
+	<cid>98</cid>
+	<name>Department of Truth Enhancement</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Wilson</artist>
+	<text>(A): Put (3) from the bank on Department of Truth Enhancement. (A): Take all the bits from Department of Truth Enhancement.</text>
+	<quote>"We don't lie. We use statistics." - Scott H. Warner, Department Coordinator</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DepartmentofTruthEnhancement.jpg</image>
+</card>
+<card>
+	<cid>98</cid>
+	<name>Department of Truth Enhancement</name>
+	<type>Node</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Wilson</artist>
+	<text>(A): Put (3) from the bank on Department of Truth Enhancement. (A): Take all the bits from Department of Truth Enhancement.</text>
+	<quote>"We don't lie. We use statistics." - Scott H. Warner, Department Coordinator</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/DepartmentofTruthEnhancement.jpg</image>
+</card>
+</cards>

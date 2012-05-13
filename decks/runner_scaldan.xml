@@ -1,0 +1,631 @@
+<cards>
+<card>
+	<cid>529</cid>
+	<name>MS-todon</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Killer - Noisy</subtype2>
+	<strength>2</strength>
+	<mu>1</mu>
+	<rarity>Common</rarity>
+	<artist>Douglas Shuler</artist>
+	<text>[1]: Break sentry subroutine.  [1]: +1 strength. The first time during each run that you break a sentry subroutine with MS-todon, lose all bits from all stealth cards, if you can, and the corp gives you a tag.</text>
+	<quote>This isn't running - it's stomping.</quote>
+	<release>Classic</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Classic/ms-todon.jpg</image>
+</card>
+<card>
+	<cid>61</cid>
+	<name>Codecracker</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<strength>0</strength>
+	<mu>1</mu>
+	<rarity>Vital</rarity>
+	<artist>Doug Shuler</artist>
+	<text>(0): Creak code gate subroutine. (1): +1 strength.</text>
+	<quote>This product for use by holder of class-A locksmith certification. Propagation of this software and use without proper certification are felony offenses. ("Yeah, right.")</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Codecracker.jpg</image>
+</card>
+<card>
+	<cid>152</cid>
+	<name>Hammer</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Noisy</subtype2>
+	<strength>2</strength>
+	<mu>1</mu>
+	<rarity>Vital</rarity>
+	<artist>Mark Poole</artist>
+	<text>(1): Break wall subroutine. (1): +1 strength. Whenever you break a wall subroutine with Hammer, lose a total of (2) from stealth cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Hammer.jpg</image>
+</card>
+<card>
+	<cid>490</cid>
+	<name>Scaldan</name>
+	<type>Program</type>
+	<subtype1>Virus - Bad Publicity</subtype1>
+	<subtype2>Random</subtype2>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Norm Dwyer</artist>
+	<text>After each successful run on HQ, give the Corp a Scaldan counter. Each Scaldan counter forces the Corp to roll a die at the start of each of its turns. On a 5 or a 6, the Corp gains 1 Bad Publicity point. The Corp may remove all Virus counters at any time, but must then forgo its next three actions. If the Corp has 7 or more Bad Publicity points, it loses the game, even if it fulfills victory conditions at the same time.</text>
+	<quote>As Frisco Del Rosario states, "Scaldan is perhaps the most dangerous of all the bad publicity cards." Take a look at his great article on the topic of putting the corp out of business through the use of bad press, Reverse Spin: An Overview of Bad Publicity.</quote>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Scaldan.jpg</image>
+</card>
+<card>
+	<cid>206</cid>
+	<name>MIT West Tier</name>
+	<type>Prep</type>
+	<cost>3</cost>
+	<rarity>Rare</rarity>
+	<artist>John Park</artist>
+	<text>Shuffle your hand, trash, and stack together, and then draw five cards. When you play MIT West Tier, remove it from the game instead of trashing it.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MITWestTier.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>231</cid>
+	<name>Organ Donor</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Trash up to five cards from your hand. Gain (2) for each card trashed in this way.</text>
+	<quote>"I really need the scratch, and well, I do have two of them..."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/OrganDonor.jpg</image>
+</card>
+<card>
+	<cid>325</cid>
+	<name>Synchronized Attack on HQ</name>
+	<type>Prep</type>
+	<cost>4</cost>
+	<rarity>Rare</rarity>
+	<artist>Craig Gilmore</artist>
+	<text>Play only if you make a successful run on HQ this turn. The Corp discards all cards. The Corp can retain cards by paying (2) for each card not discarded.</text>
+	<quote>"You just take out the guards. Let me worry about the doors and elevators."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/SynchronizedAttackonHQ.jpg</image>
+</card>
+<card>
+	<cid>355</cid>
+	<name>Valu-Pak Software Bundle</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>John Park</artist>
+	<text>Gain up to five consecutive actions, which you may use only to install programs, and gain (1). If you do not spend the bit during these actions, return it to the bank afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Valu-PakSoftwareBundle.jpg</image>
+</card>
+<card>
+	<cid>419</cid>
+	<name>Drone for a Day</name>
+	<type>Prep</type>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Romas Kukalis</artist>
+	<text>Gain (9) and the Corp gives you a tag.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/DroneforaDay.jpg</image>
+</card>
+<card>
+	<cid>419</cid>
+	<name>Drone for a Day</name>
+	<type>Prep</type>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Romas Kukalis</artist>
+	<text>Gain (9) and the Corp gives you a tag.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/DroneforaDay.jpg</image>
+</card>
+<card>
+	<cid>419</cid>
+	<name>Drone for a Day</name>
+	<type>Prep</type>
+	<cost>4</cost>
+	<rarity>Common</rarity>
+	<artist>Romas Kukalis</artist>
+	<text>Gain (9) and the Corp gives you a tag.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/DroneforaDay.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>500</cid>
+	<name>Stakeout</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Paul Chadwick</artist>
+	<text>Gain (2) and draw one card.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Stakeout.jpg</image>
+</card>
+<card>
+	<cid>500</cid>
+	<name>Stakeout</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Paul Chadwick</artist>
+	<text>Gain (2) and draw one card.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Stakeout.jpg</image>
+</card>
+<card>
+	<cid>500</cid>
+	<name>Stakeout</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Paul Chadwick</artist>
+	<text>Gain (2) and draw one card.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Stakeout.jpg</image>
+</card>
+<card>
+	<cid>147</cid>
+	<name>Gideon's Pawnshop</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>Mark Collen</artist>
+	<text>Search your trash for a card and bring it into your hand.</text>
+	<quote>"The runner stuff's cheap 'cause their next of kin don't know what it's worth any better than the shop owners do."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/GideonsPawnshop.jpg</image>
+</card>
+<card>
+	<cid>147</cid>
+	<name>Gideon's Pawnshop</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>Mark Collen</artist>
+	<text>Search your trash for a card and bring it into your hand.</text>
+	<quote>"The runner stuff's cheap 'cause their next of kin don't know what it's worth any better than the shop owners do."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/GideonsPawnshop.jpg</image>
+</card>
+<card>
+	<cid>147</cid>
+	<name>Gideon's Pawnshop</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Common</rarity>
+	<artist>Mark Collen</artist>
+	<text>Search your trash for a card and bring it into your hand.</text>
+	<quote>"The runner stuff's cheap 'cause their next of kin don't know what it's worth any better than the shop owners do."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/GideonsPawnshop.jpg</image>
+</card>
+<card>
+	<cid>404</cid>
+	<name>Cruising for Netwatch</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>David Logan</artist>
+	<text>Gain (1) and draw two cards.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/CruisingforNetwatch.jpg</image>
+</card>
+<card>
+	<cid>404</cid>
+	<name>Cruising for Netwatch</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>David Logan</artist>
+	<text>Gain (1) and draw two cards.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/CruisingforNetwatch.jpg</image>
+</card>
+<card>
+	<cid>404</cid>
+	<name>Cruising for Netwatch</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>David Logan</artist>
+	<text>Gain (1) and draw two cards.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/CruisingforNetwatch.jpg</image>
+</card>
+<card>
+	<cid>425</cid>
+	<name>Faked Hit</name>
+	<type>Prep</type>
+	<subtype1>Bad Publicity</subtype1>
+	<cost>5</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Randy Gallegos</artist>
+	<text>Give the Corp 1 Bad Publicity point. Take 2 brain damage. This damage cannot be prevented. If the Corp has 7 or more Bad Publicity points, it loses the game, even if it fulfills victory conditions at the same time.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/FakedHit.jpg</image>
+</card>
+<card>
+	<cid>444</cid>
+	<name>Identity Donor</name>
+	<type>Prep</type>
+	<subtype1>Bad Publicity</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>Do not play Identity Donor as an action; instead, play it during the Corp's turn when you would suffer meat damage. Prevent that damage and give the Corp 2 Bad Publicity points. If the Corp has 7 or more Bad Publicity points, it loses the game, even if it fulfills victory conditions at the same time.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/IdentityDonor.jpg</image>
+</card>
+<card>
+	<cid>444</cid>
+	<name>Identity Donor</name>
+	<type>Prep</type>
+	<subtype1>Bad Publicity</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>Do not play Identity Donor as an action; instead, play it during the Corp's turn when you would suffer meat damage. Prevent that damage and give the Corp 2 Bad Publicity points. If the Corp has 7 or more Bad Publicity points, it loses the game, even if it fulfills victory conditions at the same time.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/IdentityDonor.jpg</image>
+</card>
+<card>
+	<cid>444</cid>
+	<name>Identity Donor</name>
+	<type>Prep</type>
+	<subtype1>Bad Publicity</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>Do not play Identity Donor as an action; instead, play it during the Corp's turn when you would suffer meat damage. Prevent that damage and give the Corp 2 Bad Publicity points. If the Corp has 7 or more Bad Publicity points, it loses the game, even if it fulfills victory conditions at the same time.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/IdentityDonor.jpg</image>
+</card>
+<card>
+	<cid>330</cid>
+	<name>Temple Microcode Outlet</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Search your stack for a program. Show that program to the Corp, and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TempleMicrocodeOutlet.jpg</image>
+</card>
+<card>
+	<cid>330</cid>
+	<name>Temple Microcode Outlet</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Search your stack for a program. Show that program to the Corp, and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TempleMicrocodeOutlet.jpg</image>
+</card>
+<card>
+	<cid>330</cid>
+	<name>Temple Microcode Outlet</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Search your stack for a program. Show that program to the Corp, and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TempleMicrocodeOutlet.jpg</image>
+</card>
+<card>
+	<cid>542</cid>
+	<name>Panzer Run</name>
+	<type>Prep</type>
+	<subtype1>Double</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Brice Parker</artist>
+	<text>Gain [4] and draw two cards. Playing a double prep costs two consecutive actions this turn instead of one.</text>
+	<quote>"So I just drive a truck from Point A to Point B? How hard can that be?"</quote>
+	<release>Classic</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Classic/panzer_run.jpg</image>
+</card>
+<card>
+	<cid>542</cid>
+	<name>Panzer Run</name>
+	<type>Prep</type>
+	<subtype1>Double</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Brice Parker</artist>
+	<text>Gain [4] and draw two cards. Playing a double prep costs two consecutive actions this turn instead of one.</text>
+	<quote>"So I just drive a truck from Point A to Point B? How hard can that be?"</quote>
+	<release>Classic</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Classic/panzer_run.jpg</image>
+</card>
+<card>
+	<cid>542</cid>
+	<name>Panzer Run</name>
+	<type>Prep</type>
+	<subtype1>Double</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Brice Parker</artist>
+	<text>Gain [4] and draw two cards. Playing a double prep costs two consecutive actions this turn instead of one.</text>
+	<quote>"So I just drive a truck from Point A to Point B? How hard can that be?"</quote>
+	<release>Classic</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Classic/panzer_run.jpg</image>
+</card>
+<card>
+	<cid>252</cid>
+	<name>Priority Wreck</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, do not access cards from HQ; instead, pay any number of bits to force Corp to lose that many bits.</text>
+	<quote>"Your personal icon is unrecognized, Chairman; I cannot process this file. Please input authorization code within - Thank you. Filename 'Suckers!' overwrite of HQ datacore commencing as requested!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PriorityWreck.jpg</image>
+</card>
+<card>
+	<cid>481</cid>
+	<name>Remote Detonator</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>7</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Norm Dwyer</artist>
+	<text>Play only if you made a successful run on a data fort this turn. Trash all rezzed ice on that fort, and the Corp gives you three tags.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/RemoteDetonator.jpg</image>
+</card>
+<card>
+	<cid>112</cid>
+	<name>Edited Shipping Manifests</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, and the Corp has any bits when you would access HQ, do not access cards from HQ; instead, the Corp loses (1) and gives you a tag, and you gain (10).</text>
+	<quote>"It's another delivery to that warehouse in Chiba for Smith. What does he do with all that product?"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/EditedShippingManifests.jpg</image>
+</card>
+<card>
+	<cid>112</cid>
+	<name>Edited Shipping Manifests</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, and the Corp has any bits when you would access HQ, do not access cards from HQ; instead, the Corp loses (1) and gives you a tag, and you gain (10).</text>
+	<quote>"It's another delivery to that warehouse in Chiba for Smith. What does he do with all that product?"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/EditedShippingManifests.jpg</image>
+</card>
+<card>
+	<cid>112</cid>
+	<name>Edited Shipping Manifests</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, and the Corp has any bits when you would access HQ, do not access cards from HQ; instead, the Corp loses (1) and gives you a tag, and you gain (10).</text>
+	<quote>"It's another delivery to that warehouse in Chiba for Smith. What does he do with all that product?"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/EditedShippingManifests.jpg</image>
+</card>
+<card>
+	<cid>204</cid>
+	<name>Militech MRAM Chip</name>
+	<type>Hardware</type>
+	<subtype1>Chip</subtype1>
+	<subtype2>Cybernetics</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>James Allen Higgins</artist>
+	<text>Hand size +3.</text>
+	<quote>"I have a hard time remembering, when the chips are down."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MilitechMRAMChip.jpg</image>
+</card>
+<card>
+	<cid>204</cid>
+	<name>Militech MRAM Chip</name>
+	<type>Hardware</type>
+	<subtype1>Chip</subtype1>
+	<subtype2>Cybernetics</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>James Allen Higgins</artist>
+	<text>Hand size +3.</text>
+	<quote>"I have a hard time remembering, when the chips are down."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MilitechMRAMChip.jpg</image>
+</card>
+<card>
+	<cid>204</cid>
+	<name>Militech MRAM Chip</name>
+	<type>Hardware</type>
+	<subtype1>Chip</subtype1>
+	<subtype2>Cybernetics</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>James Allen Higgins</artist>
+	<text>Hand size +3.</text>
+	<quote>"I have a hard time remembering, when the chips are down."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MilitechMRAMChip.jpg</image>
+</card>
+<card>
+	<cid>145</cid>
+	<name>Full Body Conversion</name>
+	<type>Hardware</type>
+	<subtype1>Cybernetics</subtype1>
+	<rarity>Rare</rarity>
+	<artist>L.A. Williams</artist>
+	<text>Prevents all meat damage. For each (1) the Corp pays when meat damage is done, 1 point of meat damage is not prevented by this card.</text>
+	<quote>"Don't use any big words when you talk to him: he's more hardware than wetware."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/FullBodyConversion.jpg</image>
+</card>
+</cards>

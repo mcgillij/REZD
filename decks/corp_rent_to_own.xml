@@ -1,0 +1,597 @@
+<cards>
+<card>
+	<cid>553</cid>
+	<name>Data Fort Remapping</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Common</rarity>
+	<artist>John Sledd</artist>
+	<text>Put a Remap counter on a Data Fort Remapping when you score it. Remap Counter: End a run.</text>
+	<quote>"In netspace, the map is often the territory. That's just one more reason we don't hire philosophy grads." -- Dave Michaels</quote>
+	<release>Classic</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/data_fort_remapping.jpg</image>
+</card>
+<card>
+	<cid>553</cid>
+	<name>Data Fort Remapping</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Common</rarity>
+	<artist>John Sledd</artist>
+	<text>Put a Remap counter on a Data Fort Remapping when you score it. Remap Counter: End a run.</text>
+	<quote>"In netspace, the map is often the territory. That's just one more reason we don't hire philosophy grads." -- Dave Michaels</quote>
+	<release>Classic</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/data_fort_remapping.jpg</image>
+</card>
+<card>
+	<cid>553</cid>
+	<name>Data Fort Remapping</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Common</rarity>
+	<artist>John Sledd</artist>
+	<text>Put a Remap counter on a Data Fort Remapping when you score it. Remap Counter: End a run.</text>
+	<quote>"In netspace, the map is often the territory. That's just one more reason we don't hire philosophy grads." -- Dave Michaels</quote>
+	<release>Classic</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/data_fort_remapping.jpg</image>
+</card>
+<card>
+	<cid>553</cid>
+	<name>Data Fort Remapping</name>
+	<type>Agenda</type>
+	<subtype1>Gray Ops</subtype1>
+	<rarity>Common</rarity>
+	<artist>John Sledd</artist>
+	<text>Put a Remap counter on a Data Fort Remapping when you score it. Remap Counter: End a run.</text>
+	<quote>"In netspace, the map is often the territory. That's just one more reason we don't hire philosophy grads." -- Dave Michaels</quote>
+	<release>Classic</release>
+	<difficulty>4</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/data_fort_remapping.jpg</image>
+</card>
+<card>
+	<cid>554</cid>
+	<name>Superserum</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>David Ho</artist>
+	<text>When you score Superserum, remove all Virus coutners, and avoid receiving the next two Virus counters Runner gives to you.</text>
+	<quote>"A holistic approach to system immunology: its AI routines mark both computer viruses and suspect moles for deletion."</quote>
+	<release>Classic</release>
+	<difficulty>3</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/superserum.jpg</image>
+</card>
+<card>
+	<cid>554</cid>
+	<name>Superserum</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>David Ho</artist>
+	<text>When you score Superserum, remove all Virus coutners, and avoid receiving the next two Virus counters Runner gives to you.</text>
+	<quote>"A holistic approach to system immunology: its AI routines mark both computer viruses and suspect moles for deletion."</quote>
+	<release>Classic</release>
+	<difficulty>3</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/superserum.jpg</image>
+</card>
+<card>
+	<cid>554</cid>
+	<name>Superserum</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>David Ho</artist>
+	<text>When you score Superserum, remove all Virus coutners, and avoid receiving the next two Virus counters Runner gives to you.</text>
+	<quote>"A holistic approach to system immunology: its AI routines mark both computer viruses and suspect moles for deletion."</quote>
+	<release>Classic</release>
+	<difficulty>3</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/superserum.jpg</image>
+</card>
+<card>
+	<cid>554</cid>
+	<name>Superserum</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>David Ho</artist>
+	<text>When you score Superserum, remove all Virus coutners, and avoid receiving the next two Virus counters Runner gives to you.</text>
+	<quote>"A holistic approach to system immunology: its AI routines mark both computer viruses and suspect moles for deletion."</quote>
+	<release>Classic</release>
+	<difficulty>3</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/superserum.jpg</image>
+</card>
+<card>
+	<cid>554</cid>
+	<name>Superserum</name>
+	<type>Agenda</type>
+	<subtype1>Research</subtype1>
+	<rarity>Rare</rarity>
+	<artist>David Ho</artist>
+	<text>When you score Superserum, remove all Virus coutners, and avoid receiving the next two Virus counters Runner gives to you.</text>
+	<quote>"A holistic approach to system immunology: its AI routines mark both computer viruses and suspect moles for deletion."</quote>
+	<release>Classic</release>
+	<difficulty>3</difficulty>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/superserum.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>189</cid>
+	<name>Liche</name>
+	<type>Ice</type>
+	<subtype1>Sentry - Black Ice</subtype1>
+	<subtype2>AP</subtype2>
+	<strength>6</strength>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Poole</artist>
+	<text>(s) Do 1 brain damage. (s) Do 1 brain damage. (s) Do 1 brain damage. (s) End the run.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Liche.jpg</image>
+</card>
+<card>
+	<cid>394</cid>
+	<name>Colonel Failure</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Killer</subtype2>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Mark Tedin</artist>
+	<text>(s) Trash a program. (s) Trash a program. (s) Trash a program. (s) End the run. (s) End the run.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/ColonelFailure.jpg</image>
+</card>
+<card>
+	<cid>394</cid>
+	<name>Colonel Failure</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Killer</subtype2>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Mark Tedin</artist>
+	<text>(s) Trash a program. (s) Trash a program. (s) Trash a program. (s) End the run. (s) End the run.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/ColonelFailure.jpg</image>
+</card>
+<card>
+	<cid>394</cid>
+	<name>Colonel Failure</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Killer</subtype2>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Mark Tedin</artist>
+	<text>(s) Trash a program. (s) Trash a program. (s) Trash a program. (s) End the run. (s) End the run.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/ColonelFailure.jpg</image>
+</card>
+<card>
+	<cid>394</cid>
+	<name>Colonel Failure</name>
+	<type>Ice</type>
+	<subtype1>Sentry</subtype1>
+	<subtype2>Killer</subtype2>
+	<strength>6</strength>
+	<rarity>Rare</rarity>
+	<artist>Mark Tedin</artist>
+	<text>(s) Trash a program. (s) Trash a program. (s) Trash a program. (s) End the run. (s) End the run.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/ColonelFailure.jpg</image>
+</card>
+<card>
+	<cid>563</cid>
+	<name>Glacier</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>5</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>Rezzing Glacier cost 1 agenda point in addition to normal cost. -> End the run, -> End the run, [1]: Move Glacier to the outermost position of any data fort. Use this ability only at the start of a run. You may use this ability even if Glacier is unrezzed, in which case you reveal it.</text>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/glacier.jpg</image>
+</card>
+<card>
+	<cid>563</cid>
+	<name>Glacier</name>
+	<type>Ice</type>
+	<subtype1>Wall</subtype1>
+	<strength>5</strength>
+	<rarity>Rare</rarity>
+	<artist>Daniel Gelon</artist>
+	<text>Rezzing Glacier cost 1 agenda point in addition to normal cost. -> End the run, -> End the run, [1]: Move Glacier to the outermost position of any data fort. Use this ability only at the start of a run. You may use this ability even if Glacier is unrezzed, in which case you reveal it.</text>
+	<release>Classic</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Classic/glacier.jpg</image>
+</card>
+<card>
+	<cid>225</cid>
+	<name>Off-Site Backups</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Bring any card from the Archives into HQ.</text>
+	<quote>Data saved is eurobucks earned.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Off-SiteBackups.jpg</image>
+</card>
+<card>
+	<cid>225</cid>
+	<name>Off-Site Backups</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Bring any card from the Archives into HQ.</text>
+	<quote>Data saved is eurobucks earned.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Off-SiteBackups.jpg</image>
+</card>
+<card>
+	<cid>225</cid>
+	<name>Off-Site Backups</name>
+	<type>Operation</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Bring any card from the Archives into HQ.</text>
+	<quote>Data saved is eurobucks earned.</quote>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/Off-SiteBackups.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>482</cid>
+	<name>Rent-to-Own Contract</name>
+	<type>Operation</type>
+	<subtype1>Transactions</subtype1>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Rez a piece of ice, at no cost. Put on that ice a number of Term counters equal to its rez cost. At the start of each of your turns, if you have at least (2), lose (2) and remove one of these Term counters; otherwise, put a Term counter on that piece of ice.</text>
+	<release>Proteus</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Proteus/Rent-to-OwnContract.jpg</image>
+</card>
+<card>
+	<cid>33</cid>
+	<name>Bizarre Encryption Scheme</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>Runner does not score any agenda (or agendas) on a run during which Bizarre Encryption Scheme is accessed, return that agenda to the fort instead. Runner scores the agenda at the start of his or her next turn if neither you nor the Runner has scored it by then. This does not affect any further runs.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BizarreEncryptionScheme.jpg</image>
+</card>
+<card>
+	<cid>33</cid>
+	<name>Bizarre Encryption Scheme</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>Runner does not score any agenda (or agendas) on a run during which Bizarre Encryption Scheme is accessed, return that agenda to the fort instead. Runner scores the agenda at the start of his or her next turn if neither you nor the Runner has scored it by then. This does not affect any further runs.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BizarreEncryptionScheme.jpg</image>
+</card>
+<card>
+	<cid>33</cid>
+	<name>Bizarre Encryption Scheme</name>
+	<type>Upgrade</type>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>Runner does not score any agenda (or agendas) on a run during which Bizarre Encryption Scheme is accessed, return that agenda to the fort instead. Runner scores the agenda at the start of his or her next turn if neither you nor the Runner has scored it by then. This does not affect any further runs.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BizarreEncryptionScheme.jpg</image>
+</card>
+<card>
+	<cid>31</cid>
+	<name>BBS Whispering Campaign</name>
+	<type>Node</type>
+	<subtype1>Advertisement</subtype1>
+	<rarity>Common</rarity>
+	<artist>Kevin Taylor</artist>
+	<text>Put (16) from the bank on BBS Whispering Campaign when you rez it. When all the bits have been removed, trash BBS Whispering Campaign. (A): Take (2) from BBS Whispering Campaign.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BBSWhisperingCampaign.jpg</image>
+</card>
+<card>
+	<cid>31</cid>
+	<name>BBS Whispering Campaign</name>
+	<type>Node</type>
+	<subtype1>Advertisement</subtype1>
+	<rarity>Common</rarity>
+	<artist>Kevin Taylor</artist>
+	<text>Put (16) from the bank on BBS Whispering Campaign when you rez it. When all the bits have been removed, trash BBS Whispering Campaign. (A): Take (2) from BBS Whispering Campaign.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BBSWhisperingCampaign.jpg</image>
+</card>
+<card>
+	<cid>31</cid>
+	<name>BBS Whispering Campaign</name>
+	<type>Node</type>
+	<subtype1>Advertisement</subtype1>
+	<rarity>Common</rarity>
+	<artist>Kevin Taylor</artist>
+	<text>Put (16) from the bank on BBS Whispering Campaign when you rez it. When all the bits have been removed, trash BBS Whispering Campaign. (A): Take (2) from BBS Whispering Campaign.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BBSWhisperingCampaign.jpg</image>
+</card>
+<card>
+	<cid>31</cid>
+	<name>BBS Whispering Campaign</name>
+	<type>Node</type>
+	<subtype1>Advertisement</subtype1>
+	<rarity>Common</rarity>
+	<artist>Kevin Taylor</artist>
+	<text>Put (16) from the bank on BBS Whispering Campaign when you rez it. When all the bits have been removed, trash BBS Whispering Campaign. (A): Take (2) from BBS Whispering Campaign.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BBSWhisperingCampaign.jpg</image>
+</card>
+<card>
+	<cid>31</cid>
+	<name>BBS Whispering Campaign</name>
+	<type>Node</type>
+	<subtype1>Advertisement</subtype1>
+	<rarity>Common</rarity>
+	<artist>Kevin Taylor</artist>
+	<text>Put (16) from the bank on BBS Whispering Campaign when you rez it. When all the bits have been removed, trash BBS Whispering Campaign. (A): Take (2) from BBS Whispering Campaign.</text>
+	<release>Limited</release>
+	<playertype>Corporation</playertype>
+	<image>assets/images/Limited/BBSWhisperingCampaign.jpg</image>
+</card>
+</cards>

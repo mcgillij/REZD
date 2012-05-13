@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cards>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>5</cid>
+    <name>Accounts Receivable</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>5</cost>
+    <rarity>Common</rarity>
+    <artist>Zak Plucinski</artist>
+    <text>Gain (9).</text>
+    <quote>"But... but the equipment's already been installed in
+    our employees."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AccountsReceivable.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>402</cid>
+    <name>Credit Consolidation</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>10</cost>
+    <rarity>Common</rarity>
+    <artist>Doug Alexander</artist>
+    <text>Gain (15).</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/CreditConsolidation.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>402</cid>
+    <name>Credit Consolidation</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>10</cost>
+    <rarity>Common</rarity>
+    <artist>Doug Alexander</artist>
+    <text>Gain (15).</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/CreditConsolidation.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>402</cid>
+    <name>Credit Consolidation</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>10</cost>
+    <rarity>Common</rarity>
+    <artist>Doug Alexander</artist>
+    <text>Gain (15).</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/CreditConsolidation.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>402</cid>
+    <name>Credit Consolidation</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>10</cost>
+    <rarity>Common</rarity>
+    <artist>Doug Alexander</artist>
+    <text>Gain (15).</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/CreditConsolidation.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>402</cid>
+    <name>Credit Consolidation</name>
+    <type>Operation</type>
+    <subtype1>Transactions</subtype1>
+    <cost>10</cost>
+    <rarity>Common</rarity>
+    <artist>Doug Alexander</artist>
+    <text>Gain (15).</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/CreditConsolidation.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>12</cid>
+    <name>Annual Reviews</name>
+    <type>Operation</type>
+    <cost>0</cost>
+    <rarity>Uncommon</rarity>
+    <artist>John Ramirez</artist>
+    <text>Draw three cards.</text>
+    <quote>"Just between you and me, his wouldn't be a bad time to
+    impress the boss with your initiative."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AnnualReviews.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>12</cid>
+    <name>Annual Reviews</name>
+    <type>Operation</type>
+    <cost>0</cost>
+    <rarity>Uncommon</rarity>
+    <artist>John Ramirez</artist>
+    <text>Draw three cards.</text>
+    <quote>"Just between you and me, his wouldn't be a bad time to
+    impress the boss with your initiative."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AnnualReviews.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>12</cid>
+    <name>Annual Reviews</name>
+    <type>Operation</type>
+    <cost>0</cost>
+    <rarity>Uncommon</rarity>
+    <artist>John Ramirez</artist>
+    <text>Draw three cards.</text>
+    <quote>"Just between you and me, his wouldn't be a bad time to
+    impress the boss with your initiative."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AnnualReviews.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>12</cid>
+    <name>Annual Reviews</name>
+    <type>Operation</type>
+    <cost>0</cost>
+    <rarity>Uncommon</rarity>
+    <artist>John Ramirez</artist>
+    <text>Draw three cards.</text>
+    <quote>"Just between you and me, his wouldn't be a bad time to
+    impress the boss with your initiative."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/AnnualReviews.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>256</cid>
+    <name>Project Consultants</name>
+    <type>Operation</type>
+    <cost>12</cost>
+    <rarity>Uncommon</rarity>
+    <artist>Mike Raabe</artist>
+    <text>Add 4 advancement counters to any combination of
+    installed cards that can be advanced.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ProjectConsultants.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>466</cid>
+    <name>Panic Button</name>
+    <type>Upgrade</type>
+    <rez_cost>1</rez_cost>
+    <trash_cost>4</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Doug Shuler</artist>
+    <text>Install Panic Button only in HQ. (1): Draw a card. Use
+    this ability only during a run on HQ.</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/PanicButton.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>466</cid>
+    <name>Panic Button</name>
+    <type>Upgrade</type>
+    <rez_cost>1</rez_cost>
+    <trash_cost>4</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Doug Shuler</artist>
+    <text>Install Panic Button only in HQ. (1): Draw a card. Use
+    this ability only during a run on HQ.</text>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/PanicButton.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>120</cid>
+    <name>Euromarket Consortium</name>
+    <type>Node</type>
+    <rez_cost>2</rez_cost>
+    <trash_cost>4</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Doug Chaffee</artist>
+    <text>Hand size +2. (A, 1): Draw 2 cards.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/EuromarketConsortium.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>120</cid>
+    <name>Euromarket Consortium</name>
+    <type>Node</type>
+    <rez_cost>2</rez_cost>
+    <trash_cost>4</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Doug Chaffee</artist>
+    <text>Hand size +2. (A, 1): Draw 2 cards.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/EuromarketConsortium.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>120</cid>
+    <name>Euromarket Consortium</name>
+    <type>Node</type>
+    <rez_cost>2</rez_cost>
+    <trash_cost>4</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Doug Chaffee</artist>
+    <text>Hand size +2. (A, 1): Draw 2 cards.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/EuromarketConsortium.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>11</cid>
+    <name>ACME Savings and Loan</name>
+    <type>Node</type>
+    <subtype1>Transactions</subtype1>
+    <rez_cost>0</rez_cost>
+    <trash_cost>0</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Ramon Mascarenas</artist>
+    <text>Rezzing ACME S&amp;L costs 1 agenda point, in addition to
+    the normal cost. When you rez ACME S&amp;L, gain (12) and trash
+    ACME S&amp;L. For the remainder of the game, pay (1) at the end
+    of each of your turns or lose the game. You can remove this
+    effect and score 1 agenda point by taking an action to pay
+    (12).</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ACMESavingsandLoan.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>11</cid>
+    <name>ACME Savings and Loan</name>
+    <type>Node</type>
+    <subtype1>Transactions</subtype1>
+    <rez_cost>0</rez_cost>
+    <trash_cost>0</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Ramon Mascarenas</artist>
+    <text>Rezzing ACME S&amp;L costs 1 agenda point, in addition to
+    the normal cost. When you rez ACME S&amp;L, gain (12) and trash
+    ACME S&amp;L. For the remainder of the game, pay (1) at the end
+    of each of your turns or lose the game. You can remove this
+    effect and score 1 agenda point by taking an action to pay
+    (12).</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ACMESavingsandLoan.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>11</cid>
+    <name>ACME Savings and Loan</name>
+    <type>Node</type>
+    <subtype1>Transactions</subtype1>
+    <rez_cost>0</rez_cost>
+    <trash_cost>0</trash_cost>
+    <rarity>Uncommon</rarity>
+    <artist>Ramon Mascarenas</artist>
+    <text>Rezzing ACME S&amp;L costs 1 agenda point, in addition to
+    the normal cost. When you rez ACME S&amp;L, gain (12) and trash
+    ACME S&amp;L. For the remainder of the game, pay (1) at the end
+    of each of your turns or lose the game. You can remove this
+    effect and score 1 agenda point by taking an action to pay
+    (12).</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/ACMESavingsandLoan.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>349</cid>
+    <name>Tycho Extension</name>
+    <type>Agenda</type>
+    <subtype1>Asset</subtype1>
+    <rarity>Vital</rarity>
+    <artist>Randy Gallegos</artist>
+    <quote>"Of course I fired him for playing games on duty! We
+    can't have our sysops idling on the job. Remember the last time
+    a corporation tried to extend the colony? A runner edited the
+    blueprints, and the airlock system failed. Some asteroid miners
+    spotted the bodies floating by 'bout a month ago."</quote>
+    <release>Limited</release>
+    <agenda_points>4</agenda_points>
+    <difficulty>4</difficulty>
+    <image>assets/images/Limited/TychoExtension.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>349</cid>
+    <name>Tycho Extension</name>
+    <type>Agenda</type>
+    <subtype1>Asset</subtype1>
+    <rarity>Vital</rarity>
+    <artist>Randy Gallegos</artist>
+    <quote>"Of course I fired him for playing games on duty! We
+    can't have our sysops idling on the job. Remember the last time
+    a corporation tried to extend the colony? A runner edited the
+    blueprints, and the airlock system failed. Some asteroid miners
+    spotted the bodies floating by 'bout a month ago."</quote>
+    <release>Limited</release>
+    <agenda_points>4</agenda_points>
+    <difficulty>4</difficulty>
+    <image>assets/images/Limited/TychoExtension.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>349</cid>
+    <name>Tycho Extension</name>
+    <type>Agenda</type>
+    <subtype1>Asset</subtype1>
+    <rarity>Vital</rarity>
+    <artist>Randy Gallegos</artist>
+    <quote>"Of course I fired him for playing games on duty! We
+    can't have our sysops idling on the job. Remember the last time
+    a corporation tried to extend the colony? A runner edited the
+    blueprints, and the airlock system failed. Some asteroid miners
+    spotted the bodies floating by 'bout a month ago."</quote>
+    <release>Limited</release>
+    <agenda_points>4</agenda_points>
+    <difficulty>4</difficulty>
+    <image>assets/images/Limited/TychoExtension.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>349</cid>
+    <name>Tycho Extension</name>
+    <type>Agenda</type>
+    <subtype1>Asset</subtype1>
+    <rarity>Vital</rarity>
+    <artist>Randy Gallegos</artist>
+    <quote>"Of course I fired him for playing games on duty! We
+    can't have our sysops idling on the job. Remember the last time
+    a corporation tried to extend the colony? A runner edited the
+    blueprints, and the airlock system failed. Some asteroid miners
+    spotted the bodies floating by 'bout a month ago."</quote>
+    <release>Limited</release>
+    <agenda_points>4</agenda_points>
+    <difficulty>4</difficulty>
+    <image>assets/images/Limited/TychoExtension.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>9</cid>
+    <name>AI Chief Financial Officer</name>
+    <type>Agenda</type>
+    <subtype1>Asset</subtype1>
+    <rarity>Rare</rarity>
+    <artist>Pete Venters</artist>
+    <text>(A): Shuffle cards stored in HQ and the Archives into
+    R&amp;D; then draw five cards.</text>
+    <quote>"I think it's 'preferred' stock because their AI
+    financial adviser prefers not to risk changing the board of
+    directors!"</quote>
+    <release>Limited</release>
+    <agenda_points>2</agenda_points>
+    <difficulty>5</difficulty>
+    <image>assets/images/Limited/AIChiefFinancialOfficer.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>135</cid>
+    <name>Filter</name>
+    <type>Ice</type>
+    <subtype1>Code Gate</subtype1>
+    <rez_cost>0</rez_cost>
+    <strength>0</strength>
+    <rarity>Common</rarity>
+    <artist>Daniel Gelon</artist>
+    <text>(s) End the run.</text>
+    <quote>Friendly even to numerically challenged employees, it
+    accepts transposed numerals in the access codes.</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/Filter.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>460</cid>
+    <name>Misleading Access Menus</name>
+    <type>Ice</type>
+    <subtype1>Code Gate</subtype1>
+    <rez_cost>0</rez_cost>
+    <strength>1</strength>
+    <rarity>Common</rarity>
+    <artist>Mike Kimble</artist>
+    <text>(s) End the run unless Runner pays (1). Gain (3) when you
+    rez Misleading Access Menus.</text>
+    <quote>"You wouldn't believe how many suckers try to access
+    'Tools/Certain Death.'"</quote>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/MisleadingAccessMenus.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>153</cid>
+    <name>Haunting Inquisition</name>
+    <type>Ice</type>
+    <subtype1>Code Gate</subtype1>
+    <rez_cost>8</rez_cost>
+    <strength>6</strength>
+    <rarity>Rare</rarity>
+    <artist>Robert McLees</artist>
+    <text>(s) Runner cannot make another run during his or her next
+    six actions. (s) End the run.</text>
+    <quote>"It's just another nightmare, Johnny. Towel off and go
+    back to sleep."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/HauntingInquisition.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>153</cid>
+    <name>Haunting Inquisition</name>
+    <type>Ice</type>
+    <subtype1>Code Gate</subtype1>
+    <rez_cost>8</rez_cost>
+    <strength>6</strength>
+    <rarity>Rare</rarity>
+    <artist>Robert McLees</artist>
+    <text>(s) Runner cannot make another run during his or her next
+    six actions. (s) End the run.</text>
+    <quote>"It's just another nightmare, Johnny. Towel off and go
+    back to sleep."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/HauntingInquisition.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>153</cid>
+    <name>Haunting Inquisition</name>
+    <type>Ice</type>
+    <subtype1>Code Gate</subtype1>
+    <rez_cost>8</rez_cost>
+    <strength>6</strength>
+    <rarity>Rare</rarity>
+    <artist>Robert McLees</artist>
+    <text>(s) Runner cannot make another run during his or her next
+    six actions. (s) End the run.</text>
+    <quote>"It's just another nightmare, Johnny. Towel off and go
+    back to sleep."</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/HauntingInquisition.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>387</cid>
+    <name>Brain Wash</name>
+    <type>Ice</type>
+    <subtype1>Sentry - Black Ice - AP</subtype1>
+    <subtype2>Brainwipe</subtype2>
+    <rez_cost>3</rez_cost>
+    <strength>2</strength>
+    <rarity>Common</rarity>
+    <artist>Doug Shuler</artist>
+    <text>(s) Do 1 brain damage.</text>
+    <quote>"I can see clearly now my brain is gone."</quote>
+    <release>Proteus</release>
+    <image>assets/images/Proteus/BrainWash.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>21</cid>
+    <name>Asp</name>
+    <type>Ice</type>
+    <subtype1>Sentry</subtype1>
+    <subtype2>Flatline</subtype2>
+    <rez_cost>4</rez_cost>
+    <strength>4</strength>
+    <rarity>Common</rarity>
+    <artist>Mark Poole</artist>
+    <text>(s) Trace5 - If trace is successful, end the run, and
+    Runner cannot run again until Runner takes an action to pay
+    (1).</text>
+    <quote>Oh how sharper than a serpent's tooth is one of these
+    suckers clamped onto the boot sector of a drive!</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/Asp.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>21</cid>
+    <name>Asp</name>
+    <type>Ice</type>
+    <subtype1>Sentry</subtype1>
+    <subtype2>Flatline</subtype2>
+    <rez_cost>4</rez_cost>
+    <strength>4</strength>
+    <rarity>Common</rarity>
+    <artist>Mark Poole</artist>
+    <text>(s) Trace5 - If trace is successful, end the run, and
+    Runner cannot run again until Runner takes an action to pay
+    (1).</text>
+    <quote>Oh how sharper than a serpent's tooth is one of these
+    suckers clamped onto the boot sector of a drive!</quote>
+    <release>Limited</release>
+    <image>assets/images/Limited/Asp.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>187</cid>
+    <name>Laser Wire</name>
+    <type>Ice</type>
+    <subtype1>Wall</subtype1>
+    <rez_cost>4</rez_cost>
+    <strength>2</strength>
+    <rarity>Rare</rarity>
+    <artist>Kim Francisco</artist>
+    <text>(s) Do 1 Net damage. (s) End the run.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/LaserWire.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+  <card>
+    <cid>187</cid>
+    <name>Laser Wire</name>
+    <type>Ice</type>
+    <subtype1>Wall</subtype1>
+    <rez_cost>4</rez_cost>
+    <strength>2</strength>
+    <rarity>Rare</rarity>
+    <artist>Kim Francisco</artist>
+    <text>(s) Do 1 Net damage. (s) End the run.</text>
+    <release>Limited</release>
+    <image>assets/images/Limited/LaserWire.jpg</image>
+    <playertype>Corporation</playertype>
+  </card>
+</cards>

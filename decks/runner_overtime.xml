@@ -1,0 +1,584 @@
+<cards>
+<card>
+	<cid>293</cid>
+	<name>Self-Modifying Code</name>
+	<type>Program</type>
+	<mu>2</mu>
+	<rarity>Rare</rarity>
+	<artist>Jonnie Wilder</artist>
+	<text>(T): Search your stack for a program and install that program if you can. Shuffle your stack afterwards. Use this ability only during a run.</text>
+	<quote>"Now, if I could just do this with my DNA... on the fly... while eating." - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Self-ModifyingCode.jpg</image>
+</card>
+<card>
+	<cid>293</cid>
+	<name>Self-Modifying Code</name>
+	<type>Program</type>
+	<mu>2</mu>
+	<rarity>Rare</rarity>
+	<artist>Jonnie Wilder</artist>
+	<text>(T): Search your stack for a program and install that program if you can. Shuffle your stack afterwards. Use this ability only during a run.</text>
+	<quote>"Now, if I could just do this with my DNA... on the fly... while eating." - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Self-ModifyingCode.jpg</image>
+</card>
+<card>
+	<cid>180</cid>
+	<name>Joan of Arc</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>John Casebeer</artist>
+	<text>(T): Prevent one or more of your other installed programs from being trashed. (1): Prevent one or more of your other installed programs from being trashed and bring Joan of Arc into your hand.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JoanofArc.jpg</image>
+</card>
+<card>
+	<cid>318</cid>
+	<name>Startup Immolator</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Collen</artist>
+	<text>(T): Pay the rez cost of a piece of ice to trash that piece of ice.  Use this ability only if you have just broken all the subroutines of that piece of ice.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/StartupImmolator.jpg</image>
+</card>
+<card>
+	<cid>114</cid>
+	<name>Emergency Self-Construct</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Mark Poole</artist>
+	<text>(T): Prevent yourself from being flatlined, though you still lose all cards in your hand. Remove all brain damage. For the remainder of the game, you have only three actions per turn, instead of four; your hand size is reduced by 1; and all meat damage is automatically prevented.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/EmergencySelf-Construct.jpg</image>
+</card>
+<card>
+	<cid>139</cid>
+	<name>Force Shield</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Common</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Prevents up to 2 Net and/or brain damage total each turn.</text>
+	<quote>"Never use 'em; don't need 'em. My brain's been smoked so much that my myelin's vulcanized. That's why my ears are always dirty." - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/ForceShield.jpg</image>
+</card>
+<card>
+	<cid>30</cid>
+	<name>Bartmoss Memorial Icebreaker</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Random</subtype2>
+	<strength>0</strength>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Ash Arnett</artist>
+	<text>(1): Break ice subroutine. (1): +1 strength. After passing each piece of ice, roll a die if you used Bartmoss Memorial Icebreaker to break any subroutines of that ice. On a 1, trash Memorial Icebreaker.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BartmossMemorialIcebreaker.jpg</image>
+</card>
+<card>
+	<cid>405</cid>
+	<name>Crumble</name>
+	<type>Program</type>
+	<subtype1>Virus</subtype1>
+	<mu>1</mu>
+	<rarity>Uncommon</rarity>
+	<artist>Mark Rattin</artist>
+	<text>After each sucessful run on HQ, give the Corp a Crumble Counter. Two or more Crumble Counters allow you to trash, at no cost, any cards accessed from HQ, even if these cards cannot normally be trashed. The Corp may remove all Virus counters at any time, but must then forgo its next three actions.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Crumble.jpg</image>
+</card>
+<card>
+	<cid>239</cid>
+	<name>Pile Driver</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Noisy</subtype2>
+	<strength>7</strength>
+	<mu>1</mu>
+	<rarity>Vital</rarity>
+	<artist>Norm Dwyer</artist>
+	<text>(3): Break up to four wall subroutines on a single piece of ice. (1): +1 strength. Whenever you use Pile Driver's break-walls subroutine, lose a total of (3) from stealth cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PileDriver.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>174</cid>
+	<name>Jack 'n' Joe</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Common</rarity>
+	<artist>Pete Venters</artist>
+	<text>Draw three cards.</text>
+	<quote>"There's too much blood in my caffeine system."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JacknJoe.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>287</cid>
+	<name>Score!</name>
+	<type>Prep</type>
+	<cost>5</cost>
+	<rarity>Common</rarity>
+	<artist>Zak Plucinski</artist>
+	<text>Gain (9).</text>
+	<quote>"If someone has consistently good luck, it ain't luck." - Spider Murphy</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Score.jpg</image>
+</card>
+<card>
+	<cid>15</cid>
+	<name>Arasaka Owns You</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Craig Gilmore</artist>
+	<text>Do not play Arasaka Owns you as a normal action; instead, play it when you would suffer enough damage to flatline you.  Prevent all of that damage, trash Arasaka Owns you, remove any brain damage you have suffered, and then refresh your hand to the minimum size. Gain (10) and remove all tags, at no cost.  You forgo your next four actions, and you forfeit the next 3 agenda points you score.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/ArasakaOwnsYou.jpg</image>
+</card>
+<card>
+	<cid>206</cid>
+	<name>MIT West Tier</name>
+	<type>Prep</type>
+	<cost>3</cost>
+	<rarity>Rare</rarity>
+	<artist>John Park</artist>
+	<text>Shuffle your hand, trash, and stack together, and then draw five cards. When you play MIT West Tier, remove it from the game instead of trashing it.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MITWestTier.jpg</image>
+</card>
+<card>
+	<cid>160</cid>
+	<name>Hunt Club BBS</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Anthony Petrarca</artist>
+	<text>Expose up to three installed cards.</text>
+	<quote>"The Hunt Club got it's name from the original programmers, who were self-described 'hunters,' corporate programmers who moonlighted as freelance counter-intrusion agents." - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/HuntClubBBS.jpg</image>
+</card>
+<card>
+	<cid>160</cid>
+	<name>Hunt Club BBS</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>1</cost>
+	<rarity>Common</rarity>
+	<artist>Anthony Petrarca</artist>
+	<text>Expose up to three installed cards.</text>
+	<quote>"The Hunt Club got it's name from the original programmers, who were self-described 'hunters,' corporate programmers who moonlighted as freelance counter-intrusion agents." - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/HuntClubBBS.jpg</image>
+</card>
+<card>
+	<cid>204</cid>
+	<name>Militech MRAM Chip</name>
+	<type>Hardware</type>
+	<subtype1>Chip</subtype1>
+	<subtype2>Cybernetics</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>James Allen Higgins</artist>
+	<text>Hand size +3.</text>
+	<quote>"I have a hard time remembering, when the chips are down."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MilitechMRAMChip.jpg</image>
+</card>
+<card>
+	<cid>204</cid>
+	<name>Militech MRAM Chip</name>
+	<type>Hardware</type>
+	<subtype1>Chip</subtype1>
+	<subtype2>Cybernetics</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>James Allen Higgins</artist>
+	<text>Hand size +3.</text>
+	<quote>"I have a hard time remembering, when the chips are down."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MilitechMRAMChip.jpg</image>
+</card>
+<card>
+	<cid>39</cid>
+	<name>Bodyweight Data Creche</name>
+	<type>Hardware</type>
+	<subtype1>Deck</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Provides +1 MU. Once per turn, right after making a successful run, you can choose to make another run without taking an action to do so. Only one deck can be in play at a time. Trash any older decks.</text>
+	<quote>"I better hijack another order for a five-gallon saline feed... I might be in here a while."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightDataCreche.jpg</image>
+</card>
+<card>
+	<cid>547</cid>
+	<name>Vintage Camaro</name>
+	<type>Hardware</type>
+	<subtype1>Vehicle</subtype1>
+	<rarity>Common</rarity>
+	<artist>Romas Kukalis</artist>
+	<text>[1], Forgo your next action: Avoid receiving a tag.</text>
+	<quote>"I'm not firing a LAW at that! It's a classic!"</quote>
+	<release>Classic</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Classic/vintage_camaro.jpg</image>
+</card>
+<card>
+	<cid>366</cid>
+	<name>Wilson, Weeflerunner Apprentice</name>
+	<type>Resource</type>
+	<rarity>Uncommon</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action, which you may use only to make a run. You cannot spend more than (3) during that run to pay for using icebreakers or increasing your link.  Use this ability only once per turn and only during your turn. (T): Avoid receiving a tag. (T): Prevent any amount of meat damage.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/WilsonWeeflerunnerApprentice.jpg</image>
+</card>
+<card>
+	<cid>366</cid>
+	<name>Wilson, Weeflerunner Apprentice</name>
+	<type>Resource</type>
+	<rarity>Uncommon</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action, which you may use only to make a run. You cannot spend more than (3) during that run to pay for using icebreakers or increasing your link.  Use this ability only once per turn and only during your turn. (T): Avoid receiving a tag. (T): Prevent any amount of meat damage.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/WilsonWeeflerunnerApprentice.jpg</image>
+</card>
+<card>
+	<cid>366</cid>
+	<name>Wilson, Weeflerunner Apprentice</name>
+	<type>Resource</type>
+	<rarity>Uncommon</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action, which you may use only to make a run. You cannot spend more than (3) during that run to pay for using icebreakers or increasing your link.  Use this ability only once per turn and only during your turn. (T): Avoid receiving a tag. (T): Prevent any amount of meat damage.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/WilsonWeeflerunnerApprentice.jpg</image>
+</card>
+<card>
+	<cid>77</cid>
+	<name>Crash Everett, Inventive Fixer</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<subtype2>Unique</subtype2>
+	<rarity>Common</rarity>
+	<artist>Mike Kimble</artist>
+	<text>Whenever you draw one or more cards from your stack, draw an extra card; then choose one of the cards drawn and either trash it or return it to the top of your stack. Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all by one.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/CrashEverettInventiveFixer.jpg</image>
+</card>
+<card>
+	<cid>182</cid>
+	<name>Karl de Veres, Corporate Stooge</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<subtype2>Unique</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>Randy Gallegos</artist>
+	<text>Gain (1) each time you make a successful run. Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all by one.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/KarldeVeresCorporateStooge.jpg</image>
+</card>
+<card>
+	<cid>182</cid>
+	<name>Karl de Veres, Corporate Stooge</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<subtype2>Unique</subtype2>
+	<rarity>Uncommon</rarity>
+	<artist>Randy Gallegos</artist>
+	<text>Gain (1) each time you make a successful run. Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all by one.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/KarldeVeresCorporateStooge.jpg</image>
+</card>
+</cards>

@@ -1,0 +1,574 @@
+<cards>
+<card>
+	<cid>180</cid>
+	<name>Joan of Arc</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>John Casebeer</artist>
+	<text>(T): Prevent one or more of your other installed programs from being trashed. (1): Prevent one or more of your other installed programs from being trashed and bring Joan of Arc into your hand.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/JoanofArc.jpg</image>
+</card>
+<card>
+	<cid>301</cid>
+	<name>Shredder Uplink Protocol</name>
+	<type>Program</type>
+	<mu>2</mu>
+	<rarity>Uncommon</rarity>
+	<artist>Doug Shuler</artist>
+	<text>(A): Make a run on the Archives. If the run is successful, do not access cards from the archives; instead, treat run as a successful run on HQ.</text>
+	<quote>"Gives a whole new meaning to the term 'trashing.'"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/ShredderUplinkProtocol.jpg</image>
+</card>
+<card>
+	<cid>114</cid>
+	<name>Emergency Self-Construct</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Mark Poole</artist>
+	<text>(T): Prevent yourself from being flatlined, though you still lose all cards in your hand. Remove all brain damage. For the remainder of the game, you have only three actions per turn, instead of four; your hand size is reduced by 1; and all meat damage is automatically prevented.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/EmergencySelf-Construct.jpg</image>
+</card>
+<card>
+	<cid>202</cid>
+	<name>Microtech AI Interface</name>
+	<type>Program</type>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Doug Shuler</artist>
+	<text>Whenever you are about to access cards from R&amp;D, you may first choose to cut any number of cards from the top of R&amp;D to the bottom of R&amp;D.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MicrotechAIInterface.jpg</image>
+</card>
+<card>
+	<cid>109</cid>
+	<name>Dupre</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<strength>0</strength>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(1): Break code gate subroutine. (2): +1 strength. Put a +1 strength counter on Dupre after each run during which it was used to break a subroutine. All strength counters on Dupre are lost if you use Dupre on a fort other than the one you last used it on.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Dupre.jpg</image>
+</card>
+<card>
+	<cid>176</cid>
+	<name>Jackhammer</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Noisy</subtype2>
+	<strength>0</strength>
+	<mu>1</mu>
+	<rarity>Vital</rarity>
+	<artist>Norm Dwyer</artist>
+	<text>(0): Break wall subroutine. (1): +1 strength. Whenever you break a wall subroutine with Jackhammer, lose (1) if you can, from a stealth card.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/Jackhammer.jpg</image>
+</card>
+<card>
+	<cid>30</cid>
+	<name>Bartmoss Memorial Icebreaker</name>
+	<type>Program</type>
+	<subtype1>Icebreaker</subtype1>
+	<subtype2>Random</subtype2>
+	<strength>0</strength>
+	<mu>1</mu>
+	<rarity>Rare</rarity>
+	<artist>Ash Arnett</artist>
+	<text>(1): Break ice subroutine. (1): +1 strength. After passing each piece of ice, roll a die if you used Bartmoss Memorial Icebreaker to break any subroutines of that ice. On a 1, trash Memorial Icebreaker.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BartmossMemorialIcebreaker.jpg</image>
+</card>
+<card>
+	<cid>517</cid>
+	<name>Vienna 22</name>
+	<type>Program</type>
+	<subtype1>Virus</subtype1>
+	<mu>1</mu>
+	<rarity>Uncommon</rarity>
+	<artist>Kino</artist>
+	<text>After each successful run on HQ, give the Corp a Vienna counter. Each Vienna counter allows you to access an additional card from HQ whenever you access cards from HQ. The Corp may remove all Virus counters at any time, but must then forgo its next three actions.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/Vienna22.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>40</cid>
+	<name>Bodyweight Synthetic Blood</name>
+	<type>Prep</type>
+	<cost>2</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Anthony Judge</artist>
+	<text>Draw 5 cards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightSyntheticBlood.jpg</image>
+</card>
+<card>
+	<cid>231</cid>
+	<name>Organ Donor</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Trash up to five cards from your hand. Gain (2) for each card trashed in this way.</text>
+	<quote>"I really need the scratch, and well, I do have two of them..."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/OrganDonor.jpg</image>
+</card>
+<card>
+	<cid>231</cid>
+	<name>Organ Donor</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Trash up to five cards from your hand. Gain (2) for each card trashed in this way.</text>
+	<quote>"I really need the scratch, and well, I do have two of them..."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/OrganDonor.jpg</image>
+</card>
+<card>
+	<cid>231</cid>
+	<name>Organ Donor</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Trash up to five cards from your hand. Gain (2) for each card trashed in this way.</text>
+	<quote>"I really need the scratch, and well, I do have two of them..."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/OrganDonor.jpg</image>
+</card>
+<card>
+	<cid>231</cid>
+	<name>Organ Donor</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Trash up to five cards from your hand. Gain (2) for each card trashed in this way.</text>
+	<quote>"I really need the scratch, and well, I do have two of them..."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/OrganDonor.jpg</image>
+</card>
+<card>
+	<cid>206</cid>
+	<name>MIT West Tier</name>
+	<type>Prep</type>
+	<cost>3</cost>
+	<rarity>Rare</rarity>
+	<artist>John Park</artist>
+	<text>Shuffle your hand, trash, and stack together, and then draw five cards. When you play MIT West Tier, remove it from the game instead of trashing it.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MITWestTier.jpg</image>
+</card>
+<card>
+	<cid>206</cid>
+	<name>MIT West Tier</name>
+	<type>Prep</type>
+	<cost>3</cost>
+	<rarity>Rare</rarity>
+	<artist>John Park</artist>
+	<text>Shuffle your hand, trash, and stack together, and then draw five cards. When you play MIT West Tier, remove it from the game instead of trashing it.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MITWestTier.jpg</image>
+</card>
+<card>
+	<cid>206</cid>
+	<name>MIT West Tier</name>
+	<type>Prep</type>
+	<cost>3</cost>
+	<rarity>Rare</rarity>
+	<artist>John Park</artist>
+	<text>Shuffle your hand, trash, and stack together, and then draw five cards. When you play MIT West Tier, remove it from the game instead of trashing it.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/MITWestTier.jpg</image>
+</card>
+<card>
+	<cid>194</cid>
+	<name>Lucidrine Booster Drug</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Pete Venters</artist>
+	<text>Make a run, and gain (9), which you may use only during that run. After that run is completed, suffer 1 brain damage; this damage cannot be prevented. Then return to the bank any of the (9) not spent.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/LucidrineBoosterDrug.jpg</image>
+</card>
+<card>
+	<cid>194</cid>
+	<name>Lucidrine Booster Drug</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Pete Venters</artist>
+	<text>Make a run, and gain (9), which you may use only during that run. After that run is completed, suffer 1 brain damage; this damage cannot be prevented. Then return to the bank any of the (9) not spent.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/LucidrineBoosterDrug.jpg</image>
+</card>
+<card>
+	<cid>194</cid>
+	<name>Lucidrine Booster Drug</name>
+	<type>Prep</type>
+	<cost>0</cost>
+	<rarity>Uncommon</rarity>
+	<artist>Pete Venters</artist>
+	<text>Make a run, and gain (9), which you may use only during that run. After that run is completed, suffer 1 brain damage; this damage cannot be prevented. Then return to the bank any of the (9) not spent.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/LucidrineBoosterDrug.jpg</image>
+</card>
+<card>
+	<cid>205</cid>
+	<name>misc.for-sale</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>Trash any number of your installed cards. Gain (3) for each card trashed in this way.</text>
+	<quote>"Why throw it away when you can convince some half-brained weef to use it for creative suicide instead?" - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/misc.for-sale.jpg</image>
+</card>
+<card>
+	<cid>205</cid>
+	<name>misc.for-sale</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>Trash any number of your installed cards. Gain (3) for each card trashed in this way.</text>
+	<quote>"Why throw it away when you can convince some half-brained weef to use it for creative suicide instead?" - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/misc.for-sale.jpg</image>
+</card>
+<card>
+	<cid>205</cid>
+	<name>misc.for-sale</name>
+	<type>Prep</type>
+	<subtype1>BBS</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>Trash any number of your installed cards. Gain (3) for each card trashed in this way.</text>
+	<quote>"Why throw it away when you can convince some half-brained weef to use it for creative suicide instead?" - Rache Bartmoss</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/misc.for-sale.jpg</image>
+</card>
+<card>
+	<cid>252</cid>
+	<name>Priority Wreck</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, do not access cards from HQ; instead, pay any number of bits to force Corp to lose that many bits.</text>
+	<quote>"Your personal icon is unrecognized, Chairman; I cannot process this file. Please input authorization code within - Thank you. Filename 'Suckers!' overwrite of HQ datacore commencing as requested!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PriorityWreck.jpg</image>
+</card>
+<card>
+	<cid>252</cid>
+	<name>Priority Wreck</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, do not access cards from HQ; instead, pay any number of bits to force Corp to lose that many bits.</text>
+	<quote>"Your personal icon is unrecognized, Chairman; I cannot process this file. Please input authorization code within - Thank you. Filename 'Suckers!' overwrite of HQ datacore commencing as requested!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PriorityWreck.jpg</image>
+</card>
+<card>
+	<cid>252</cid>
+	<name>Priority Wreck</name>
+	<type>Prep</type>
+	<subtype1>Sabotage</subtype1>
+	<cost>0</cost>
+	<rarity>Rare</rarity>
+	<artist>Dave Pilurs</artist>
+	<text>Make a run on HQ. If run is successful, do not access cards from HQ; instead, pay any number of bits to force Corp to lose that many bits.</text>
+	<quote>"Your personal icon is unrecognized, Chairman; I cannot process this file. Please input authorization code within - Thank you. Filename 'Suckers!' overwrite of HQ datacore commencing as requested!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PriorityWreck.jpg</image>
+</card>
+<card>
+	<cid>39</cid>
+	<name>Bodyweight Data Creche</name>
+	<type>Hardware</type>
+	<subtype1>Deck</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Provides +1 MU. Once per turn, right after making a successful run, you can choose to make another run without taking an action to do so. Only one deck can be in play at a time. Trash any older decks.</text>
+	<quote>"I better hijack another order for a five-gallon saline feed... I might be in here a while."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightDataCreche.jpg</image>
+</card>
+<card>
+	<cid>39</cid>
+	<name>Bodyweight Data Creche</name>
+	<type>Hardware</type>
+	<subtype1>Deck</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Provides +1 MU. Once per turn, right after making a successful run, you can choose to make another run without taking an action to do so. Only one deck can be in play at a time. Trash any older decks.</text>
+	<quote>"I better hijack another order for a five-gallon saline feed... I might be in here a while."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightDataCreche.jpg</image>
+</card>
+<card>
+	<cid>39</cid>
+	<name>Bodyweight Data Creche</name>
+	<type>Hardware</type>
+	<subtype1>Deck</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Pete Venters</artist>
+	<text>Provides +1 MU. Once per turn, right after making a successful run, you can choose to make another run without taking an action to do so. Only one deck can be in play at a time. Trash any older decks.</text>
+	<quote>"I better hijack another order for a five-gallon saline feed... I might be in here a while."</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/BodyweightDataCreche.jpg</image>
+</card>
+<card>
+	<cid>210</cid>
+	<name>N.E.T.O.</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(A): Look at the top four cards of your stack. You may bring any prep or resource card among them into your hand. Pay (1) for each card taken in this way, and show those cards to the Corp.  Shuffle the rest back into your stack.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/N.E.T.O..jpg</image>
+</card>
+<card>
+	<cid>210</cid>
+	<name>N.E.T.O.</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(A): Look at the top four cards of your stack. You may bring any prep or resource card among them into your hand. Pay (1) for each card taken in this way, and show those cards to the Corp.  Shuffle the rest back into your stack.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/N.E.T.O..jpg</image>
+</card>
+<card>
+	<cid>210</cid>
+	<name>N.E.T.O.</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Robert McLees</artist>
+	<text>(A): Look at the top four cards of your stack. You may bring any prep or resource card among them into your hand. Pay (1) for each card taken in this way, and show those cards to the Corp.  Shuffle the rest back into your stack.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/N.E.T.O..jpg</image>
+</card>
+<card>
+	<cid>334</cid>
+	<name>The Short Circuit</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Common</rarity>
+	<artist>Ray Winninger</artist>
+	<text>(A, 1): Search your stack for a program. Show that program to the Corp and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TheShortCircuit.jpg</image>
+</card>
+<card>
+	<cid>334</cid>
+	<name>The Short Circuit</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Common</rarity>
+	<artist>Ray Winninger</artist>
+	<text>(A, 1): Search your stack for a program. Show that program to the Corp and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TheShortCircuit.jpg</image>
+</card>
+<card>
+	<cid>334</cid>
+	<name>The Short Circuit</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Common</rarity>
+	<artist>Ray Winninger</artist>
+	<text>(A, 1): Search your stack for a program. Show that program to the Corp and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TheShortCircuit.jpg</image>
+</card>
+<card>
+	<cid>334</cid>
+	<name>The Short Circuit</name>
+	<type>Resource</type>
+	<subtype1>BBS</subtype1>
+	<rarity>Common</rarity>
+	<artist>Ray Winninger</artist>
+	<text>(A, 1): Search your stack for a program. Show that program to the Corp and then bring it into your hand. Reshuffle your stack afterwards.</text>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/TheShortCircuit.jpg</image>
+</card>
+<card>
+	<cid>250</cid>
+	<name>Preying Mantis</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action. If you do, suffer 1 brain damage at the end of the turn. This damage cannot be prevented.</text>
+	<quote>"First hit's free!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PreyingMantis.jpg</image>
+</card>
+<card>
+	<cid>250</cid>
+	<name>Preying Mantis</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action. If you do, suffer 1 brain damage at the end of the turn. This damage cannot be prevented.</text>
+	<quote>"First hit's free!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PreyingMantis.jpg</image>
+</card>
+<card>
+	<cid>250</cid>
+	<name>Preying Mantis</name>
+	<type>Resource</type>
+	<subtype1>Connection</subtype1>
+	<rarity>Rare</rarity>
+	<artist>Dan Frazier</artist>
+	<text>Each of your turns, you may choose to gain an action. If you do, suffer 1 brain damage at the end of the turn. This damage cannot be prevented.</text>
+	<quote>"First hit's free!"</quote>
+	<release>Limited</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Limited/PreyingMantis.jpg</image>
+</card>
+<card>
+	<cid>473</cid>
+	<name>Precision Bribery</name>
+	<type>Resource</type>
+	<subtype1>Unique</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>The Corp cannot create any new data forts. The Corp may trash Precision Bribery by taking an action to pay (4). Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all but one.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/PrecisionBribery.jpg</image>
+</card>
+<card>
+	<cid>473</cid>
+	<name>Precision Bribery</name>
+	<type>Resource</type>
+	<subtype1>Unique</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>The Corp cannot create any new data forts. The Corp may trash Precision Bribery by taking an action to pay (4). Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all but one.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/PrecisionBribery.jpg</image>
+</card>
+<card>
+	<cid>473</cid>
+	<name>Precision Bribery</name>
+	<type>Resource</type>
+	<subtype1>Unique</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>The Corp cannot create any new data forts. The Corp may trash Precision Bribery by taking an action to pay (4). Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all but one.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/PrecisionBribery.jpg</image>
+</card>
+<card>
+	<cid>473</cid>
+	<name>Precision Bribery</name>
+	<type>Resource</type>
+	<subtype1>Unique</subtype1>
+	<rarity>Uncommon</rarity>
+	<artist>Debbie Hughes</artist>
+	<text>The Corp cannot create any new data forts. The Corp may trash Precision Bribery by taking an action to pay (4). Only one unique card of a particular name can be in play at a time. If for some reason more than one is in play, trash all but one.</text>
+	<release>Proteus</release>
+	<playertype>Runner</playertype>
+	<image>assets/images/Proteus/PrecisionBribery.jpg</image>
+</card>
+</cards>
