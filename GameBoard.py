@@ -1,3 +1,4 @@
+""" Main class for the client """
 import pyglet
 import os
 from Deck import Deck
@@ -26,8 +27,11 @@ from pprint import pprint
 VERSION = 0.4
 pyglet.options['debug_gl'] = False
 class GameBoard(window.Window, ConnectionListener):
+    """ GameBoard is the main client / class for the game 
+        and will maintain the game state """
     is_event_handler = True     #: enable pyglet's events
     def __init__(self, *args, **kwargs):
+        """ init """
         platform = pyglet.window.get_platform()
         display = platform.get_default_display()
         screen = display.get_default_screen()
@@ -95,6 +99,7 @@ class GameBoard(window.Window, ConnectionListener):
         
     #___________________________________MAIN______________________________________________________#           
     def main_loop(self):
+        """ Where the action happens """
         self.batch = pyglet.graphics.Batch()
         self.batch2 = pyglet.graphics.Batch()
         self.batch3 = pyglet.graphics.Batch()
@@ -142,6 +147,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.flip() #flip to the other opengl buffer
     
     def drawDeckBrowserCard(self):
+        """ used for when players want to browse through the deck for a card """
         if self.deckBrowserCard != None:
             if self.deckBrowserCard.sprite == None:
                 self.deckBrowserCard.sprite = self.setupCard(self.deckBrowserCard)
@@ -152,6 +158,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.deckBrowserCard.sprite.draw()
 
     def drawZoomedCard(self):
+        """ zooms in on a card so you can read the details """
         if self.zoomedCard:
             self.zoomedCard.scale = 2
             self.zoomedCard.image.anchor_x = self.zoomedCard.image.width/2
@@ -161,6 +168,7 @@ class GameBoard(window.Window, ConnectionListener):
        
             
     def drawSelectedCard(self):
+        """ draw the selected card """
         if self.selected != None:
             if self.selected.sprite == None or self.selected.image == None:
                 self.selected.image = pyglet.image.load(self.selected.imageloc)
@@ -169,6 +177,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.selected.sprite.draw() 
     #process network actions
     def ConnectToServer(self):
+        """ establish a network connection to the server """
         self.Connect((self.host, self.port))
         self.SetNickname(self.nickname)
         connection.Send({"action": "message", "message": pickle.dumps("Has Connected")})
@@ -178,11 +187,11 @@ class GameBoard(window.Window, ConnectionListener):
         self.connected = True
     
     def processNetworkedVars(self):
+        """ read in the stuff from the network for each the the players """
         for p in self.players:
             color = self.players[p]['color']
             #if DEBUG: print "COLOR: OMG", str(color)
             pyglet.gl.glColor4f(color[0],color[1],color[2],1.0)
-            #self.drawLines(self.players[p]['lines'])
             while self.cards[p]['cards']:
                 cardn = self.cards[p]['cards'].pop()
                 self.MakeLocalCard(cardn)
@@ -198,6 +207,7 @@ class GameBoard(window.Window, ConnectionListener):
         
     #gui functions
     def update_chat(self, message):
+        """ update the chat messages with the new message """
         self.ML.addMessage(message)
         self.decoded = pyglet.text.decode_text(self.ML.getMessages())
         self.decoded.set_style(0, len(self.decoded.text), dict(color=(255,255,255,255)))
@@ -205,27 +215,29 @@ class GameBoard(window.Window, ConnectionListener):
 
     # Kytten stuff
     def on_escape(self, dialog):
+        """ Handle pressing esc """
         self.deckBrowserCard = None
         dialog.teardown()
     def on_escape_menu(self, dialog):
+        """ handle esc on menu """  
         dialog.teardown()
     def on_escape_action(self, dialog):
+        """ handle esc on action  """
         dialog.teardown()
         self.action_menu = False
     def on_escape_chat(self, dialog):
+        """ handle esc on chat """
         dialog.teardown()
         self.chat_menu = False
     
     def update_kytten(self,dt):
+        """ update kytten """
         self.dispatch_event('on_update', dt)
             
     def on_select(self, choice):
-        #if choice == "Network":
-         #   self.create_network_dialog()
+        """ handle selections """
         if choice == 'Deck Loader':
             self.create_deckloader_dialog()
-        #elif choice == 'Stats':
-        #    self.create_stats_dialog()
         elif choice == "Actions":
             if self.action_menu == False:
                 self.create_actions_dialog()
@@ -243,6 +255,7 @@ class GameBoard(window.Window, ConnectionListener):
         else:
             if DEBUG: print "Unexpected menu selection: %s" % choice
     def loadDeck(self, deck):
+        """ load the specified deck from xml """
         self.playerDeck.populate("decks/" + deck)
         self.playerDeck.shuffle()
         act = Act(self.RNDuuid, "update", "ms", payload=len(self.playerDeck.deck))
@@ -250,20 +263,22 @@ class GameBoard(window.Window, ConnectionListener):
         connection.Send({"action": "message", "message": pickle.dumps("Has loaded a deck:" + deck)})
     
     def generateMenu(self):
-            dialog = kytten.Dialog(
-   kytten.TitleFrame("Main Menu",
-     kytten.VerticalLayout([
-            kytten.Label("Select dialog to show"),
-            kytten.Menu(options=["Deck Loader","Actions","Runner Actions", "Corp Actions","Controls","Chat","Quit" ],
-            on_select=self.on_select),
-                    ]),
-                 ),
+        """ Create the menu """
+        dialog = kytten.Dialog(
+        kytten.TitleFrame("Main Menu",
+        kytten.VerticalLayout([
+        kytten.Label("Select dialog to show"),
+        kytten.Menu(options=["Deck Loader","Actions","Runner Actions", "Corp Actions","Controls","Chat","Quit" ],
+        on_select=self.on_select),
+                ]),
+             ),
         window=self, batch=self.batch3, 
             anchor=kytten.ANCHOR_TOP_LEFT, on_escape=self.on_escape,
             theme=self.theme)
-            return dialog
+        return dialog
         
     def create_deckloader_dialog(self):
+        """ create the deckloader dialog """
         def on_select(choice):
             if DEBUG: print "Selected: %s" % choice
             self.loadDeck(choice)
@@ -284,6 +299,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
 
     def create_deckbrowser_dialog(self):
+        """ create the deckbrowser dialog """
         def on_select(choice):
             if DEBUG: print "Selected: %s" % choice
             self.deckBrowserCard = None
@@ -302,11 +318,7 @@ class GameBoard(window.Window, ConnectionListener):
                 act = Act(self.RNDuuid, "update", "ms", payload=len(self.playerDeck.deck))
                 self.Send({"action": "addact", "act": pickle.dumps(act)})
                 self.deckBrowserCard = None
-                self.on_escape(dialog)
-        #def on_escape(dialog):
-         #   self.deckBrowserCard = None
-         #   self.on_escape(dialog)
-            
+                self.on_escape(dialog)  
                 
         list = []
         for card in self.playerDeck.deck:
@@ -325,6 +337,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_stats_dialog(self):
+        """ create the stats dialog """
         dialog = kytten.Dialog(
             kytten.Frame(
                 kytten.VerticalLayout([
@@ -344,19 +357,16 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_chat_dialog(self):
+        """ create the chat dialog """
         dialog = None
         def on_enter(dialog):
             if DEBUG: print "Form submitted!"
             for key, value in dialog.get_values().iteritems():
-     #           if key == "name":
-      #              self.nickname=value
-       #             self.SetNickname(value)
                 if key == "chat_text":
                     if value != "":
                         self.SendMessage(value)
                     else:
                         if DEBUG: print "not sending blank message"
-                #if DEBUG: print "  %s=%s" % (key, value)
             self.on_escape_chat(dialog)
         def on_submit():
             on_enter(dialog)
@@ -381,6 +391,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_network_dialog(self):
+        """ create the network dialog """
         dialog = None
         def on_enter(dialog):
             if DEBUG: print "Form submitted!"
@@ -429,6 +440,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_actions_dialog(self):
+        """ create the actions dialog """
         dialog = kytten.Dialog(
             kytten.Frame(
                 kytten.VerticalLayout([
@@ -450,6 +462,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_runner_actions_dialog(self):
+        """ create the runner actions dialog """
         dialog = kytten.Dialog(
             kytten.Frame(
                 kytten.VerticalLayout([
@@ -472,6 +485,7 @@ class GameBoard(window.Window, ConnectionListener):
         return dialog
     
     def create_corp_actions_dialog(self):
+        """ create the corp actions dialog """
         dialog = kytten.Dialog(
             kytten.Frame(
                 kytten.VerticalLayout([
@@ -486,33 +500,41 @@ class GameBoard(window.Window, ConnectionListener):
         theme=self.theme2, on_escape=self.on_escape_action)
         return dialog
     def remove_tag(self):
+        """ send the network message to remove a tag """
         connection.Send({"action": "message", "message": pickle.dumps("2Bits and an action to remove a Tag")})
     
     def destroy_resource(self):
+        """ send the network message to destroy a resource """
         connection.Send({"action": "message", "message": pickle.dumps("2Bits and an action to destroy a resource of Tagged runner.")})
     
     def run_archives(self):
+        """ send a network message about running on the archives """
         connection.Send({"action": "message", "message": pickle.dumps("Starting a run on the Archives")})
     
     def run_rnd(self):
+        """ send a network message about running on rnd"""
         connection.Send({"action": "message", "message": pickle.dumps("Starting a run on the R&D")})
     
     def run_hq(self):
+        """ send a network message about running on HQ """
         connection.Send({"action": "message", "message": pickle.dumps("Starting a run on the HQ")})
     
     def run_datafort(self):
+        """ send a network message about running a particular datafort """
         connection.Send({"action": "message", "message": pickle.dumps("Starting a run on the Aux Datafort")})
         
     def trace(self):
+        """ send a network message about doing a trace """
         connection.Send({"action": "message", "message": pickle.dumps("Is executing a Trace")})
     
         
-    
     def shuffleDeck(self):
+        """ shuffle the deck, and send the network message to notify the clients """
         self.playerDeck.shuffle()
         connection.Send({"action": "message", "message": pickle.dumps("Has Shuffled his deck")})
         
     def create_controls_dialog(self):
+        """ create the controls dialog, used kytten markup """
         document = pyglet.text.decode_attributed('''
 {bold True}----MOUSE----{bold False}
 
@@ -544,6 +566,8 @@ class GameBoard(window.Window, ConnectionListener):
      
     # Turn Network Data into local Data
     def MakeLocalAct(self, actn):
+        """ Turn a network action into a local action, this gets called on actions
+        that come in from the network """
         tempact = pickle.loads(actn)
         if tempact.target == "ms":
             if tempact.action == "remove":
@@ -580,6 +604,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.localCardList.addCard(newcard)
             
     def MakeLocalToken(self, tokenn):
+        """ build a local copy of the network token """
         temptoken = pickle.loads(tokenn)
         newtoken = self.tokenList.findTokenByUUID(temptoken.uuid)
         if newtoken == None:
@@ -589,6 +614,7 @@ class GameBoard(window.Window, ConnectionListener):
         self.tokenList.tokens.append(newtoken)
         
     def MakeLocalMovableStat(self, msn, color):
+        """ Create the movable stats """
         tempms = pickle.loads(msn)
         if DEBUG: print "new position", str(tempms.position)
         newms = self.movableStatList.findMSByUUID(tempms.uuid)
@@ -604,6 +630,7 @@ class GameBoard(window.Window, ConnectionListener):
         self.movableStatList.statlist.append(newms)
     
     def drawUnderlay(self):
+        """ Draw the text for the particular movable stat """
         for ms in self.movableStatList.statlist:
             ms.loadImg()
             pyglet.text.Label(ms.label + str(ms.count), font_name="Computerfont", font_size=78,x=ms.sprite.x+35,y=ms.sprite.y-15, color=(ms.color[0], ms.color[1], ms.color[2], ms.color[3])).draw()
@@ -612,6 +639,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.selectedMS.sprite.draw()
         
     def drawTokens(self):
+        """ draw all the local tokens """
         for token in self.tokenList.tokens:
             token.loadImg()
             token.sprite.draw()
@@ -619,6 +647,7 @@ class GameBoard(window.Window, ConnectionListener):
             self.selectedToken.sprite.draw()
             
     def drawHandCards(self):
+        """ draw all the cards in your hand """
         for card in self.hand.deck:
             if card.sprite == None or card.image == None:
                 card.image = pyglet.image.load(card.imageloc)
@@ -628,6 +657,7 @@ class GameBoard(window.Window, ConnectionListener):
             card.set_sprite_pos()
             
     def setupCard(self, card):
+        """ setup / init a card / refresh its image if its loaded from the network """
         if card.sprite == None:
             card.image = pyglet.image.load(card.imageloc)
             if card.faceUp:
@@ -648,6 +678,7 @@ class GameBoard(window.Window, ConnectionListener):
         return card.sprite
           
     def drawLocalCards(self):
+        """ draw all the local cards """
         if self.localCardList.deck:
             for card in self.localCardList.deck:
                 card.sprite = self.setupCard(card)
@@ -655,6 +686,7 @@ class GameBoard(window.Window, ConnectionListener):
                 card.set_sprite_pos()
             
     def drawRects(self):
+        """ Draw rectangles around the local cards """
         pyglet.gl.glColor4f(1.0,0,0,1.0)
         for card in self.localCardList.deck:
             if card.isTapped:
@@ -664,23 +696,16 @@ class GameBoard(window.Window, ConnectionListener):
             pyglet.graphics.draw(5, pyglet.gl.GL_LINE_STRIP,('v2i', (ax,ay,bx,by,cx,cy,dx,dy,ax,ay)))
     
     def drawHandRects(self):
+        """ Draw outlines around the cards in the hand """
         pyglet.gl.glColor4f(1.0,0,1,1.0)
         
         for card in self.hand.deck:
             ax,ay,bx,by,cx,cy,dx,dy = card.rotateRect(0)
             pyglet.graphics.draw(5, pyglet.gl.GL_LINE_STRIP,('v2i', (ax,ay,bx,by,cx,cy,dx,dy,ax,ay)))
     
-    def drawLines(self, linesets):
-        mypointlist = []
-        for lines in linesets:
-            for l in lines:
-                if len(l) > 1:
-                    for v in l:
-                        mypointlist.append(int(v))
-        pyglet.graphics.draw(len(mypointlist)/2, pyglet.gl.GL_POINTS,('v2i', mypointlist ))
-        
     # -------------------------------------- EVENTS ------------------------------------- #
     def on_mouse_scroll(self, x, y, scroll_x, scroll_y):
+        """ handle the mouse scrolling (wheel), zooms in and out """
         scrollvalue = .05
         if scroll_y < 0:
             self.camera.zoom -= self.camera.zoom_speed * scrollvalue
@@ -725,12 +750,6 @@ class GameBoard(window.Window, ConnectionListener):
             if DEBUG: print "Clearing"
             self.clearLines()
             
-    def on_key_release(self, key, modifiers):
-        if key == pyglet.window.key.F2:
-            if DEBUG: print "Stopping Drawing"
-            self.drawing = False    
-        
-            
     def on_mouse_motion (self, x, y, dx, dy):
         """This function is called when the mouse is moved over the app.
         (x, y) are the physical coordinates of the mouse
@@ -743,6 +762,7 @@ class GameBoard(window.Window, ConnectionListener):
         #self.update_mouse_text (x, y)
     
     def on_mouse_drag(self,x,y,dx,dy,buttons, modifiers):
+        """ Handle dragging cards around """
         mouse_STW = self.camera.screen_to_world(x, y)
         if self.selected != None:
             self.CardMove(mouse_STW[0], mouse_STW[1])
@@ -783,6 +803,7 @@ class GameBoard(window.Window, ConnectionListener):
     
         
     def on_mouse_release(self,x,y,button,modifiers):
+        """ what happens when you let go of the mouse button based on what you were dragging """
         mouse_STW = self.camera.screen_to_world(x, y)
         if self.selected != None:
             self.CardDrop(mouse_STW[0], mouse_STW[1])
@@ -796,19 +817,20 @@ class GameBoard(window.Window, ConnectionListener):
     # -------------------------------------- Various actions triggered by the events ---------------------------- #
     
     def passTurn(self):
+        """ send the network message that your turn is done """
         connection.Send({"action": "message", "message": pickle.dumps("Go your turn now.")})
     
     def rollD6(self):
+        """ Rolls a d6 and sends the results over the network to the server """
         roll = randint(1,6)
         connection.Send({"action": "message", "message": pickle.dumps("Rolling D6: " + str(roll))})
     
-    def clearLines(self):
-        if DEBUG: print "CLEAR FROM CLIENT"
-        connection.Send({"action": "clear"})
     def quitGame(self):
+	""" quit """ 
         self.has_exit = True
     
     def createHQMS(self):
+        """ Create the HQ move-able stats """ 
         ms = MovableStat('Hq: ', len(self.hand.deck))
         self.HQuuid = ms.uuid
         ms.position = self.camera.screen_to_world(self.width/2, self.height/2)
@@ -816,12 +838,14 @@ class GameBoard(window.Window, ConnectionListener):
         connection.Send({"action": "message", "message": pickle.dumps("created a HQ Stat token")})
         
     def createRNDMS(self):
+        """ create the RND movable stats """
         ms = MovableStat('RnD: ', len(self.playerDeck.deck))
         self.RNDuuid = ms.uuid
         ms.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addms", "ms": pickle.dumps(ms.getMovableStatN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a RND Stat token")})
     def createArchivesMS(self):
+        """ create the archives movable stats """
         ms = MovableStat('Archives', 0)
         self.ARCHIVEuuid = ms.uuid
         ms.position = self.camera.screen_to_world(self.width/2, self.height/2)
@@ -829,37 +853,44 @@ class GameBoard(window.Window, ConnectionListener):
         connection.Send({"action": "message", "message": pickle.dumps("created a Archives Stat token")})
         
     def createBit(self):
+        """ create a bit locally and propagate it to the network """
         token = Token("1bit")
         token.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(token.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a bit")})
     def create5Bit(self):
+        """ create a 5bit and send the message over the network """
         token = Token("5bit")
         token.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(token.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a 5bit")})
     def createBD(self):
+        """ create a brain damage token and broadcast it to the network """
         bd = Token("bd")
         bd.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(bd.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a Brain Damage")})
     def createVirus(self):
+        """ create a virus token and send it on it's way via the network """
         virus = Token("virus")
         virus.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(virus.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a Virus Token")})
     def create_tag(self):  
+        """ create a tag token, and send the signal over the network to the server """
         tag = Token("tag")
         tag.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(tag.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a tag Token")})
     def createBadPublicity(self):  
+        """ create a bad publicity token and send the signal to the server """
         tag = Token("badpublicity")
         tag.position = self.camera.screen_to_world(self.width/2, self.height/2)
         connection.Send({"action": "addtoken", "token": pickle.dumps(tag.getTokenN())})
         connection.Send({"action": "message", "message": pickle.dumps("created a Bad Publicity Token")}) 
     
     def play_top_card(self):
+        """ play the top card from the deck """
         card = self.playerDeck.drawCard()
         mouse_STW = self.camera.screen_to_world(self.width/2, self.height/2)
         card.position = (mouse_STW[0], mouse_STW[1])
@@ -872,7 +903,7 @@ class GameBoard(window.Window, ConnectionListener):
         self.Send({"action": "addact", "act": pickle.dumps(act)})
                   
     def draw_a_card(self):
-        #if DEBUG: print "BUTTON PRESSED OMG, adding card to hand"
+        """ Draw a card """ 
         card = self.playerDeck.drawCard()
         card.inHand = True
         self.hand.addCard(card)
@@ -884,6 +915,7 @@ class GameBoard(window.Window, ConnectionListener):
         
         
     def CardHandClicked(self, x,y):
+        """ Has a card in your hand been clicked? """
         for card in self.hand.deck:
             if card.contains2(x,y):
                 if DEBUG: print "Clicked from Hand:", card.name
@@ -901,6 +933,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def TokenClicked(self, x,y):
+        """ Has a token been clicked """
         for token in self.tokenList.tokens:
             if token.clicked(x,y):
                 if DEBUG: print "Clicked token:", token.uuid
@@ -910,6 +943,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def MSClicked(self, x,y):
+        """ Have you clicked on a movable stat """
         for ms in self.movableStatList.statlist:
             if ms.clicked(x,y):
                 if DEBUG: print "Clicked ms:", ms.uuid
@@ -919,6 +953,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def TokenRightClicked(self, x,y):
+        """ Right clicks on a token remove them, and send the event / message over the network """
         for token in self.tokenList.tokens:
             if token.clicked(x,y):
                 if DEBUG: print "Right Clicked token:", token.uuid
@@ -927,16 +962,8 @@ class GameBoard(window.Window, ConnectionListener):
                 return True
         return False
 
-    #def MSRightClicked(self, x,y):
-    #    for ms in self.movableStatList.statlist:
-    #        if ms.clicked(x,y):
-    #            if DEBUG: print "right Clicked ms:", ms.uuid
-    #            act = Act(ms.uuid, "remove", "ms")
-    #            self.Send({"action": "addact", "act": pickle.dumps(act)})
-    #            return True
-    #    return False
-
     def CardClicked(self, x,y):
+        """ Has a card been clicked """
         for card in self.localCardList.deck:
             if card.clicked(x,y):
                 if DEBUG: print "card clicked: ", card.name
@@ -946,6 +973,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def ZoomCard(self, x,y):
+        """ Zoom in on a card """
         #check cards on the board first
         for card in self.localCardList.deck:
             if card.clicked(x,y) and card.faceUp:
@@ -961,6 +989,7 @@ class GameBoard(window.Window, ConnectionListener):
                 return True
         return False
     def CardToDeck(self, x,y):
+        """ Put a card back on top of the players deck """
         for card in self.localCardList.deck:
             if card.clicked(x,y):
                 if DEBUG: print "card To Deck: ", card.name
@@ -979,6 +1008,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def CardToHand(self, x,y):
+        """ put the card back into your hand """
         for card in self.localCardList.deck:
             if card.clicked(x,y):
                 if DEBUG: print "card To Hand: ", card.name
@@ -998,17 +1028,19 @@ class GameBoard(window.Window, ConnectionListener):
     
         
     def CardMove(self, x,y):
-        #if DEBUG: print "Moving"
-        #mouse_STW = self.camera.screen_to_world(x, y)
+        """ Move a card locally """
         self.selected.sprite.position = (x,y)
     
     def TokenMove(self, x,y):
+        """ Move a token locally """
         self.selectedToken.sprite.position = (x,y)
         
     def MSMove(self, x,y):
+        """ Move the movable stats around """
         self.selectedMS.sprite.position = (x,y)
     
     def CardDrop(self, x,y):
+        """ Drop the card, log its position and send the info over the network to the server """
         if DEBUG: print "Dropping"
         self.selected.position = (x,y)
         self.selected.dirty = True
@@ -1019,12 +1051,14 @@ class GameBoard(window.Window, ConnectionListener):
         self.selected = None
         
     def TokenDrop(self, x,y):
+        """ Logs the location of the token, and sends the info to the server for propagation to the other clients """
         if DEBUG: print "Dropping"
         self.selectedToken.position = (x,y)
         self.Send({"action": "movetoken", "token": pickle.dumps(self.selectedToken.getTokenN())})
         self.selectedToken = None
     
     def MSDrop(self, x,y):
+        """ updates the position and sends the network command to the server """
         if DEBUG: print "Dropping"
         self.selectedMS.position = (x,y)
         self.Send({"action": "movems", "ms": pickle.dumps(self.selectedMS.getMovableStatN())})
@@ -1032,6 +1066,7 @@ class GameBoard(window.Window, ConnectionListener):
     
     
     def tap_card(self, x,y):
+        """ To tap a card, is to rotate it 90 degree's, to signify that its been used this turn """
         if DEBUG: print "Count of cards", str(len(self.localCardList.deck))
         for card in self.localCardList.deck:
             if card.clicked(x,y):
@@ -1048,6 +1083,7 @@ class GameBoard(window.Window, ConnectionListener):
         return False
     
     def flip_card(self, x,y):
+        """ Flip a card over, if its faceup it will become facedown, and vice versa """
         for card in self.localCardList.deck:
             if card.clicked(x,y):
                 if DEBUG: print "card clicked: ", card.name
@@ -1058,14 +1094,15 @@ class GameBoard(window.Window, ConnectionListener):
                     
                 card.dirty = True
                 self.localCardList.removeCard(card)    
-
                 self.Send({"action": "movecard", "card": pickle.dumps(card.getCardN())})
                 return True
         return False
     def SetNickname(self, input):
+        """ Send the network action to set your nickname for the chat """
         connection.Send({"action": "nickname", "nickname": input})
     
     def SendMessage(self, input):
+        """ Send a message over the network """
         connection.Send({"action": "message", "message": pickle.dumps(input)})
         
     # --------------------------------------- Network Callbacks ------------------------------------------- #        
@@ -1101,8 +1138,6 @@ class GameBoard(window.Window, ConnectionListener):
         if DEBUG: print "From Network movems"
         self.mss[data['id']]['mss'].append(data['ms'])
     
-    
-        
     #Chat
     def Network_message(self, data):
         self.update_chat(data['who'] + ": " + pickle.loads(data['message']))    

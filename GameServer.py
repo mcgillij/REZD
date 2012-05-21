@@ -16,10 +16,7 @@ class ServerChannel(Channel):
 		self.nickname = "anonymous"
 		self.id = str(self._server.NextId())
 		intid = int(self.id)
-		#self.color = [(intid + 1) % 3 * 84, (intid + 2) % 3 * 84, (intid + 3) % 3 * 84] #tuple([randint(0, 127) for r in range(3)])
-		#self.color = [random.random(),random.random(),random.random(),1 ] #tuple([randint(0, 127) for r in range(3)])
 		self.color = [randint(0,255),randint(0,255),randint(0,255), 255 ] #tuple([randint(0, 127) for r in range(3)])
-		#self.lines = []
 		self.cards = []
 		self.tokens = []
 		self.acts = []
@@ -44,44 +41,30 @@ class ServerChannel(Channel):
 		self._server.SendPlayers()
 	
 	def Network_addcard(self, data):
-		print "Add card from the server"
-		print str(data)
 		self.cards.append(data['card'])
 		self.PassOn(data)
 		
 	def Network_movecard(self, data):
-		print "Move card from the server"
-		print str(data)
 		self.cards.append(data['card'])
 		self.PassOn(data)
 	
 	def Network_addtoken(self, data):
-		print "Add token from the server"
-		print str(data)
 		self.tokens.append(data['token'])
 		self.PassOn(data)
 		
 	def Network_movetoken(self, data):
-		print "Move token from the server"
-		print str(data)
 		self.tokens.append(data['token'])
 		self.PassOn(data)
 	
 	def Network_addms(self, data):
-		print "Add ms from the server"
-		print str(data)
 		self.mss.append(data['ms'])
 		self.PassOn(data)
 		
 	def Network_movems(self, data):
-		print "Move ms from the server"
-		print str(data)
 		self.mss.append(data['ms'])
 		self.PassOn(data)
 	
 	def Network_addact(self, data):
-		print "Add act from the server"
-		print str(data)
 		self.acts.append(data['act'])
 		self.PassOn(data)
 	
@@ -132,18 +115,9 @@ class GameServer(Server):
 			self.Pump()
 			sleep(0.0001)
 
-# get command line argument of server, port
-#if len(sys.argv) != 2:
-	#print "Usage:", sys.argv[0], "host:port"
-	#print "e.g.", sys.argv[0], "localhost:31425"
-#else:#
-#	host, port = sys.argv[1].split(":")
-#s = GameServer(localaddr=('localhost', int(1234)))
 config=ConfigParser()
 config.readfp(open("conf/game.conf"))
 host = config.get('server', 'host')
 port = config.getint('server', 'port')
 s = GameServer(localaddr=(host, port))
-#s = GameServer(localaddr=(host, int(port)))
 s.Launch()
-
