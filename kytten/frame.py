@@ -8,10 +8,11 @@
 #        to cover the Widget's area, or the space within which it is contained.
 # TitleFrame: like Frame, but has a title region on top as well.
 
-from widgets import Widget, Control, Graphic, Label
-from layout import HorizontalLayout, VerticalLayout, GetRelativePoint
-from layout import VALIGN_BOTTOM, HALIGN_LEFT, HALIGN_CENTER, HALIGN_RIGHT
-from layout import ANCHOR_CENTER
+from .widgets import Widget, Control, Graphic, Label
+from .layout import HorizontalLayout, VerticalLayout, GetRelativePoint
+from .layout import VALIGN_BOTTOM, HALIGN_LEFT, HALIGN_CENTER, HALIGN_RIGHT
+from .layout import ANCHOR_CENTER
+
 
 class Wrapper(Widget):
     """
@@ -21,8 +22,10 @@ class Wrapper(Widget):
     panel, or Scrollable might provide scrollbars to let the widget
     be panned about within its display area.
     """
-    def __init__(self, content=None,
-                 is_expandable=False, anchor=ANCHOR_CENTER, offset=(0, 0)):
+
+    def __init__(
+        self, content=None, is_expandable=False, anchor=ANCHOR_CENTER, offset=(0, 0)
+    ):
         """
         Creates a new Wrapper around an included Widget.
 
@@ -63,8 +66,8 @@ class Wrapper(Widget):
         Widget.layout(self, x, y)
         if self.content is not None:
             x, y = GetRelativePoint(
-                self, self.anchor,
-                self.content, self.anchor, self.content_offset)
+                self, self.anchor, self.content, self.anchor, self.content_offset
+            )
             self.content.layout(x, y)
 
     def set(self, dialog, content):
@@ -99,18 +102,25 @@ class Wrapper(Widget):
         self.content = None
         Widget.teardown(self)
 
+
 class Frame(Wrapper):
     """
     Frame draws an untitled frame which encloses the dialog's content.
     """
-    def __init__(self, content=None, path=['frame'], image_name='image',
-                 is_expandable=False, anchor=ANCHOR_CENTER,
-                 use_bg_group=False):
+
+    def __init__(
+        self,
+        content=None,
+        path=["frame"],
+        image_name="image",
+        is_expandable=False,
+        anchor=ANCHOR_CENTER,
+        use_bg_group=False,
+    ):
         """
         Creates a new Frame surrounding a widget or layout.
         """
-        Wrapper.__init__(self, content,
-                         is_expandable=is_expandable, anchor=anchor)
+        Wrapper.__init__(self, content, is_expandable=is_expandable, anchor=anchor)
         self.frame = None
         self.path = path
         self.image_name = image_name
@@ -127,8 +137,7 @@ class Frame(Wrapper):
 
     def expand(self, width, height):
         if self.content.is_expandable():
-            content_width, content_height = \
-                         self.frame.get_content_size(width, height)
+            content_width, content_height = self.frame.get_content_size(width, height)
             self.content.expand(content_width, content_height)
         self.width, self.height = width, height
 
@@ -148,8 +157,9 @@ class Frame(Wrapper):
         x, y, width, height = self.frame.get_content_region()
         interior = Widget(width, height)
         interior.x, interior.y = x, y
-        x, y = GetRelativePoint(interior, self.anchor,
-                                self.content, self.anchor, self.content_offset)
+        x, y = GetRelativePoint(
+            interior, self.anchor, self.content, self.anchor, self.content_offset
+        )
         self.content.layout(x, y)
 
     def size(self, dialog):
@@ -168,23 +178,34 @@ class Frame(Wrapper):
                 group = dialog.panel_group
             template = dialog.theme[self.path][self.image_name]
             self.frame = template.generate(
-                dialog.theme[self.path]['gui_color'],
-                dialog.batch,
-                group)
+                dialog.theme[self.path]["gui_color"], dialog.batch, group
+            )
         self.width, self.height = self.frame.get_needed_size(
-            self.content.width, self.content.height)
+            self.content.width, self.content.height
+        )
+
 
 class TitleFrame(VerticalLayout):
     def __init__(self, title, content):
-        VerticalLayout.__init__(self, content=[
-                HorizontalLayout([
-                    Graphic(path=["titlebar", "left"], is_expandable=True),
-                    Frame(Label(title, path=["titlebar"]),
-                          path=["titlebar", "center"]),
-                    Graphic(path=["titlebar", "right"], is_expandable=True),
-                ], align=VALIGN_BOTTOM, padding=0),
+        VerticalLayout.__init__(
+            self,
+            content=[
+                HorizontalLayout(
+                    [
+                        Graphic(path=["titlebar", "left"], is_expandable=True),
+                        Frame(
+                            Label(title, path=["titlebar"]), path=["titlebar", "center"]
+                        ),
+                        Graphic(path=["titlebar", "right"], is_expandable=True),
+                    ],
+                    align=VALIGN_BOTTOM,
+                    padding=0,
+                ),
                 Frame(content, path=["titlebar", "frame"], is_expandable=True),
-            ], padding=0)
+            ],
+            padding=0,
+        )
+
 
 class SectionHeader(HorizontalLayout):
     def __init__(self, title, align=HALIGN_CENTER):
@@ -198,13 +219,21 @@ class SectionHeader(HorizontalLayout):
             left_expand = True
             right_expand = False
 
-        HorizontalLayout.__init__(self, content=[
+        HorizontalLayout.__init__(
+            self,
+            content=[
                 Graphic(path=["section", "left"], is_expandable=left_expand),
-                Frame(Label(title, path=["section"]),
-                      path=['section', 'center'],
-                      use_bg_group=True),
+                Frame(
+                    Label(title, path=["section"]),
+                    path=["section", "center"],
+                    use_bg_group=True,
+                ),
                 Graphic(path=["section", "right"], is_expandable=right_expand),
-            ], align=VALIGN_BOTTOM, padding=0)
+            ],
+            align=VALIGN_BOTTOM,
+            padding=0,
+        )
+
 
 class FoldingSection(Control, VerticalLayout):
     def __init__(self, title, content=None, is_open=True, align=HALIGN_CENTER):
@@ -223,15 +252,24 @@ class FoldingSection(Control, VerticalLayout):
         self.folding_content = content
         self.book = Graphic(self._get_image_path())
 
-        self.header = HorizontalLayout([
-            Graphic(path=["section", "left"], is_expandable=left_expand),
-            Frame(HorizontalLayout([
-                      self.book,
-                      Label(title, path=["section"]),
-                  ]), path=["section", "center"],
-                  use_bg_group=True),
-            Graphic(path=["section", "right"], is_expandable=right_expand),
-            ], align=VALIGN_BOTTOM, padding=0)
+        self.header = HorizontalLayout(
+            [
+                Graphic(path=["section", "left"], is_expandable=left_expand),
+                Frame(
+                    HorizontalLayout(
+                        [
+                            self.book,
+                            Label(title, path=["section"]),
+                        ]
+                    ),
+                    path=["section", "center"],
+                    use_bg_group=True,
+                ),
+                Graphic(path=["section", "right"], is_expandable=right_expand),
+            ],
+            align=VALIGN_BOTTOM,
+            padding=0,
+        )
         layout = [self.header]
         if self.is_open:
             layout.append(content)
@@ -239,9 +277,15 @@ class FoldingSection(Control, VerticalLayout):
         VerticalLayout.__init__(self, content=layout, align=align)
 
     def _get_controls(self):
-        return VerticalLayout._get_controls(self) + \
-               [(self, self.header.x, self.header.x + self.header.width,
-                       self.header.y + self.header.height, self.header.y)]
+        return VerticalLayout._get_controls(self) + [
+            (
+                self,
+                self.header.x,
+                self.header.x + self.header.width,
+                self.header.y + self.header.height,
+                self.header.y,
+            )
+        ]
 
     def _get_image_path(self):
         if self.is_open:

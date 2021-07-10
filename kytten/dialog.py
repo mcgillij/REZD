@@ -4,11 +4,12 @@
 import pyglet
 from pyglet import gl
 
-from widgets import Widget, Control, Label
-from button import Button
-from frame import Wrapper, Frame
-from layout import GetRelativePoint, ANCHOR_CENTER
-from layout import VerticalLayout, HorizontalLayout
+from .widgets import Widget, Control, Label
+from .button import Button
+from .frame import Wrapper, Frame
+from .layout import GetRelativePoint, ANCHOR_CENTER
+from .layout import VerticalLayout, HorizontalLayout
+
 
 class DialogEventManager(Control):
     def __init__(self):
@@ -58,8 +59,9 @@ class DialogEventManager(Control):
         @param modifiers Modifiers for key press
         """
         if symbol in [pyglet.window.key.TAB, pyglet.window.key.ENTER]:
-            focusable = [x for x in self.controls
-                         if x.is_focusable() and not x.is_disabled()]
+            focusable = [
+                x for x in self.controls if x.is_focusable() and not x.is_disabled()
+            ]
             if not focusable:
                 return
 
@@ -79,12 +81,11 @@ class DialogEventManager(Control):
 
             # If we hit ENTER, and wrapped back to the first focusable,
             # pass the ENTER back so the Dialog can call its on_enter callback
-            if symbol != pyglet.window.key.ENTER or \
-               new_focus != focusable[0]:
+            if symbol != pyglet.window.key.ENTER or new_focus != focusable[0]:
                 return pyglet.event.EVENT_HANDLED
 
         elif symbol != pyglet.window.key.ESCAPE:
-            if self.focus is not None and hasattr(self.focus, 'on_key_press'):
+            if self.focus is not None and hasattr(self.focus, "on_key_press"):
                 return self.focus.on_key_press(symbol, modifiers)
 
     def on_key_release(self, symbol, modifiers):
@@ -93,7 +94,7 @@ class DialogEventManager(Control):
         @param symbol Key released
         @param modifiers Modifiers for key released
         """
-        if self.focus is not None and hasattr(self.focus, 'on_key_release'):
+        if self.focus is not None and hasattr(self.focus, "on_key_release"):
             return self.focus.on_key_release(symbol, modifiers)
 
     def on_mouse_drag(self, x, y, dx, dy, buttons, modifiers):
@@ -108,8 +109,7 @@ class DialogEventManager(Control):
         @param modifiers Modifiers to apply to buttons
         """
         if self.focus is not None:
-            self.focus.dispatch_event('on_mouse_drag',
-                                      x, y, dx, dy, buttons, modifiers)
+            self.focus.dispatch_event("on_mouse_drag", x, y, dx, dy, buttons, modifiers)
             return pyglet.event.EVENT_HANDLED
 
     def on_mouse_motion(self, x, y, dx, dy):
@@ -123,7 +123,7 @@ class DialogEventManager(Control):
         @param dy Delta Y
         """
         if self.hover is not None and not self.hit_control(x, y, self.hover):
-            self.hover.dispatch_event('on_mouse_motion', x, y, dx, dy)
+            self.hover.dispatch_event("on_mouse_motion", x, y, dx, dy)
         new_hover = None
         for control in self.controls:
             if self.hit_control(x, y, control):
@@ -131,7 +131,7 @@ class DialogEventManager(Control):
                 break
         self.set_hover(new_hover)
         if self.hover is not None:
-            self.hover.dispatch_event('on_mouse_motion', x, y, dx, dy)
+            self.hover.dispatch_event("on_mouse_motion", x, y, dx, dy)
 
     def on_mouse_press(self, x, y, button, modifiers):
         """
@@ -146,15 +146,13 @@ class DialogEventManager(Control):
         @param modifiers Modifiers to apply to button
         """
         if self.focus is not None and self.hit_control(x, y, self.focus):
-            self.focus.dispatch_event('on_mouse_press',
-                                      x, y, button, modifiers)
+            self.focus.dispatch_event("on_mouse_press", x, y, button, modifiers)
             return pyglet.event.EVENT_HANDLED
         else:
             if self.hit_test(x, y):
                 self.set_focus(self.hover)
                 if self.focus is not None:
-                    self.focus.dispatch_event('on_mouse_press',
-                                              x, y, button, modifiers)
+                    self.focus.dispatch_event("on_mouse_press", x, y, button, modifiers)
                     return pyglet.event.EVENT_HANDLED
             else:
                 self.set_focus(None)
@@ -172,8 +170,7 @@ class DialogEventManager(Control):
         """
         self.is_dragging = False
         if self.focus is not None:
-            self.focus.dispatch_event('on_mouse_release',
-                                      x, y, button, modifiers)
+            self.focus.dispatch_event("on_mouse_release", x, y, button, modifiers)
             DialogEventManager.on_mouse_motion(self, x, y, 0, 0)
             return pyglet.event.EVENT_HANDLED
         return pyglet.event.EVENT_HANDLED
@@ -188,35 +185,33 @@ class DialogEventManager(Control):
         @param scroll_x Number of clicks horizontally mouse was moved
         @param scroll_y Number of clicks vertically mouse was moved
         """
-        if self.wheel_target is not None and \
-           self.wheel_target in self.controls:
-            self.wheel_target.dispatch_event('on_mouse_scroll',
-                                             x, y, scroll_x, scroll_y)
+        if self.wheel_target is not None and self.wheel_target in self.controls:
+            self.wheel_target.dispatch_event(
+                "on_mouse_scroll", x, y, scroll_x, scroll_y
+            )
             return pyglet.event.EVENT_HANDLED
-        elif self.wheel_hint is not None and \
-             self.wheel_hint in self.controls:
-            self.wheel_hint.dispatch_event('on_mouse_scroll',
-                                           x, y, scroll_x, scroll_y)
+        elif self.wheel_hint is not None and self.wheel_hint in self.controls:
+            self.wheel_hint.dispatch_event("on_mouse_scroll", x, y, scroll_x, scroll_y)
             return pyglet.event.EVENT_HANDLED
 
     def on_text(self, text):
-        if self.focus and text != u'\r':
+        if self.focus and text != "\r":
             try:
-                return getattr(self.focus, 'on_text')(text)
+                return getattr(self.focus, "on_text")(text)
             except KeyError:
                 return pyglet.event.EVENT_UNHANDLED
 
     def on_text_motion(self, motion):
         if self.focus:
             try:
-                return getattr(self.focus, 'on_text_motion')(motion)
+                return getattr(self.focus, "on_text_motion")(motion)
             except KeyError:
                 return pyglet.event.EVENT_UNHANDLED
 
     def on_text_motion_select(self, motion):
         if self.focus:
             try:
-                return getattr(self.focus, 'on_text_motion_select')(motion)
+                return getattr(self.focus, "on_text_motion_select")(motion)
             except KeyError:
                 return pyglet.event.EVENT_UNHANDLED
 
@@ -230,7 +225,7 @@ class DialogEventManager(Control):
         @param dt Time passed since last update event (in seconds)
         """
         for control in self.controls:
-            control.dispatch_event('on_update', dt)
+            control.dispatch_event("on_update", dt)
 
     def set_focus(self, focus):
         """
@@ -241,10 +236,10 @@ class DialogEventManager(Control):
         if self.focus == focus:
             return
         if self.focus is not None:
-            self.focus.dispatch_event('on_lose_focus')
+            self.focus.dispatch_event("on_lose_focus")
         self.focus = focus
         if focus is not None:
-            focus.dispatch_event('on_gain_focus')
+            focus.dispatch_event("on_gain_focus")
 
     def set_hover(self, hover):
         """
@@ -256,10 +251,10 @@ class DialogEventManager(Control):
         if self.hover == hover:
             return
         if self.hover is not None:
-            self.hover.dispatch_event('on_lose_highlight')
+            self.hover.dispatch_event("on_lose_highlight")
         self.hover = hover
         if hover is not None:
-            hover.dispatch_event('on_gain_highlight')
+            hover.dispatch_event("on_gain_highlight")
 
     def set_wheel_hint(self, control):
         self.wheel_hint = control
@@ -292,11 +287,15 @@ class DialogEventManager(Control):
         if self.focus is not None and self.focus not in self.controls:
             self.set_focus(None)
 
+
 kytten_next_dialog_order_id = 0
+
+
 def GetNextDialogOrderId():
     global kytten_next_dialog_order_id
     kytten_next_dialog_order_id += 1
     return kytten_next_dialog_order_id
+
 
 class DialogGroup(pyglet.graphics.OrderedGroup):
     """
@@ -304,14 +303,14 @@ class DialogGroup(pyglet.graphics.OrderedGroup):
     blending enabled, and that our Dialog will be drawn in a particular
     order relative to other Dialogs.
     """
+
     def __init__(self, parent=None):
         """
         Creates a new DialogGroup.  By default we'll be on top.
 
         @param parent Parent group
         """
-        pyglet.graphics.OrderedGroup.__init__(
-            self, GetNextDialogOrderId(), parent)
+        pyglet.graphics.OrderedGroup.__init__(self, GetNextDialogOrderId(), parent)
         self.real_order = self.order
 
     def __cmp__(self, other):
@@ -351,6 +350,7 @@ class DialogGroup(pyglet.graphics.OrderedGroup):
         """
         gl.glPopAttrib()
 
+
 class Dialog(Wrapper, DialogEventManager):
     """
     Defines a new GUI.  By default it can contain only one element, but that
@@ -360,9 +360,21 @@ class Dialog(Wrapper, DialogEventManager):
     The Dialog is always repositioned in relationship to the window, and
     handles resize events accordingly.
     """
-    def __init__(self, content=None, window=None, batch=None, group=None,
-                 anchor=ANCHOR_CENTER, offset=(0, 0), parent=None,
-                 theme=None, movable=True, on_enter=None, on_escape=None):
+
+    def __init__(
+        self,
+        content=None,
+        window=None,
+        batch=None,
+        group=None,
+        anchor=ANCHOR_CENTER,
+        offset=(0, 0),
+        parent=None,
+        theme=None,
+        movable=True,
+        on_enter=None,
+        on_escape=None,
+    ):
         """
         Creates a new dialog.
 
@@ -432,8 +444,7 @@ class Dialog(Wrapper, DialogEventManager):
         # Calculate our position relative to our containing window,
         # making sure that we fit completely on the window.  If our offset
         # would send us off the screen, constrain it.
-        x, y = GetRelativePoint(self.screen, self.anchor,
-                                self, None, (0, 0))
+        x, y = GetRelativePoint(self.screen, self.anchor, self, None, (0, 0))
         max_offset_x = self.screen.width - self.width - x
         max_offset_y = self.screen.height - self.height - y
         offset_x, offset_y = self.offset
@@ -499,8 +510,7 @@ class Dialog(Wrapper, DialogEventManager):
         @param buttons Buttons held while moving
         @param modifiers Modifiers to apply to buttons
         """
-        if not DialogEventManager.on_mouse_drag(self, x, y, dx, dy,
-                                                buttons, modifiers):
+        if not DialogEventManager.on_mouse_drag(self, x, y, dx, dy, buttons, modifiers):
             if self.is_movable and self.is_dragging:
                 x, y = self.offset
                 self.offset = (int(x + dx), int(y + dy))
@@ -519,8 +529,7 @@ class Dialog(Wrapper, DialogEventManager):
         @param button Button pressed
         @param modifiers Modifiers to apply to button
         """
-        retval = DialogEventManager.on_mouse_press(self, x, y,
-                                             button, modifiers)
+        retval = DialogEventManager.on_mouse_press(self, x, y, button, modifiers)
         if self.hit_test(x, y):
             if not self.root_group.is_on_top():
                 self.pop_to_top()
@@ -541,8 +550,7 @@ class Dialog(Wrapper, DialogEventManager):
         @param modifiers Modifiers to apply to button
         """
         self.is_dragging = False
-        return DialogEventManager.on_mouse_release(self, x, y,
-                                                   button, modifiers)
+        return DialogEventManager.on_mouse_release(self, x, y, button, modifiers)
 
     def on_resize(self, width, height):
         """
@@ -595,31 +603,53 @@ class Dialog(Wrapper, DialogEventManager):
             self.window = None
         self.batch._draw_list_dirty = True  # forces resorting groups
 
+
 class PopupMessage(Dialog):
     """A simple fire-and-forget dialog."""
 
-    def __init__(self, text="", window=None, batch=None, group=None,
-                 theme=None, on_escape=None):
+    def __init__(
+        self, text="", window=None, batch=None, group=None, theme=None, on_escape=None
+    ):
         def on_ok(dialog=None):
             if on_escape is not None:
                 on_escape(self)
             self.teardown()
 
-        return Dialog.__init__(self, content=Frame(
-            VerticalLayout([
-                Label(text),
-                Button("Ok", on_click=on_ok),
-            ])),
-            window=window, batch=batch, group=group,
-            theme=theme, movable=True,
-            on_enter=on_ok, on_escape=on_ok)
+        return Dialog.__init__(
+            self,
+            content=Frame(
+                VerticalLayout(
+                    [
+                        Label(text),
+                        Button("Ok", on_click=on_ok),
+                    ]
+                )
+            ),
+            window=window,
+            batch=batch,
+            group=group,
+            theme=theme,
+            movable=True,
+            on_enter=on_ok,
+            on_escape=on_ok,
+        )
+
 
 class PopupConfirm(Dialog):
     """An ok/cancel-style dialog.  Escape defaults to cancel."""
 
-    def __init__(self, text="", ok="Ok", cancel="Cancel",
-                 window=None, batch=None, group=None, theme=None,
-                 on_ok=None, on_cancel=None):
+    def __init__(
+        self,
+        text="",
+        ok="Ok",
+        cancel="Cancel",
+        window=None,
+        batch=None,
+        group=None,
+        theme=None,
+        on_ok=None,
+        on_cancel=None,
+    ):
         def on_ok_click(dialog=None):
             if on_ok is not None:
                 on_ok(self)
@@ -630,15 +660,27 @@ class PopupConfirm(Dialog):
                 on_cancel(self)
             self.teardown()
 
-        return Dialog.__init__(self, content=Frame(
-            VerticalLayout([
-                Label(text),
-                HorizontalLayout([
-                    Button(ok, on_click=on_ok_click),
-                    None,
-                    Button(cancel, on_click=on_cancel_click)
-                ]),
-            ])),
-            window=window, batch=batch, group=group,
-            theme=theme, movable=True,
-            on_enter=on_ok_click, on_escape=on_cancel_click)
+        return Dialog.__init__(
+            self,
+            content=Frame(
+                VerticalLayout(
+                    [
+                        Label(text),
+                        HorizontalLayout(
+                            [
+                                Button(ok, on_click=on_ok_click),
+                                None,
+                                Button(cancel, on_click=on_cancel_click),
+                            ]
+                        ),
+                    ]
+                )
+            ),
+            window=window,
+            batch=batch,
+            group=group,
+            theme=theme,
+            movable=True,
+            on_enter=on_ok_click,
+            on_escape=on_cancel_click,
+        )

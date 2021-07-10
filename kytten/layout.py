@@ -12,7 +12,8 @@
 import pyglet
 from pyglet import gl
 
-from widgets import Widget, Control, Spacer, Graphic, Label
+from .widgets import Widget, Control, Spacer, Graphic, Label
+from functools import reduce
 
 # GUI layout constants
 
@@ -34,6 +35,7 @@ ANCHOR_BOTTOM_LEFT = (VALIGN_BOTTOM, HALIGN_LEFT)
 ANCHOR_BOTTOM = (VALIGN_BOTTOM, HALIGN_CENTER)
 ANCHOR_BOTTOM_RIGHT = (VALIGN_BOTTOM, HALIGN_RIGHT)
 
+
 def GetRelativePoint(parent, parent_anchor, child, child_anchor, offset):
     valign, halign = parent_anchor or ANCHOR_CENTER
 
@@ -41,14 +43,14 @@ def GetRelativePoint(parent, parent_anchor, child, child_anchor, offset):
         y = parent.y + parent.height
     elif valign == VALIGN_CENTER:
         y = parent.y + parent.height / 2
-    else: # VALIGN_BOTTOM
+    else:  # VALIGN_BOTTOM
         y = parent.y
 
     if halign == HALIGN_LEFT:
         x = parent.x
     elif halign == HALIGN_CENTER:
         x = parent.x + parent.width / 2
-    else: # HALIGN_RIGHT
+    else:  # HALIGN_RIGHT
         x = parent.x + parent.width
 
     valign, halign = child_anchor or (valign, halign)
@@ -57,23 +59,25 @@ def GetRelativePoint(parent, parent_anchor, child, child_anchor, offset):
     if valign == VALIGN_TOP:
         y += offset_y - child.height
     elif valign == VALIGN_CENTER:
-        y += offset_y - child.height/2
-    else: # VALIGN_BOTTOM
+        y += offset_y - child.height / 2
+    else:  # VALIGN_BOTTOM
         y += offset_y
 
     if halign == HALIGN_LEFT:
         x += offset_x
     elif halign == HALIGN_CENTER:
         x += offset_x - child.width / 2
-    else: # HALIGN_RIGHT
+    else:  # HALIGN_RIGHT
         x += offset_x - child.width
 
     return (x, y)
+
 
 class VerticalLayout(Widget):
     """
     Arranges Widgets on top of each other, from top to bottom.
     """
+
     def __init__(self, content=[], align=HALIGN_CENTER, padding=5):
         """
         Creates a new VerticalLayout.
@@ -162,15 +166,13 @@ class VerticalLayout(Widget):
         top = y + self.height
         if self.align == HALIGN_RIGHT:
             for item in self.content:
-                item.layout(x + self.width - item.width,
-                            top - item.height)
+                item.layout(x + self.width - item.width, top - item.height)
                 top -= item.height + self.padding
         elif self.align == HALIGN_CENTER:
             for item in self.content:
-                item.layout(x + self.width/2 - item.width/2,
-                            top - item.height)
+                item.layout(x + self.width / 2 - item.width / 2, top - item.height)
                 top -= item.height + self.padding
-        else: # HALIGN_LEFT
+        else:  # HALIGN_LEFT
             for item in self.content:
                 item.layout(x, top - item.height)
                 top -= item.height + self.padding
@@ -212,10 +214,12 @@ class VerticalLayout(Widget):
         self.content = []
         Widget.teardown(self)
 
+
 class HorizontalLayout(VerticalLayout):
     """
     Arranges Widgets from left to right.
     """
+
     def __init__(self, content=[], align=VALIGN_CENTER, padding=5):
         """
         Creates a new HorizontalLayout.
@@ -265,9 +269,9 @@ class HorizontalLayout(VerticalLayout):
                 left += item.width + self.padding
         elif self.align == VALIGN_CENTER:
             for item in self.content:
-                item.layout(left, y + self.height/2 - item.height/2)
+                item.layout(left, y + self.height / 2 - item.height / 2)
                 left += item.width + self.padding
-        else: # VALIGN_BOTTOM
+        else:  # VALIGN_BOTTOM
             for item in self.content:
                 item.layout(left, y)
                 left += item.width + self.padding
@@ -293,6 +297,7 @@ class HorizontalLayout(VerticalLayout):
         self.width, self.height = width, height
         self.expandable = [x for x in self.content if x.is_expandable()]
 
+
 class GridLayout(Widget):
     """
     Arranges Widgets in a table.  Each cell's height and width are set to
@@ -303,8 +308,8 @@ class GridLayout(Widget):
     Another anchor point may be specified, i.e. ANCHOR_CENTER will ensure
     that Widgets are centered within cells.
     """
-    def __init__(self, content=[[]], anchor=ANCHOR_TOP_LEFT, padding=5,
-                 offset=(0, 0)):
+
+    def __init__(self, content=[[]], anchor=ANCHOR_TOP_LEFT, padding=5, offset=(0, 0)):
         """
         Defines a new GridLayout.
 
@@ -313,9 +318,10 @@ class GridLayout(Widget):
                        and rows do not need to all be the same length.
         @param anchor Alignment of
         """
-        assert ((isinstance(content, list) or isinstance(content, tuple)) and
-                (len(content) == 0 or (isinstance(content[0], list) or
-                                       isinstance(content[0], tuple))))
+        assert (isinstance(content, list) or isinstance(content, tuple)) and (
+            len(content) == 0
+            or (isinstance(content[0], list) or isinstance(content[0], tuple))
+        )
         Widget.__init__(self)
         self.content = content
         self.anchor = anchor
@@ -405,9 +411,11 @@ class GridLayout(Widget):
                 if cell is not None:
                     if cell.is_expandable():
                         cell.expand(placement.width, placement.height)
-                    cell.layout(*GetRelativePoint(placement, self.anchor,
-                                                  cell, self.anchor,
-                                                  self.offset))
+                    cell.layout(
+                        *GetRelativePoint(
+                            placement, self.anchor, cell, self.anchor, self.offset
+                        )
+                    )
                 placement.x += placement.width
                 col_index += 1
             row_index += 1
@@ -421,11 +429,11 @@ class GridLayout(Widget):
         @param item The new Widget to be set in that cell
         """
         if len(self.content) <= row:
-            self.content = list(self.content) + \
-                           [] * (row - len(self.content) + 1)
+            self.content = list(self.content) + [] * (row - len(self.content) + 1)
         if len(self.content[row]) <= column:
-            self.content[row] = list(self.content[row]) + \
-                [None] * (column - len(self.content[row]) + 1)
+            self.content[row] = list(self.content[row]) + [None] * (
+                column - len(self.content[row]) + 1
+            )
         if self.content[row][column] is not None:
             self.content[row][column].delete()
         self.content[row][column] = item
@@ -463,13 +471,11 @@ class GridLayout(Widget):
             self.max_heights[row_index] = max_height
             row_index += 1
         if self.max_widths:
-            self.width = reduce(lambda x, y: x + y, self.max_widths) \
-                - self.padding
+            self.width = reduce(lambda x, y: x + y, self.max_widths) - self.padding
         else:
             self.width = 0
         if self.max_heights:
-            self.height = reduce(lambda x, y: x + y, self.max_heights) \
-                - self.padding
+            self.height = reduce(lambda x, y: x + y, self.max_heights) - self.padding
         else:
             self.height = 0
 
@@ -479,6 +485,7 @@ class GridLayout(Widget):
                 cell.teardown()
         self.content = []
         Widget.teardown(self)
+
 
 class FreeLayout(Spacer):
     """
@@ -491,6 +498,7 @@ class FreeLayout(Spacer):
     the other half, and be assured the FreeLayout would be resized to the
     width of the overall Dialog.
     """
+
     def __init__(self, width=0, height=0, content=[]):
         """
         Creates a new FreeLayout.
@@ -524,7 +532,7 @@ class FreeLayout(Spacer):
         @param y Y-coordinate of offset from anchor point; positive is upward
         @param widget The Widget to be added
         """
-        self.content.append( (anchor, x, y, widget) )
+        self.content.append((anchor, x, y, widget))
         self.saved_dialog.set_needs_layout()
 
     def layout(self, x, y):
@@ -537,8 +545,7 @@ class FreeLayout(Spacer):
         """
         Spacer.layout(self, x, y)
         for anchor, offset_x, offset_y, widget in self.content:
-            x, y = GetRelativePoint(self, anchor, widget, anchor,
-                                    (offset_x, offset_y))
+            x, y = GetRelativePoint(self, anchor, widget, anchor, (offset_x, offset_y))
             widget.layout(x, y)
 
     def remove(self, dialog, widget):
@@ -567,4 +574,3 @@ class FreeLayout(Spacer):
             item.teardown()
         self.content = []
         Widget.teardown(self)
-

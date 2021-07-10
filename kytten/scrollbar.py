@@ -2,19 +2,21 @@
 # Copyrighted (C) 2009 by Conrad "Lynx" Wong
 
 import pyglet
-from widgets import Control
+from .widgets import Control
+
 
 class HScrollbar(Control):
     """
     A horizontal scrollbar.  Position is measured from 0.0 to 1.0, and bar
     size is set as a percentage of the maximum.
     """
-    IMAGE_LEFT = ['hscrollbar', 'left']
-    IMAGE_SPACE = ['hscrollbar', 'space']
-    IMAGE_BAR = ['hscrollbar', 'bar']
-    IMAGE_RIGHT = ['hscrollbar', 'right']
-    IMAGE_LEFTMAX = ['hscrollbar', 'leftmax']
-    IMAGE_RIGHTMAX = ['hscrollbar', 'rightmax']
+
+    IMAGE_LEFT = ["hscrollbar", "left"]
+    IMAGE_SPACE = ["hscrollbar", "space"]
+    IMAGE_BAR = ["hscrollbar", "bar"]
+    IMAGE_RIGHT = ["hscrollbar", "right"]
+    IMAGE_LEFTMAX = ["hscrollbar", "leftmax"]
+    IMAGE_RIGHTMAX = ["hscrollbar", "rightmax"]
 
     def __init__(self, width):
         """
@@ -56,8 +58,12 @@ class HScrollbar(Control):
         Return area of the right button (x, y, width, height)
         """
         if self.right is not None:
-            return (self.x + self.width - self.right.width, self.y,
-                    self.right.width, self.height)
+            return (
+                self.x + self.width - self.right.width,
+                self.y,
+                self.right.width,
+                self.height,
+            )
         else:
             return self.x + self.width, self.y, 0, 0
 
@@ -67,9 +73,12 @@ class HScrollbar(Control):
         (x, y, width, height)
         """
         if self.left is not None and self.right is not None:
-            return (self.x + self.left.width, self.y,
-                    self.width - self.left.width - self.right.width,
-                    self.height)
+            return (
+                self.x + self.left.width,
+                self.y,
+                self.width - self.left.width - self.right.width,
+                self.height,
+            )
         else:
             return self.x, self.y, self.width, self.height
 
@@ -84,10 +93,12 @@ class HScrollbar(Control):
             left_width = right_width = 0
         self.pos = max(min(self.pos, 1.0 - self.bar_width), 0.0)
         space_width = self.width - left_width - right_width
-        return (int(self.x + left_width + self.pos * space_width),
-                self.y,
-                int(self.bar_width * space_width),
-                self.height)
+        return (
+            int(self.x + left_width + self.pos * space_width),
+            self.y,
+            int(self.bar_width * space_width),
+            self.height,
+        )
 
     def delete(self):
         """
@@ -115,8 +126,10 @@ class HScrollbar(Control):
         """
         _, _, space_width, space_height = self._get_space_region()
         _, _, bar_width, bar_height = self._get_bar_region()
-        self.pos = min(max(self.pos + float(dx) / space_width, 0.0),
-                       1.0 - float(bar_width)/space_width)
+        self.pos = min(
+            max(self.pos + float(dx) / space_width, 0.0),
+            1.0 - float(bar_width) / space_width,
+        )
 
     def ensure_visible(self, left, right, max_width):
         """
@@ -199,23 +212,34 @@ class HScrollbar(Control):
         @param modifiers Modifiers to apply to button
         """
         space_x, space_y, space_width, space_height = self._get_space_region()
-        if x >= space_x and x < space_x + space_width and \
-           y >= space_y and y < space_y + space_height:
+        if (
+            x >= space_x
+            and x < space_x + space_width
+            and y >= space_y
+            and y < space_y + space_height
+        ):
             self.set_bar_pos(x, y)
             self.is_dragging = True
             self.delete()
             self.saved_dialog.set_needs_layout()
         else:
             left_x, left_y, left_width, left_height = self._get_left_region()
-            if x >= left_x and x < left_x + left_width and \
-               y >= left_y and y < left_y + left_height:
+            if (
+                x >= left_x
+                and x < left_x + left_width
+                and y >= left_y
+                and y < left_y + left_height
+            ):
                 self.is_scrolling = True
                 self.scroll_delta = -1
             else:
-                right_x, right_y, right_width, right_height = \
-                       self._get_right_region()
-                if x >= right_x and x < right_x + right_width and \
-                   y >= right_y and y < right_y + right_height:
+                right_x, right_y, right_width, right_height = self._get_right_region()
+                if (
+                    x >= right_x
+                    and x < right_x + right_width
+                    and y >= right_y
+                    and y < right_y + right_height
+                ):
                     self.is_scrolling = True
                     self.scroll_delta = 1
 
@@ -298,30 +322,31 @@ class HScrollbar(Control):
                 path = self.IMAGE_LEFT
             else:
                 path = self.IMAGE_LEFTMAX
-            self.left = dialog.theme[path]['image'].generate(
-                dialog.theme[path]['gui_color'],
-                dialog.batch, dialog.fg_group)
+            self.left = dialog.theme[path]["image"].generate(
+                dialog.theme[path]["gui_color"], dialog.batch, dialog.fg_group
+            )
 
             # Left button is our basis for minimum dimension
             self.width, self.height = self.left.width, self.left.height
         if self.space is None:
             path = self.IMAGE_SPACE
-            self.space = dialog.theme[path]['image'].generate(
-                dialog.theme[path]['gui_color'],
-                dialog.batch, dialog.fg_group)
+            self.space = dialog.theme[path]["image"].generate(
+                dialog.theme[path]["gui_color"], dialog.batch, dialog.fg_group
+            )
         if self.bar is None:
             path = self.IMAGE_BAR
-            self.bar = dialog.theme[path]['image'].generate(
-                dialog.theme[path]['gui_color'],
-                dialog.batch, dialog.fg_group)
+            self.bar = dialog.theme[path]["image"].generate(
+                dialog.theme[path]["gui_color"], dialog.batch, dialog.fg_group
+            )
         if self.right is None:
             if self.pos < 1.0 - self.bar_width:
                 path = self.IMAGE_RIGHT
             else:
                 path = self.IMAGE_RIGHTMAX
-            self.right = dialog.theme[path]['image'].generate(
-                dialog.theme[path]['gui_color'],
-                dialog.batch, dialog.fg_group)
+            self.right = dialog.theme[path]["image"].generate(
+                dialog.theme[path]["gui_color"], dialog.batch, dialog.fg_group
+            )
+
 
 class VScrollbar(HScrollbar):
     """
@@ -329,12 +354,13 @@ class VScrollbar(HScrollbar):
     is set as a percentage of the maximum.  Note that left is top, and
     right is bottom, from the viewpoint of the VScrollbar.
     """
-    IMAGE_LEFT = ['vscrollbar', 'up']
-    IMAGE_SPACE = ['vscrollbar', 'space']
-    IMAGE_BAR = ['vscrollbar', 'bar']
-    IMAGE_RIGHT = ['vscrollbar', 'down']
-    IMAGE_LEFTMAX = ['vscrollbar', 'upmax']
-    IMAGE_RIGHTMAX = ['vscrollbar', 'downmax']
+
+    IMAGE_LEFT = ["vscrollbar", "up"]
+    IMAGE_SPACE = ["vscrollbar", "space"]
+    IMAGE_BAR = ["vscrollbar", "bar"]
+    IMAGE_RIGHT = ["vscrollbar", "down"]
+    IMAGE_LEFTMAX = ["vscrollbar", "upmax"]
+    IMAGE_RIGHTMAX = ["vscrollbar", "downmax"]
 
     def __init__(self, height):
         """
@@ -350,8 +376,12 @@ class VScrollbar(HScrollbar):
         """Returns the area occupied by the up button
         (x, y, width, height)"""
         if self.left is not None:
-            return (self.x, self.y + self.height - self.left.height,
-                    self.width, self.left.height)
+            return (
+                self.x,
+                self.y + self.height - self.left.height,
+                self.width,
+                self.left.height,
+            )
         else:
             return self.x, self.y, 0, 0
 
@@ -367,10 +397,12 @@ class VScrollbar(HScrollbar):
         """Returns the area occupied by the space between up and down
         buttons (x, y, width, height)"""
         if self.left is not None and self.right is not None:
-            return (self.x,
-                    self.y + self.right.height,
-                    self.width,
-                    self.height - self.left.width - self.right.width)
+            return (
+                self.x,
+                self.y + self.right.height,
+                self.width,
+                self.height - self.left.width - self.right.width,
+            )
         else:
             return self.x, self.y, self.width, self.height
 
@@ -384,8 +416,12 @@ class VScrollbar(HScrollbar):
         self.pos = max(min(self.pos, 1.0 - self.bar_width), 0.0)
         space_height = self.height - left_height - right_height
         top = self.y + self.height - left_height
-        return (self.x, int(top - (self.pos + self.bar_width) * space_height),
-                self.width, int(self.bar_width * space_height))
+        return (
+            self.x,
+            int(top - (self.pos + self.bar_width) * space_height),
+            self.width,
+            int(self.bar_width * space_height),
+        )
 
     def drag_bar(self, dx, dy):
         """Handles dragging the bar.
@@ -395,8 +431,10 @@ class VScrollbar(HScrollbar):
         """
         _, _, space_width, space_height = self._get_space_region()
         _, _, bar_width, bar_height = self._get_bar_region()
-        self.pos = min(max(self.pos - float(dy) / space_height, 0.0),
-                       1.0 - float(bar_height)/space_height)
+        self.pos = min(
+            max(self.pos - float(dy) / space_height, 0.0),
+            1.0 - float(bar_height) / space_height,
+        )
 
     def ensure_visible(self, top, bottom, max_height):
         """
@@ -470,4 +508,3 @@ class VScrollbar(HScrollbar):
             self.pos = float(min(max_bar_y, top - y)) / space_height
         if self.bar is not None:
             self.bar.update(*self._get_bar_region())
-

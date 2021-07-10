@@ -2,13 +2,23 @@
 # Copyrighted (C) 2009 by Conrad "Lynx" Wong
 
 import pyglet
-from widgets import Control
-from override import KyttenInputLabel
+from .widgets import Control
+from .override import KyttenInputLabel
+
 
 class Input(Control):
     """A text input field."""
-    def __init__(self, id=None, text="", length=20, max_length=None, padding=0,
-                 on_input=None, disabled=False):
+
+    def __init__(
+        self,
+        id=None,
+        text="",
+        length=20,
+        max_length=None,
+        padding=0,
+        on_input=None,
+        disabled=False,
+    ):
         Control.__init__(self, id=id, disabled=disabled)
         self.text = text
         self.length = length
@@ -125,7 +135,7 @@ class Input(Control):
         if not self.is_disabled() and self.caret:
             self.caret.on_text(text)
             if self.max_length and len(self.document.text) > self.max_length:
-                self.document.text = self.document.text[:self.max_length]
+                self.document.text = self.document.text[: self.max_length]
                 self.caret.mark = self.caret.position = self.max_length
             return pyglet.event.EVENT_HANDLED
 
@@ -144,12 +154,13 @@ class Input(Control):
                 self.highlight = None
 
     def set_highlight(self):
-        path = ['input', 'highlight']
+        path = ["input", "highlight"]
         if self.highlight is None:
-            self.highlight = self.saved_dialog.theme[path]['image'].generate(
-                color=self.saved_dialog.theme[path]['highlight_color'],
+            self.highlight = self.saved_dialog.theme[path]["image"].generate(
+                color=self.saved_dialog.theme[path]["highlight_color"],
                 batch=self.saved_dialog.batch,
-                group=self.saved_dialog.highlight_group)
+                group=self.saved_dialog.highlight_group,
+            )
             self.highlight.update(self.x, self.y, self.width, self.height)
 
     def set_text(self, text):
@@ -165,23 +176,28 @@ class Input(Control):
         Control.size(self, dialog)
 
         if self.is_disabled():
-            color = dialog.theme['input']['disabled_color']
+            color = dialog.theme["input"]["disabled_color"]
         else:
-            color = dialog.theme['input']['text_color']
+            color = dialog.theme["input"]["text_color"]
 
         # We set the style once.  We shouldn't have to do so again because
         # it's an UnformattedDocument.
         if not self.document_style_set:
-            self.document.set_style(0, len(self.document.text),
-                                    dict(color=color,
-                                         font_name=dialog.theme['font'],
-                                         font_size=dialog.theme['font_size']))
+            self.document.set_style(
+                0,
+                len(self.document.text),
+                dict(
+                    color=color,
+                    font_name=dialog.theme["font"],
+                    font_size=dialog.theme["font_size"],
+                ),
+            )
             self.document_style_set = True
 
         # Calculate the needed size based on the font size
         font = self.document.get_font(0)
         height = font.ascent - font.descent
-        glyphs = font.get_glyphs('A_')
+        glyphs = font.get_glyphs("A_")
         width = max([x.width for x in glyphs])
         needed_width = self.length * width + 2 * self.padding
         needed_height = height + 2 * self.padding
@@ -189,41 +205,47 @@ class Input(Control):
         if self.is_focus():
             if self.text_layout is None:
                 self.text_layout = pyglet.text.layout.IncrementalTextLayout(
-                    self.document, needed_width, needed_height,
+                    self.document,
+                    needed_width,
+                    needed_height,
                     multiline=False,
-                    batch=dialog.batch, group=dialog.fg_group)
+                    batch=dialog.batch,
+                    group=dialog.fg_group,
+                )
                 assert self.caret is None
             assert self.label is None
             if self.caret is None:
                 self.caret = pyglet.text.caret.Caret(
-                    self.text_layout,
-                    color=dialog.theme['input']['gui_color'][0:3])
+                    self.text_layout, color=dialog.theme["input"]["gui_color"][0:3]
+                )
                 self.caret.visible = True
                 self.caret.mark = 0
                 self.caret.position = len(self.document.text)
         else:
             if self.label is None:
-                self.label = KyttenInputLabel(self.document.text,
-                                              multiline=False,
-                                              width=self.width-self.padding*2,
-                                              color=color,
-                                              batch=dialog.batch,
-                                              group=dialog.fg_group)
+                self.label = KyttenInputLabel(
+                    self.document.text,
+                    multiline=False,
+                    width=self.width - self.padding * 2,
+                    color=color,
+                    batch=dialog.batch,
+                    group=dialog.fg_group,
+                )
             assert self.text_layout is None and self.caret is None
         if self.field is None:
             if self.is_disabled():
-                color = dialog.theme['input']['disabled_color']
+                color = dialog.theme["input"]["disabled_color"]
             else:
-                color = dialog.theme['input']['gui_color']
-            self.field = dialog.theme['input']['image'].generate(
-                color=color,
-                batch=dialog.batch,
-                group=dialog.bg_group)
+                color = dialog.theme["input"]["gui_color"]
+            self.field = dialog.theme["input"]["image"].generate(
+                color=color, batch=dialog.batch, group=dialog.bg_group
+            )
         if self.highlight is None and self.is_highlight():
             self.set_highlight()
 
         self.width, self.height = self.field.get_needed_size(
-            needed_width, needed_height)
+            needed_width, needed_height
+        )
 
     def teardown(self):
         self.on_input = False

@@ -2,17 +2,26 @@
 # Copyrighted (C) 2009 by Conrad "Lynx" Wong
 
 import pyglet
-from widgets import Control
-from layout import HALIGN_LEFT, HALIGN_RIGHT
-from override import KyttenLabel
+from .widgets import Control
+from .layout import HALIGN_LEFT, HALIGN_RIGHT
+from .override import KyttenLabel
+
 
 class Checkbox(Control):
     """
     A two-state checkbox.
     """
-    def __init__(self, text="", is_checked=False, id=None,
-                 align=HALIGN_RIGHT, padding=4, on_click=None,
-                 disabled=False):
+
+    def __init__(
+        self,
+        text="",
+        is_checked=False,
+        id=None,
+        align=HALIGN_RIGHT,
+        padding=4,
+        on_click=None,
+        disabled=False,
+    ):
         """
         Creates a new checkbox.  The provided text will be used to caption the
         checkbox.
@@ -67,21 +76,28 @@ class Checkbox(Control):
         """
         Control.layout(self, x, y)
         if self.align == HALIGN_RIGHT:  # label goes on right
-            self.checkbox.update(x, y + self.height/2 - self.checkbox.height/2,
-                                 self.checkbox.width, self.checkbox.height)
+            self.checkbox.update(
+                x,
+                y + self.height / 2 - self.checkbox.height / 2,
+                self.checkbox.width,
+                self.checkbox.height,
+            )
             self.label.x = x + self.checkbox.width + self.padding
-        else: # label goes on left
+        else:  # label goes on left
             self.label.x = x
-            self.checkbox.update(x + self.label.content_width + self.padding,
-                                 y + self.height/2 - self.checkbox.height/2,
-                                 self.checkbox.width, self.checkbox.height)
+            self.checkbox.update(
+                x + self.label.content_width + self.padding,
+                y + self.height / 2 - self.checkbox.height / 2,
+                self.checkbox.width,
+                self.checkbox.height,
+            )
 
         if self.highlight is not None:
             self.highlight.update(self.x, self.y, self.width, self.height)
 
         font = self.label.document.get_font()
         height = font.ascent - font.descent
-        self.label.y = y + self.height/2 - height/2 - font.descent
+        self.label.y = y + self.height / 2 - height / 2 - font.descent
 
     def on_gain_highlight(self):
         Control.on_gain_highlight(self)
@@ -117,34 +133,35 @@ class Checkbox(Control):
             return
         Control.size(self, dialog)
         if self.is_checked:
-            path = ['checkbox', 'checked']
+            path = ["checkbox", "checked"]
         else:
-            path = ['checkbox', 'unchecked']
+            path = ["checkbox", "unchecked"]
         if self.is_disabled():
-            color = dialog.theme[path]['disabled_color']
+            color = dialog.theme[path]["disabled_color"]
         else:
-            color = dialog.theme[path]['gui_color']
+            color = dialog.theme[path]["gui_color"]
         if self.checkbox is None:
-            self.checkbox = dialog.theme[path]['image'].generate(
-                color,
-                dialog.batch, dialog.bg_group)
+            self.checkbox = dialog.theme[path]["image"].generate(
+                color, dialog.batch, dialog.bg_group
+            )
         if self.highlight is None and self.is_highlight():
-            self.highlight = dialog.theme[path]['highlight']['image'].generate(
-                    dialog.theme[path]['highlight_color'],
-                    dialog.batch,
-                    dialog.bg_group)
+            self.highlight = dialog.theme[path]["highlight"]["image"].generate(
+                dialog.theme[path]["highlight_color"], dialog.batch, dialog.bg_group
+            )
         if self.label is None:
-            self.label = KyttenLabel(self.text,
-                font_name=dialog.theme[path]['font'],
-                font_size=dialog.theme[path]['font_size'],
+            self.label = KyttenLabel(
+                self.text,
+                font_name=dialog.theme[path]["font"],
+                font_size=dialog.theme[path]["font_size"],
                 color=color,
-                batch=dialog.batch, group=dialog.fg_group)
+                batch=dialog.batch,
+                group=dialog.fg_group,
+            )
 
         # Treat the height of the label as ascent + descent
         font = self.label.document.get_font()
         height = font.ascent - font.descent  # descent is negative
-        self.width = self.checkbox.width + self.padding + \
-            self.label.content_width
+        self.width = self.checkbox.width + self.padding + self.label.content_width
         self.height = max(self.checkbox.height, height)
 
     def teardown(self):

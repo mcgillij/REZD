@@ -3,15 +3,16 @@
 
 import pyglet
 
-from widgets import Widget, Control
-from dialog import Dialog
-from frame import Frame
-from layout import GetRelativePoint, VerticalLayout
-from layout import ANCHOR_CENTER, ANCHOR_TOP_LEFT, ANCHOR_BOTTOM_LEFT
-from layout import HALIGN_CENTER
-from layout import VALIGN_TOP, VALIGN_CENTER, VALIGN_BOTTOM
-from override import KyttenLabel
-from scrollable import Scrollable
+from .widgets import Widget, Control
+from .dialog import Dialog
+from .frame import Frame
+from .layout import GetRelativePoint, VerticalLayout
+from .layout import ANCHOR_CENTER, ANCHOR_TOP_LEFT, ANCHOR_BOTTOM_LEFT
+from .layout import HALIGN_CENTER
+from .layout import VALIGN_TOP, VALIGN_CENTER, VALIGN_BOTTOM
+from .override import KyttenLabel
+from .scrollable import Scrollable
+
 
 class MenuOption(Control):
     """
@@ -19,8 +20,8 @@ class MenuOption(Control):
     (inverted color against text-color background) to indicate that it
     has been chosen.
     """
-    def __init__(self, text="", anchor=ANCHOR_CENTER, menu=None,
-                 disabled=False):
+
+    def __init__(self, text="", anchor=ANCHOR_CENTER, menu=None, disabled=False):
         Control.__init__(self, disabled=disabled)
         self.text = text
         self.anchor = anchor
@@ -56,9 +57,13 @@ class MenuOption(Control):
             self.highlight.update(x, y, self.width, self.height)
         font = self.label.document.get_font()
         height = font.ascent - font.descent
-        x, y = GetRelativePoint(self, self.anchor,
-                                Widget(self.label.content_width, height),
-                                self.anchor, (0, 0))
+        x, y = GetRelativePoint(
+            self,
+            self.anchor,
+            Widget(self.label.content_width, height),
+            self.anchor,
+            (0, 0),
+        )
         self.label.x = x
         self.label.y = y - font.descent
 
@@ -66,8 +71,7 @@ class MenuOption(Control):
         Control.on_gain_highlight(self)
         self.size(self.saved_dialog)  # to set up the highlight
         if self.highlight is not None:
-            self.highlight.update(self.x, self.y,
-                                  self.menu.width, self.height)
+            self.highlight.update(self.x, self.y, self.menu.width, self.height)
 
     def on_lose_highlight(self):
         Control.on_lose_highlight(self)
@@ -93,38 +97,38 @@ class MenuOption(Control):
             return
         Control.size(self, dialog)
         if self.is_selected:
-            path = ['menuoption', 'selection']
+            path = ["menuoption", "selection"]
         else:
-            path = ['menuoption']
+            path = ["menuoption"]
         if self.label is None:
             if self.is_disabled():
-                color = dialog.theme[path]['disabled_color']
+                color = dialog.theme[path]["disabled_color"]
             else:
-                color = dialog.theme[path]['text_color']
-            self.label = KyttenLabel(self.text,
+                color = dialog.theme[path]["text_color"]
+            self.label = KyttenLabel(
+                self.text,
                 color=color,
-                font_name=dialog.theme[path]['font'],
-                font_size=dialog.theme[path]['font_size'],
+                font_name=dialog.theme[path]["font"],
+                font_size=dialog.theme[path]["font_size"],
                 batch=dialog.batch,
-                group=dialog.fg_group)
+                group=dialog.fg_group,
+            )
             font = self.label.document.get_font()
             self.width = self.label.content_width
             self.height = font.ascent - font.descent
 
         if self.background is None:
             if self.is_selected:
-                self.background = \
-                    dialog.theme[path]['highlight']['image'].generate(
-                        dialog.theme[path]['gui_color'],
-                        dialog.batch,
-                        dialog.bg_group)
+                self.background = dialog.theme[path]["highlight"]["image"].generate(
+                    dialog.theme[path]["gui_color"], dialog.batch, dialog.bg_group
+                )
         if self.highlight is None:
             if self.is_highlight():
-                self.highlight = \
-                    dialog.theme[path]['highlight']['image'].generate(
-                        dialog.theme[path]['highlight_color'],
-                        dialog.batch,
-                        dialog.highlight_group)
+                self.highlight = dialog.theme[path]["highlight"]["image"].generate(
+                    dialog.theme[path]["highlight_color"],
+                    dialog.batch,
+                    dialog.highlight_group,
+                )
 
     def unselect(self):
         self.is_selected = False
@@ -140,34 +144,38 @@ class MenuOption(Control):
         self.menu = None
         Control.teardown(self)
 
+
 class Menu(VerticalLayout):
     """
     Menu is a VerticalLayout of MenuOptions.  Moving the mouse across
     MenuOptions highlights them; clicking one selects it and causes Menu
     to send an on_click event.
     """
-    def __init__(self, options=[], align=HALIGN_CENTER, padding=4,
-                 on_select=None):
+
+    def __init__(self, options=[], align=HALIGN_CENTER, padding=4, on_select=None):
         self.align = align
         menu_options = self._make_options(options)
-        self.options = dict(zip(options, menu_options))
+        self.options = dict(list(zip(options, menu_options)))
         self.on_select = on_select
         self.selected = None
-        VerticalLayout.__init__(self, menu_options,
-                                align=align, padding=padding)
+        VerticalLayout.__init__(self, menu_options, align=align, padding=padding)
 
     def _make_options(self, options):
         menu_options = []
         for option in options:
-            if option.startswith('-'):
+            if option.startswith("-"):
                 disabled = True
                 option = option[1:]
             else:
                 disabled = False
-            menu_options.append(MenuOption(option,
-                                           anchor=(VALIGN_CENTER, self.align),
-                                           menu=self,
-                                           disabled=disabled))
+            menu_options.append(
+                MenuOption(
+                    option,
+                    anchor=(VALIGN_CENTER, self.align),
+                    menu=self,
+                    disabled=disabled,
+                )
+            )
         return menu_options
 
     def get_value(self):
@@ -193,7 +201,7 @@ class Menu(VerticalLayout):
         self.delete()
         self.selected = None
         menu_options = self._make_options(options)
-        self.options = dict(zip(options, menu_options))
+        self.options = dict(list(zip(options, menu_options)))
         self.set(menu_options)
         self.saved_dialog.set_needs_layout()
 
@@ -201,10 +209,18 @@ class Menu(VerticalLayout):
         self.on_select = None
         VerticalLayout.teardown(self)
 
+
 class Dropdown(Control):
-    def __init__(self, options=[], selected=None, id=None,
-                 max_height=400, align=VALIGN_TOP, on_select=None,
-                 disabled=False):
+    def __init__(
+        self,
+        options=[],
+        selected=None,
+        id=None,
+        max_height=400,
+        align=VALIGN_TOP,
+        on_select=None,
+        disabled=False,
+    ):
         assert options
         Control.__init__(self, id=id, disabled=disabled)
         self.options = options
@@ -285,14 +301,21 @@ class Dropdown(Control):
         # Now to setup the dialog
         self.pulldown_menu = Dialog(
             Frame(
-                Scrollable(Menu(options=self.options, on_select=on_select),
-                           height=self.max_height),
-                path=['dropdown', 'pulldown']
+                Scrollable(
+                    Menu(options=self.options, on_select=on_select),
+                    height=self.max_height,
+                ),
+                path=["dropdown", "pulldown"],
             ),
-            window=root.window, batch=root.batch,
-            group=root.root_group.parent, theme=root.theme,
-            movable=False, anchor=anchor, offset=(x, y),
-            on_escape=on_escape)
+            window=root.window,
+            batch=root.batch,
+            group=root.root_group.parent,
+            theme=root.theme,
+            movable=False,
+            anchor=anchor,
+            offset=(x, y),
+            on_escape=on_escape,
+        )
         root.window.push_handlers(self.pulldown_menu)
 
     def layout(self, x, y):
@@ -318,24 +341,28 @@ class Dropdown(Control):
         Control.size(self, dialog)
 
         if self.is_disabled():
-            color = dialog.theme['dropdown']['disabled_color']
+            color = dialog.theme["dropdown"]["disabled_color"]
         else:
-            color = dialog.theme['dropdown']['gui_color']
+            color = dialog.theme["dropdown"]["gui_color"]
 
         if self.field is None:
-            self.field = dialog.theme['dropdown']['image'].generate(
-                color,
-                dialog.batch, dialog.bg_group)
+            self.field = dialog.theme["dropdown"]["image"].generate(
+                color, dialog.batch, dialog.bg_group
+            )
         if self.label is None:
-            self.label = KyttenLabel(self.selected,
-                font_name=dialog.theme['dropdown']['font'],
-                font_size=dialog.theme['dropdown']['font_size'],
-                color=dialog.theme['dropdown']['text_color'],
-                batch=dialog.batch, group=dialog.fg_group)
+            self.label = KyttenLabel(
+                self.selected,
+                font_name=dialog.theme["dropdown"]["font"],
+                font_size=dialog.theme["dropdown"]["font_size"],
+                color=dialog.theme["dropdown"]["text_color"],
+                batch=dialog.batch,
+                group=dialog.fg_group,
+            )
         font = self.label.document.get_font()
         height = font.ascent - font.descent
         self.width, self.height = self.field.get_needed_size(
-            self.label.content_width, height)
+            self.label.content_width, height
+        )
 
     def teardown(self):
         self.on_select = False

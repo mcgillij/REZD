@@ -37,24 +37,32 @@ Thanks to Gary Herron and Steve Johnson for debugging assistance!
 
 # GUI public constants
 
-from layout import VALIGN_TOP, VALIGN_CENTER, VALIGN_BOTTOM
-from layout import HALIGN_LEFT, HALIGN_CENTER, HALIGN_RIGHT
-from layout import ANCHOR_TOP_LEFT, ANCHOR_TOP, ANCHOR_TOP_RIGHT, \
-                   ANCHOR_LEFT, ANCHOR_CENTER, ANCHOR_RIGHT, \
-                   ANCHOR_BOTTOM_LEFT, ANCHOR_BOTTOM, ANCHOR_BOTTOM_RIGHT
+from .layout import VALIGN_TOP, VALIGN_CENTER, VALIGN_BOTTOM
+from .layout import HALIGN_LEFT, HALIGN_CENTER, HALIGN_RIGHT
+from .layout import (
+    ANCHOR_TOP_LEFT,
+    ANCHOR_TOP,
+    ANCHOR_TOP_RIGHT,
+    ANCHOR_LEFT,
+    ANCHOR_CENTER,
+    ANCHOR_RIGHT,
+    ANCHOR_BOTTOM_LEFT,
+    ANCHOR_BOTTOM,
+    ANCHOR_BOTTOM_RIGHT,
+)
 
 # GUI public classes
 
-from button import Button
-from checkbox import Checkbox
-from dialog import Dialog, PopupMessage, PopupConfirm
-from document import Document
-from file_dialogs import FileLoadDialog, FileSaveDialog, DirectorySelectDialog
-from frame import Frame, TitleFrame, Wrapper, SectionHeader, FoldingSection
-from layout import GridLayout, HorizontalLayout, VerticalLayout, FreeLayout
-from menu import Menu, Dropdown
-from scrollable import Scrollable
-from slider import Slider
-from text_input import Input
-from theme import Theme
-from widgets import Widget, Spacer, Label
+from .button import Button
+from .checkbox import Checkbox
+from .dialog import Dialog, PopupMessage, PopupConfirm
+from .document import Document
+from .file_dialogs import FileLoadDialog, FileSaveDialog, DirectorySelectDialog
+from .frame import Frame, TitleFrame, Wrapper, SectionHeader, FoldingSection
+from .layout import GridLayout, HorizontalLayout, VerticalLayout, FreeLayout
+from .menu import Menu, Dropdown
+from .scrollable import Scrollable
+from .slider import Slider
+from .text_input import Input
+from .theme import Theme
+from .widgets import Widget, Spacer, Label

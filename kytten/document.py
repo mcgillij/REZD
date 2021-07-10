@@ -3,23 +3,31 @@
 
 import pyglet
 
-from widgets import Control
-from scrollbar import VScrollbar
+from .widgets import Control
+from .scrollbar import VScrollbar
+
 
 class Document(Control):
     """
     Allows you to embed a document within the GUI, which includes a
     vertical scrollbar as needed.
     """
-    def __init__(self, document, width=1000, height=5000,
-                 is_fixed_size=False, always_show_scrollbar=False):
+
+    def __init__(
+        self,
+        document,
+        width=1000,
+        height=5000,
+        is_fixed_size=False,
+        always_show_scrollbar=False,
+    ):
         """
         Creates a new Document.
         """
         Control.__init__(self, width, height)
         self.max_height = height
         self.content_width = width
-        if isinstance(document, basestring):
+        if isinstance(document, str):
             self.document = pyglet.text.document.UnformattedDocument(document)
         else:
             self.document = document
@@ -33,9 +41,13 @@ class Document(Control):
 
     def _do_set_document_style(self, attr, value):
         length = len(self.document.text)
-        runs = [(start, end, doc_value) for start, end, doc_value in
-                self.document.get_style_runs(attr).ranges(0, length)
-                if doc_value is not None]
+        runs = [
+            (start, end, doc_value)
+            for start, end, doc_value in self.document.get_style_runs(attr).ranges(
+                0, length
+            )
+            if doc_value is not None
+        ]
         if not runs:
             terminator = len(self.document.text)
         else:
@@ -62,9 +74,9 @@ class Document(Control):
 
         # Check the style runs to make sure we don't stamp on anything
         # set by the user
-        self._do_set_document_style('color', dialog.theme['text_color'])
-        self._do_set_document_style('font_name', dialog.theme['font'])
-        self._do_set_document_style('font_size', dialog.theme['font_size'])
+        self._do_set_document_style("color", dialog.theme["text_color"])
+        self._do_set_document_style("font_name", dialog.theme["font"])
+        self._do_set_document_style("font_size", dialog.theme["font_size"])
 
     def get_text(self):
         return self.document.text
@@ -86,9 +98,8 @@ class Document(Control):
         @param dt Time passed since last update event (in seconds)
         """
         if self.scrollbar is not None:
-            self.scrollbar.dispatch_event('on_update', dt)
-            pos = self.scrollbar.get(self.max_height,
-                                     self.content.content_height)
+            self.scrollbar.dispatch_event("on_update", dt)
+            pos = self.scrollbar.get(self.max_height, self.content.content_height)
             if pos != -self.content.view_y:
                 self.content.view_y = -pos
 
@@ -108,15 +119,20 @@ class Document(Control):
                 self.document,
                 self.content_width,
                 self.max_height,
-                multiline=True, batch=dialog.batch, group=dialog.fg_group)
-            if self.is_fixed_size or (self.max_height and
-                self.content.content_height > self.max_height):
+                multiline=True,
+                batch=dialog.batch,
+                group=dialog.fg_group,
+            )
+            if self.is_fixed_size or (
+                self.max_height and self.content.content_height > self.max_height
+            ):
                 self.height = self.max_height
             else:
                 self.height = self.content.content_height
             self.content.height = self.height
-        if self.always_show_scrollbar or \
-           (self.max_height and self.content.content_height > self.max_height):
+        if self.always_show_scrollbar or (
+            self.max_height and self.content.content_height > self.max_height
+        ):
             if self.scrollbar is None:
                 self.scrollbar = VScrollbar(self.max_height)
             self.scrollbar.size(dialog)

@@ -5,13 +5,13 @@ from pyglet.window import mouse
 from pyglet.gl import *
 import os
 from collections import defaultdict
+
+
 class Camera(object):
-    """The editor 2D camera.
-    """
+    """The editor 2D camera."""
 
     def __init__(self, window):
-        """Create a camera for the given window.
-        """
+        """Create a camera for the given window."""
         self.window = window
         self.pos = Vec2(0, 0)
         self.speed = 2000.0
@@ -35,10 +35,9 @@ class Camera(object):
     zoom = property(_get_zoom, _set_zoom)
 
     def transform(self):
-        """Apply the camera transformation.
-        """
-        half_win = Vec2(self.window.width/2, self.window.height/2)
-        t = (self.pos + half_win)
+        """Apply the camera transformation."""
+        half_win = Vec2(self.window.width / 2, self.window.height / 2)
+        t = self.pos + half_win
 
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
@@ -48,16 +47,14 @@ class Camera(object):
         glTranslatef(-t.x, -t.y, 0.0)
 
     def screen_to_world(self, x, y):
-        """Converts from screen to world coordinates.
-        """
-        half_win = Vec2(self.window.width/2, self.window.height/2)
+        """Converts from screen to world coordinates."""
+        half_win = Vec2(self.window.width / 2, self.window.height / 2)
         spos = Vec2(x, y)
 
-        return ((spos - half_win) / self.zoom ) + (self.pos + half_win)
+        return ((spos - half_win) / self.zoom) + (self.pos + half_win)
 
     def check_input(self, dt):
-        """Update method called at each frame.
-        """
+        """Update method called at each frame."""
         dx, dy = 0, 0
         if self.key_state[key.UP]:
             dy = 1
@@ -72,8 +69,8 @@ class Camera(object):
         if dx != 0 or dy != 0:
             vel = Vec2(dx, dy).normalize() * self.speed * dt
             self.pos = self.pos + vel
-            #print str(dt)
-        #if self.key_state[key.DOWN]:
+            # print str(dt)
+        # if self.key_state[key.DOWN]:
         #    self.zoom -= self.zoom_speed * dt
-        #elif self.key_state[key.UP]:
+        # elif self.key_state[key.UP]:
         #   self.zoom += self.zoom_speed * dt

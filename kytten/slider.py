@@ -2,18 +2,29 @@
 # Copyrighted (C) 2009 by Conrad "Lynx" Wong
 
 import pyglet
-from widgets import Control
+from .widgets import Control
+
 
 class Slider(Control):
     """
     A horizontal slider.  Position is measured from 0.0 to 1.0.
     """
-    IMAGE_BAR = ['slider', 'bar']
-    IMAGE_KNOB = ['slider', 'knob']
-    IMAGE_STEP = ['slider', 'step']
 
-    def __init__(self, value=0.0, min_value=0.0, max_value=1.0, steps=None,
-                 width=100, id=None, on_set=None, disabled=False):
+    IMAGE_BAR = ["slider", "bar"]
+    IMAGE_KNOB = ["slider", "knob"]
+    IMAGE_STEP = ["slider", "step"]
+
+    def __init__(
+        self,
+        value=0.0,
+        min_value=0.0,
+        max_value=1.0,
+        steps=None,
+        width=100,
+        id=None,
+        on_set=None,
+        disabled=False,
+    ):
         """
         Creates a new slider.
 
@@ -41,8 +52,8 @@ class Slider(Control):
         self.knob = None
         self.markers = []
         self.pos = max(
-            min(float(value - min_value) / (max_value - min_value), 1.0),
-            0.0)
+            min(float(value - min_value) / (max_value - min_value), 1.0), 0.0
+        )
         self.offset = (0, 0)
         self.step_offset = (0, 0)
         self.padding = (0, 0, 0, 0)
@@ -84,25 +95,33 @@ class Slider(Control):
         self.x, self.y = x, y
         if self.bar is not None:
             left, right, top, bottom = self.padding
-            self.bar.update(x + left, y + bottom,
-                            self.width - left - right,
-                            self.height - top - bottom)
+            self.bar.update(
+                x + left,
+                y + bottom,
+                self.width - left - right,
+                self.height - top - bottom,
+            )
             x, y, width, height = self.bar.get_content_region()
 
             if self.knob is not None:
                 offset_x, offset_y = self.offset
-                self.knob.update(x + int(width * self.pos) + offset_x,
-                                 y + offset_y,
-                                 self.knob.width, self.knob.height)
+                self.knob.update(
+                    x + int(width * self.pos) + offset_x,
+                    y + offset_y,
+                    self.knob.width,
+                    self.knob.height,
+                )
 
             if self.markers:
                 step = float(width) / self.steps
                 offset_x, offset_y = self.step_offset
-                for n in xrange(0, self.steps + 1):
-                    self.markers[n].update(int(x + step * n) + offset_x,
-                                           y + offset_y,
-                                           self.markers[n].width,
-                                           self.markers[n].height)
+                for n in range(0, self.steps + 1):
+                    self.markers[n].update(
+                        int(x + step * n) + offset_x,
+                        y + offset_y,
+                        self.markers[n].width,
+                        self.markers[n].height,
+                    )
 
     def on_mouse_drag(self, x, y, dx, dy, buttons, modifiers):
         if self.is_dragging and self.bar is not None:
@@ -136,9 +155,12 @@ class Slider(Control):
         if self.bar is not None and self.knob is not None:
             x, y, width, height = self.bar.get_content_region()
             offset_x, offset_y = self.offset
-            self.knob.update(x + int(width * self.pos) + offset_x,
-                             y + offset_y,
-                             self.knob.width, self.knob.height)
+            self.knob.update(
+                x + int(width * self.pos) + offset_x,
+                y + offset_y,
+                self.knob.width,
+                self.knob.height,
+            )
 
     def size(self, dialog):
         """
@@ -148,29 +170,30 @@ class Slider(Control):
             return
         Control.size(self, dialog)
         if self.is_disabled():
-            color = dialog.theme['slider']['disabled_color']
+            color = dialog.theme["slider"]["disabled_color"]
         else:
-            color = dialog.theme['slider']['gui_color']
+            color = dialog.theme["slider"]["gui_color"]
         if self.bar is None:
             path = self.IMAGE_BAR
-            self.bar = dialog.theme[path]['image'].generate(
-                color,
-                dialog.batch, dialog.bg_group)
-            self.padding = dialog.theme[path]['padding']
+            self.bar = dialog.theme[path]["image"].generate(
+                color, dialog.batch, dialog.bg_group
+            )
+            self.padding = dialog.theme[path]["padding"]
         if self.knob is None:
             path = self.IMAGE_KNOB
-            self.knob = dialog.theme[path]['image'].generate(
-                color,
-                dialog.batch, dialog.highlight_group)
-            self.offset = dialog.theme[path]['offset']
+            self.knob = dialog.theme[path]["image"].generate(
+                color, dialog.batch, dialog.highlight_group
+            )
+            self.offset = dialog.theme[path]["offset"]
         if not self.markers and self.steps is not None:
             path = self.IMAGE_STEP
-            for n in xrange(0, self.steps + 1):
+            for n in range(0, self.steps + 1):
                 self.markers.append(
-                    dialog.theme[path]['image'].generate(
-                        color,
-                        dialog.batch, dialog.fg_group))
-            self.step_offset = dialog.theme[path]['offset']
+                    dialog.theme[path]["image"].generate(
+                        color, dialog.batch, dialog.fg_group
+                    )
+                )
+            self.step_offset = dialog.theme[path]["offset"]
         width, height = self.bar.get_needed_size(self.min_width, 0)
         left, right, top, bottom = self.padding
         self.width = width + left + right

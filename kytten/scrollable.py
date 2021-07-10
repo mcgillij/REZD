@@ -4,16 +4,18 @@
 import pyglet
 from pyglet import gl
 
-from dialog import DialogEventManager
-from frame import Wrapper
-from scrollbar import HScrollbar, VScrollbar
-from widgets import Widget
+from .dialog import DialogEventManager
+from .frame import Wrapper
+from .scrollbar import HScrollbar, VScrollbar
+from .widgets import Widget
+
 
 class ScrollableGroup(pyglet.graphics.Group):
     """
     We restrict what's shown within a Scrollable by performing a scissor
     test.
     """
+
     def __init__(self, x, y, width, height, parent=None):
         """Create a new ScrollableGroup
 
@@ -31,12 +33,10 @@ class ScrollableGroup(pyglet.graphics.Group):
         """
         Enables a scissor test on our region
         """
-        gl.glPushAttrib(gl.GL_ENABLE_BIT | gl.GL_TRANSFORM_BIT |
-                        gl.GL_CURRENT_BIT)
+        gl.glPushAttrib(gl.GL_ENABLE_BIT | gl.GL_TRANSFORM_BIT | gl.GL_CURRENT_BIT)
         self.was_scissor_enabled = gl.glIsEnabled(gl.GL_SCISSOR_TEST)
         gl.glEnable(gl.GL_SCISSOR_TEST)
-        gl.glScissor(int(self.x), int(self.y),
-                     int(self.width), int(self.height))
+        gl.glScissor(int(self.x), int(self.y), int(self.width), int(self.height))
 
     def unset_state(self):
         """
@@ -46,14 +46,22 @@ class ScrollableGroup(pyglet.graphics.Group):
             gl.glDisable(gl.GL_SCISSOR_TEST)
         gl.glPopAttrib()
 
+
 class Scrollable(Wrapper):
     """
     Wraps a layout or widget and limits it to a maximum, or fixed, size.
     If the layout exceeds the viewable limits then it is truncated and
     scrollbars will be displayed so the user can pan around.
     """
-    def __init__(self, content=None, width=None, height=None,
-                 is_fixed_size=False, always_show_scrollbars=False):
+
+    def __init__(
+        self,
+        content=None,
+        width=None,
+        height=None,
+        is_fixed_size=False,
+        always_show_scrollbars=False,
+    ):
         """
         Creates a new Scrollable.
 
@@ -104,11 +112,15 @@ class Scrollable(Wrapper):
         our_bottom = self.content_y
         our_top = our_bottom + self.content_height
         for control, left, right, top, bottom in base_controls:
-            controls.append((control,
-                             max(left, our_left),
-                             min(right, our_right),
-                             min(top, our_top),
-                             max(bottom, our_bottom)))
+            controls.append(
+                (
+                    control,
+                    max(left, our_left),
+                    min(right, our_right),
+                    min(top, our_top),
+                    max(bottom, our_bottom),
+                )
+            )
         if self.hscrollbar is not None:
             controls += self.hscrollbar._get_controls()
         if self.vscrollbar is not None:
@@ -138,25 +150,28 @@ class Scrollable(Wrapper):
         """
         offset_x = 0
         if self.hscrollbar:
-            offset_x = self.hscrollbar.get(self.content_width,
-                                           self.content.width)
+            offset_x = self.hscrollbar.get(self.content_width, self.content.width)
         offset_y = 0
         if self.vscrollbar:
-            offset_y = self.content.height - self.content_height - \
-                     self.vscrollbar.get(self.content_height,
-                                         self.content.height)
+            offset_y = (
+                self.content.height
+                - self.content_height
+                - self.vscrollbar.get(self.content_height, self.content.height)
+            )
         control_left = control.x - self.content_x - offset_x
         control_right = control_left + control.width
         control_bottom = control.y - self.content_y + offset_y
         control_top = control_bottom + control.height
         if self.hscrollbar is not None:
-            self.hscrollbar.ensure_visible(control_left, control_right,
-                                           max(self.content_width,
-                                               self.content.width))
+            self.hscrollbar.ensure_visible(
+                control_left, control_right, max(self.content_width, self.content.width)
+            )
         if self.vscrollbar is not None:
-            self.vscrollbar.ensure_visible(control_top, control_bottom,
-                                           max(self.content_height,
-                                               self.content.height))
+            self.vscrollbar.ensure_visible(
+                control_top,
+                control_bottom,
+                max(self.content_height, self.content.height),
+            )
 
     def expand(self, width, height):
         if self.content.is_expandable():
@@ -168,8 +183,10 @@ class Scrollable(Wrapper):
                 self.content_height = height - self.hscrollbar_height
             else:
                 self.content_height = height
-            self.content.expand(max(self.content_width, self.content.width),
-                                max(self.content_height, self.content.height))
+            self.content.expand(
+                max(self.content_width, self.content.width),
+                max(self.content_height, self.content.height),
+            )
         self.width, self.height = width, height
 
     def get_root(self):
@@ -183,9 +200,12 @@ class Scrollable(Wrapper):
         We only intercept events for the content region, not for
         our scrollbars.  They can handle themselves!
         """
-        return x >= self.content_x and y >= self.content_y and \
-               x < self.content_x + self.content_width and \
-               y < self.content_y + self.content_height
+        return (
+            x >= self.content_x
+            and y >= self.content_y
+            and x < self.content_x + self.content_width
+            and y < self.content_y + self.content_height
+        )
 
     def is_expandable(self):
         return True
@@ -204,8 +224,7 @@ class Scrollable(Wrapper):
             self.hscrollbar.layout(x, y)
             y += self.hscrollbar.height
         if self.vscrollbar is not None:
-            self.vscrollbar.layout(
-                x + self.content_width, y)
+            self.vscrollbar.layout(x + self.content_width, y)
 
         # Set the scissor group
         self.root_group.x, self.root_group.y = x - 1, y - 1
@@ -217,11 +236,9 @@ class Scrollable(Wrapper):
         left = x
         top = y + self.content_height - self.content.height
         if self.hscrollbar:
-            left -= self.hscrollbar.get(self.content_width,
-                                        self.content.width)
+            left -= self.hscrollbar.get(self.content_width, self.content.width)
         if self.vscrollbar:
-            top += self.vscrollbar.get(self.content_height,
-                                       self.content.height)
+            top += self.vscrollbar.get(self.content_height, self.content.height)
         self.content.layout(left, top)
 
         self.needs_layout = False
@@ -263,30 +280,26 @@ class Scrollable(Wrapper):
         if self.is_fixed_size:
             self.width, self.height = self.max_width, self.max_height
 
-        self.hscrollbar_height = \
-            dialog.theme['hscrollbar']['left']['image'].height
-        self.vscrollbar_width = \
-            dialog.theme['vscrollbar']['up']['image'].width
+        self.hscrollbar_height = dialog.theme["hscrollbar"]["left"]["image"].height
+        self.vscrollbar_width = dialog.theme["vscrollbar"]["up"]["image"].width
 
-        if self.root_group is None: # do we need to re-clone dialog groups?
+        if self.root_group is None:  # do we need to re-clone dialog groups?
             self.theme = dialog.theme
             self.batch = dialog.batch
-            self.root_group = ScrollableGroup(0, 0, self.width, self.height,
-                                              parent=dialog.fg_group)
-            self.panel_group = pyglet.graphics.OrderedGroup(
-                0, self.root_group)
-            self.bg_group = pyglet.graphics.OrderedGroup(
-                1, self.root_group)
-            self.fg_group = pyglet.graphics.OrderedGroup(
-                2, self.root_group)
-            self.highlight_group = pyglet.graphics.OrderedGroup(
-                3, self.root_group)
+            self.root_group = ScrollableGroup(
+                0, 0, self.width, self.height, parent=dialog.fg_group
+            )
+            self.panel_group = pyglet.graphics.OrderedGroup(0, self.root_group)
+            self.bg_group = pyglet.graphics.OrderedGroup(1, self.root_group)
+            self.fg_group = pyglet.graphics.OrderedGroup(2, self.root_group)
+            self.highlight_group = pyglet.graphics.OrderedGroup(3, self.root_group)
             Wrapper.delete(self)  # force children to abandon old groups
 
         Wrapper.size(self, self)  # all children are to use our groups
 
-        if self.always_show_scrollbars or \
-           (self.max_width and self.width > self.max_width):
+        if self.always_show_scrollbars or (
+            self.max_width and self.width > self.max_width
+        ):
             if self.hscrollbar is None:
                 self.hscrollbar = HScrollbar(self.max_width)
         else:
@@ -294,8 +307,9 @@ class Scrollable(Wrapper):
                 self.hscrollbar.delete()
                 self.hscrollbar = None
 
-        if self.always_show_scrollbars or \
-           (self.max_height and self.height > self.max_height):
+        if self.always_show_scrollbars or (
+            self.max_height and self.height > self.max_height
+        ):
             if self.vscrollbar is None:
                 self.vscrollbar = VScrollbar(self.max_height)
         else:
@@ -310,12 +324,12 @@ class Scrollable(Wrapper):
 
         if self.hscrollbar is not None:
             self.hscrollbar.size(dialog)
-            self.hscrollbar.set(self.max_width, max(self.content.width,
-                                                    self.max_width))
+            self.hscrollbar.set(self.max_width, max(self.content.width, self.max_width))
             self.height += self.hscrollbar.height
 
         if self.vscrollbar is not None:
             self.vscrollbar.size(dialog)
-            self.vscrollbar.set(self.max_height, max(self.content.height,
-                                                     self.max_height))
+            self.vscrollbar.set(
+                self.max_height, max(self.content.height, self.max_height)
+            )
             self.width += self.vscrollbar.width
